@@ -19,10 +19,10 @@ function App() {
       <div className="content">
         <Switch>
           <Route exact path="/" component={Empty}/>
-          <Route exact path="/filmes" component={FilmList} />
-          <Route path="/filmes/:name" component={FilmDetails} />
-          <Route exact path="/colabs" component={FilmList} />
-          <Route path="/colabs/:name" component={FilmDetails} />
+          <Route exact path="/filmes" render={(props) => <FilmList {...props} whichList="filmes" />} />
+          <Route path="/filmes/:title" component={FilmDetails} />
+          <Route exact path="/colabs" render={(props) => <FilmList {...props} whichList="colabs" />} />
+          <Route path="/colabs/:title" component={FilmDetails} />
           <Route path="/sobre" component={About} />
           <Route path="/contato" component={Contact} />
         </Switch>

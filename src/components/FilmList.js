@@ -13,12 +13,12 @@ class FilmList extends Component {
   }
 
   componentDidMount() {
-    const {path} = this.props.match;
-    if (path === "/filmes") {
+    const {whichList} = this.props;
+    if (whichList === "filmes") {
       this.setState({
         films: filmesData
       })
-    } else if (path === "/colabs") {
+    } else if (whichList === "colabs") {
       this.setState({
         films: colabsData
       })
