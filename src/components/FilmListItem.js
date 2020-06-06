@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class FilmListItem extends Component {
   constructor(props) {
@@ -6,15 +7,18 @@ class FilmListItem extends Component {
   }
 
   render() {
-    const {title, year, duration, format, support, director, images} = this.props.film;
+    const {title, year, duration, format, support, director, images, url} = this.props.film;
+    const {whichList} = this.props;
     return (
       <div className="card" style={{backgroundImage: `url(${images.banner})`}}>
-        <div className="card-content">
-          <h2 className="card-title">{title}</h2>
-          <p className="card-year">{year}</p>
-          <p className="card-details">{duration}', {format}, {support}</p>
-          <p className="card-director">direção: {director}</p>
-        </div>
+        <Link to={`/${whichList}/${url}`} className="card-click">
+          <div className="card-content">
+            <h2 className="card-title">{title}</h2>
+            <p className="card-year">{year}</p>
+            <p className="card-details">{duration}', {format}, {support}</p>
+            <p className="card-director">direção: {director}</p>
+          </div>
+        </Link>
       </div>
     )
   }

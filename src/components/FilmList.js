@@ -30,7 +30,7 @@ class FilmList extends Component {
       <div className="list">        
         {this.state.films.map((film, index) => {
           return (
-            <FilmListItem film={film} key={index}/>
+            <FilmListItem film={film} key={index} whichList={this.props.whichList}/>
           )
         })}
       </div>

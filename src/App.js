@@ -20,9 +20,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Empty}/>
           <Route exact path="/filmes" render={(props) => <FilmList {...props} whichList="filmes" />} />
-          <Route path="/filmes/:title" component={FilmDetails} />
+          <Route path="/filmes/:url" component={FilmDetails} />
           <Route exact path="/colabs" render={(props) => <FilmList {...props} whichList="colabs" />} />
-          <Route path="/colabs/:title" component={FilmDetails} />
+          <Route path="/colabs/:url" component={FilmDetails} />
           <Route path="/sobre" component={About} />
           <Route path="/contato" component={Contact} />
         </Switch>
