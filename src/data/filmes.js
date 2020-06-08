@@ -1,8 +1,8 @@
 const filmesData = [
   {
     title: "Ronda",
-    year: 2019,
-    duration: 25,
+    year: "2019",
+    duration: "25",
     format: "ficção",
     support: "digital",
     director: "Mauricio Battistuci e Francisco Miguez",
@@ -157,6 +157,51 @@ const filmesData = [
     },
     url: "ronda"
   },
+  
 ]
+
+const template =
+  {
+    title: "",
+    year: "",
+    duration: "",
+    format: "",
+    support: "",
+    director: "",
+    summary: "",
+    crew: [
+    {
+      name:"",
+      content: ""
+    },
+  ],
+  festivals: [
+    "",
+    "",
+    "",
+  ],
+  reviews: [
+    {
+      name: "",
+      author: "",
+      content: "",
+      link: ""
+    }
+  ],
+  english: {
+    title: "",
+    summary: ""
+  },
+  spanish: {
+    title: "",
+    summary: ""
+  },
+  images: {
+    banner: "",
+    thumbs: [],
+    fullSize: []
+  },
+  url: ""
+},
 
 export default filmesData;
