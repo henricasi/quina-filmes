@@ -108,6 +108,10 @@ const filmesData = [
         name: "APOIO",
         content: "Spcine e Pródigo Films"
       },
+      {
+        name:"",
+        content: "São Paulo, 2018"
+      },
     ],
     festivals: [
       "XV Panorama Internacional Coisa de Cinema - Mostra Competitiva (Salvador BA / novembro 2019)",
@@ -155,24 +159,77 @@ const filmesData = [
       banner: "",
       thumbs: "",
     },
+    video: "",
     url: "ronda"
   },
-  
-]
-
-const template =
   {
-    title: "",
-    year: "",
-    duration: "",
-    format: "",
-    support: "",
-    director: "",
-    summary: "",
+    title: "Ver a China",
+    year: "2019",
+    duration: "29'52\"",
+    format: "documentário",
+    support: "digital",
+    director: "Amanda Carvalho",
+    summary: "Uma realizadora estrangeira é convidada a visitar a China com a tarefa de produzir um filme documentário sobre a produção de chá na província de Fujian. Um ano depois, de volta ao Brasil, retoma suas imagens e aquilo que foi visto em território chinês.",
     crew: [
     {
+      name:"realização",
+      content: "Amanda Carvalho"
+    },
+    {
+      name:"produção china",
+      content: "Zhao Fangwei"
+    },
+    {
+      name:"assistência de montagem",
+      content: "Luisa Noriko"
+    },
+    {
+      name:"captação",
+      content: "Amanda Carvalho"
+    },
+    {
+      name:"imagens adicionais china",
+      content: "Yi Ling"
+    },
+    {
+      name:"imagens adicionais brasil",
+      content: "Caio Antônio, Francisco Miguez, Maurício Battistuci"
+    },
+    {
+      name:"canção",
+      content: "Zhang Binying"
+    },
+    {
+      name:"trilha sonora",
+      content: "Amanda Carvalho"
+    },
+    {
+      name:"edição de som",
+      content: "Lucca Chiavone"
+    },
+    {
+      name:"mixagem",
+      content: "Sandro Dalla Costa"
+    },
+    {
+      name:"correção de cor",
+      content: "Caio Antônio"
+    },
+    {
+      name:"motion graphics",
+      content: "Cauê Silvério"
+    },
+    {
+      name:"legenda e tradução",
+      content: "Henrique Casimiro"
+    },
+    {
+      name:"APOIO",
+      content: "Departamento de Cinema, Rádio e Televisão - ECA USP, Xiamen University, Looking China Youth Film Project."
+    },
+    {
       name:"",
-      content: ""
+      content: "São Paulo, 2019"
     },
   ],
   festivals: [
@@ -201,7 +258,285 @@ const template =
     thumbs: [],
     fullSize: []
   },
-  url: ""
-},
+  video: "https://vimeo.com/338993567",
+  url: "ver-a-china"
+  },
+  {
+    title: "Angela",
+    year: "wip",
+    duration: "",
+    format: "documentário",
+    support: "digital",
+    director: "Francisco Miguez e Nicolau de Almeida",
+    summary: "Angela de Almeida junta os pontos de um mapa de levantes e represálias militares que atravessaram a América Latina. Esse filme é o encontro de três gerações, Angela, seu filho e seus sobrinhos-netos, que se interrogam: como é ver um mundo que parece tão distante daquele pelo qual lutou Angela toda sua vida? Entre o visível e invisível, a derrota e a vitória, vida e morte de encontro com uma mulher de 80 anos que persiste, incansável.",
+    crew: [
+      {
+        name:"realização",
+        content: "Francisco Miguez e Nicolau de Almeida"
+      },
+      {
+        name:"direção de fotografia",
+        content: "Mauricio Battistuci"
+      },
+      {
+        name:"produção",
+        content: "Amanda Carvalho, Francisco Miguez e Nicolau de Almeida"
+      },
+      {
+        name:"montagem",
+        content: "Luísa Noriko e Amanda Carvalho"
+      },
+      {
+        name:"finalização",
+        content: "Caio Antonio"
+      },
+    ],
+    festivals: [
+      "",
+      "",
+      "",
+    ],
+    reviews: [
+      {
+        name: "",
+        author: "",
+        content: "",
+        link: ""
+      }
+    ],
+    english: {
+      title: "",
+      summary: ""
+    },
+    spanish: {
+      title: "",
+      summary: ""
+    },
+    images: {
+      banner: "",
+      thumbs: [],
+      fullSize: []
+    },
+    video: "",
+    url: "angela"
+  },
+  {
+    title: "Ensaios",
+    year: "wip",
+    duration: "",
+    format: "ficção",
+    support: "digital",
+    director: "Mauricio Battistuci",
+    summary: "Ana, uma jovem atriz que mora sozinha, grava self-tapes para um teste de elenco de uma publicidade sobre consultoria empresarial. Sob a orientação de seu agente, ela não mede esforços para conseguir o trabalho.",
+    crew: [
+      {
+        name:"ELENCO",
+        content: "Sofia Maruci, Érika Rocha, Ricardo Teodoro, João Filho"
+      },
+      {
+        name:"direção e roteiro",
+        content: "Mauricio Battistuci"
+      },
+      {
+        name:"montagem",
+        content: "Manoela Cezar"
+      },
+      {
+        name:"produção",
+        content: "Amanda Carvalho, Francisco Miguez e Mauricio Battistuci"
+      },
+      {
+        name:"assistente de direção",
+        content: "Ana Sampaio"
+      },
+      {
+        name:"continuidade",
+        content: "Luisa Noriko"
+      },
+      {
+        name:"assistentes de produção",
+        content: "Júlia Fávero, Fernando Borba e Francisco Grasso"
+      },
+      {
+        name:"direção de fotografia",
+        content: "Francisco Miguez"
+      },
+      {
+        name:"1º assistente de câmera",
+        content: "Raffaela Rosset"
+      },
+      {
+        name:"2º assistentes de câmera e gaffer",
+        content: "Matheus Albino e Caio Antônio"
+      },
+      {
+        name:"som direto",
+        content: "Maíra Romero e Igor Giestas"
+      },
+      {
+        name:"direção de arte",
+        content: "Marina Zilbersztejn e Helena Zilbersztejn"
+      },
+      {
+        name:"assistente de arte",
+        content: "Henrique Casimiro"
+      },
+      {
+        name:"maquiadora",
+        content: "Amanda Hiruta"
+      },
+      {
+        name:"figurino",
+        content: "Joana Lorenzetti"
+      },
+      {
+        name:"supervisão de montagem e pós-produção",
+        content: "Luisa Noriko"
+      },
+    ],
+    festivals: [
+      "",
+      "",
+      "",
+    ],
+    reviews: [
+      {
+        name: "",
+        author: "",
+        content: "",
+        link: ""
+      }
+    ],
+    english: {
+      title: "",
+      summary: ""
+    },
+    spanish: {
+      title: "",
+      summary: ""
+    },
+    images: {
+      banner: "",
+      thumbs: [],
+      fullSize: []
+    },
+    video: "",
+    url: "ensaios"
+  },
+  {
+    title: "Uma Invenção Sem Futuro",
+    year: "wip",
+    duration: "",
+    format: "documentário",
+    support: "digital",
+    director: "Francisco Miguez",
+    summary: "Uma invenção sem futuro? Três projecionistas de película falam de cinema e do declínio de sua profissão durante uma mostra de filmes dos irmãos Lumière. Quando começou o cinema, quando ele termina?",
+    crew: [
+      {
+        name: "com",
+        content: "José Bezerra, José Cícero, Moacir Rodrigues"
+      },
+      {
+        name: "realização",
+        content: "Francisco Miguez"
+      },
+      {
+        name: "",
+        content: "filmado no CCBB São Paulo ao longo da mostra Lumière Cineasta"
+      },
+      {
+        name: "Mostra Lumière Cineasta",
+        content: ""
+      },
+      {
+        name: "curadoria",
+        content: "Calac Nogueira, Lucas Baptista, Maria Chiaretti"
+      },
+      {
+        name: "produção mostra",
+        content: "Marina Pessanha, José de Aguiar"
+      },
+      {
+        name: "e também",
+        content: "Fabio Miguez, Fernanda Mendes Luiz, João MB Bim, Lucia Miguez, Lucas Reitano, Ottavia Delfanti, Paulo Martins Filho, Pedro Koberle, Victor Maia"
+      },
+    ],
+    festivals: [
+      "",
+      "",
+      "",
+    ],
+    reviews: [
+      {
+        name: "",
+        author: "",
+        content: "",
+        link: ""
+      }
+    ],
+    english: {
+      title: "",
+      summary: ""
+    },
+    spanish: {
+      title: "",
+      summary: ""
+    },
+    images: {
+      banner: "",
+      thumbs: [],
+      fullSize: []
+    },
+    video: "",
+    url: "uma-invencao-sem-futuro"
+  },
+
+  
+]
+
+const template =
+  {
+    title: "",
+    year: "",
+    duration: "",
+    format: "",
+    support: "",
+    director: "",
+    summary: "",
+    crew: [
+    {
+      name: "",
+      content: ""
+    },
+    ],
+    festivals: [
+      "",
+      "",
+      "",
+    ],
+    reviews: [
+      {
+        name: "",
+        author: "",
+        content: "",
+        link: ""
+      }
+    ],
+    english: {
+      title: "",
+      summary: ""
+    },
+    spanish: {
+      title: "",
+      summary: ""
+    },
+    images: {
+      banner: "",
+      thumbs: [],
+      fullSize: []
+    },
+    video: "",
+    url: ""
+  },
 
 export default filmesData;
