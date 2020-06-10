@@ -1,4 +1,4 @@
-const filmesData = [
+export const filmesData = [
   {
     title: "Ronda",
     year: "2019",
@@ -537,6 +537,4 @@ const template =
     },
     video: "",
     url: ""
-  },
-
-export default filmesData;
+  }

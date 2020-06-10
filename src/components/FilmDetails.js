@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import filmesData from '../data/filmes';
-import colabsData from '../data/colabs';
+import {filmesData} from '../data/filmes';
+import {colabsData} from '../data/colabs';
 
 class FilmDetails extends Component {
   constructor(props) {
@@ -30,14 +30,16 @@ class FilmDetails extends Component {
   }
 
   render() {
-    const {title, year, duration, format, support, director} = this.state.film
+    const {title, year, duration, summary, format, support, director} = this.state.film
     return (
       <div className="details-page">
         <div className="video-container">
 
         </div>
-        <div className="details-text">
+        <div className="details-content">
           <h3>{title} <span className="year-duration">({year}, {duration}')</span></h3>
+          <h4>Sinopse</h4>
+          <p className="details-text">{summary}</p>
 
         </div>
       </div>

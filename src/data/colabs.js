@@ -1,4 +1,4 @@
-const colabsData = [
+export const colabsData = [
   {
     title: "Todos os Pontos da Curva",
     year: "2019",
@@ -464,6 +464,4 @@ const template =
     },
     video: "",
     url: ""
-  },
-
-export default colabsData;
+  }

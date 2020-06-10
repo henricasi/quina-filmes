@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import FilmListItem from './FilmListItem';
 
-import filmesData from '../data/filmes';
-import colabsData from '../data/colabs';
+import {filmesData} from '../data/filmes';
+import {colabsData} from '../data/colabs';
 
 class FilmList extends Component {
   constructor(props) {
