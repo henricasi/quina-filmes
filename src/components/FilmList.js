@@ -13,6 +13,16 @@ class FilmList extends Component {
   }
 
   componentDidMount() {
+    this.setList();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.whichList !== prevProps.whichList) {
+      this.setList();
+    }
+  }
+
+  setList() {
     const {whichList} = this.props;
     if (whichList === "filmes") {
       this.setState({
@@ -24,6 +34,7 @@ class FilmList extends Component {
       })
     }
   }
+  
 
   render() {
     return (
