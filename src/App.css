@@ -49,7 +49,7 @@ li {
 }
 
 .content {
-  width: 80%;
+  width: 100%;
 }
 
 
@@ -59,6 +59,45 @@ li {
 
 .active {
   color: #BFB4A2 !important;
+}
+
+/* FilmDetails */
+
+.details-page {
+  background-color: white;
+  width: 90%;
+  margin: 6vh auto;
+}
+
+.video-container {
+  width: 100%;
+  background-color: black;
+}
+
+.details-content {
+  padding: 2vh 2vw;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.details-content-text > a {
+  color: black;
+}
+
+.details-content-text > a:hover {
+  color: blue;
+}
+
+.back-link {
+  margin-bottom: 1vh;
+  display: inline-block;
+}
+
+.crew-item {
+  /* width: 40%; */
+}
+
+.crew-title {
+  font-weight: 600;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -94,6 +133,8 @@ li {
 
   .content {
     width: 80%;
+    max-height: 100vh;
+    overflow: auto;
   }
 
   .nav {
@@ -135,6 +176,37 @@ li {
 
   .card-click {
     padding: 2%;
+  }
+
+  .details-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details-content-text {
+    width: 60%;
+    text-align: justify;
+  }
+
+  .details-content-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .thumb-link {
+    margin-bottom: 2vh;
+  }
+
+  .crew {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .crew-item {
+    width: 80%;
   }
 
 }
