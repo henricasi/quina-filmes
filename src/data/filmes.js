@@ -194,7 +194,7 @@ export const filmesData = [
   {
     title: "Ver a China",
     year: "2019",
-    duration: "29'52\"",
+    duration: "30",
     format: "documentário",
     support: "digital",
     director: "Amanda Carvalho",
@@ -282,11 +282,24 @@ export const filmesData = [
     title: "",
     summary: ""
   },
-  images: {
-    banner: "",
-    thumbs: [],
-    fullSize: []
-  },
+  banner: "",
+  images: [
+    {
+      thumb: "/img/china/thumb-verachina_still1.jpg",
+      full: "/img/china/verachina_still1_1316x740.jpg",
+      alt: "Still 1"
+    },
+    {
+      thumb: "/img/china/thumb-verachina_still2.jpg",
+      full: "/img/china/verachina_still2_1316x740.jpg",
+      alt: "Still 2"
+    },
+    {
+      thumb: "/img/china/thumb-verachina_still3.jpg",
+      full: "/img/china/verachina_still3_1316x740.jpg",
+      alt: "Still 3"
+    },
+  ],
   video: "https://vimeo.com/338993567",
   url: "ver-a-china"
   },
@@ -341,11 +354,39 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "/img/angela/thumb-angela_still1.jpg",
+        full: "/img/angela/angela_still1_1316x740.jpg",
+        alt: "Still 1"
+      },
+      {
+        thumb: "/img/angela/thumb-angela_still2.jpg",
+        full: "/img/angela/angela_still2_1184x740.jpg",
+        alt: "Still 2"
+      },
+      {
+        thumb: "/img/angela/thumb-angela_still3.jpg",
+        full: "/img/angela/angela_still3_1184x740.jpg",
+        alt: "Still 3"
+      },
+      {
+        thumb: "/img/angela/thumb-angela_still4.jpg",
+        full: "/img/angela/angela_still4_1316x740.jpg",
+        alt: "Still 4"
+      },
+      {
+        thumb: "/img/angela/thumb-angela_still5.jpg",
+        full: "/img/angela/angela_still5_1312x740.jpg",
+        alt: "Still 5"
+      },
+      {
+        thumb: "/img/angela/thumb-angela_still6.jpg",
+        full: "/img/angela/angela_still6_874x740.jpg",
+        alt: "Still 6"
+      },
+    ],
     video: "",
     url: "angela"
   },
@@ -444,11 +485,14 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: "ensaios"
   },
@@ -511,11 +555,14 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: "uma-invencao-sem-futuro"
   },
@@ -533,10 +580,10 @@ const template =
     director: "",
     summary: "",
     crew: [
-    {
-      name: "",
-      content: ""
-    },
+      {
+        name: "",
+        content: ""
+      },
     ],
     festivals: [
       "",
@@ -559,11 +606,14 @@ const template =
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: ""
   }

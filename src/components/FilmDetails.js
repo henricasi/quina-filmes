@@ -53,7 +53,8 @@ class FilmDetails extends Component {
         <div className="details-content">
           <div className="details-content-text">
             <Link to={this.renderGoBackLink} className="back-link">← voltar</Link>
-            <h3>{title} <span className="year-duration">({year}, {duration}')</span></h3>
+            <h3>{title}</h3>
+            <p className="year-duration">{year}, {format}, {support}, {duration}'</p>
             <p className="summary">{summary}</p>
             <div className="crew">
               {crew && crew.map((item, idx) => {

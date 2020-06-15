@@ -83,8 +83,17 @@ li {
   color: black;
 }
 
+.details-content-text > h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+}
+
 .details-content-text > a:hover {
   color: blue;
+}
+
+.year-duration {
+  color: gray;
 }
 
 .back-link {

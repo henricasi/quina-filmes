@@ -88,11 +88,14 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: "todos-os-pontos"
   },
@@ -179,11 +182,14 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: "cabeca-oca"
   },
@@ -250,11 +256,14 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: "nylon-bites"
   },
@@ -313,11 +322,14 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: "estudos-nylon"
   },
@@ -411,11 +423,14 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: "dobras"
   },
@@ -457,11 +472,14 @@ const template =
       title: "",
       summary: ""
     },
-    images: {
-      banner: "",
-      thumbs: [],
-      fullSize: []
-    },
+    banner: "",
+    images: [
+      {
+        thumb: "",
+        full: "",
+        alt: ""
+      },
+    ],
     video: "",
     url: ""
   }
