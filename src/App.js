@@ -12,11 +12,12 @@ import './App.css';
 function App() {
   return (
     <div className="container-fluid main">
-      {/* //TODO inserir div video, div blur */}
-      <div className="menu">
-        <Navbar></Navbar>
-      </div>
-      <div className="content">
+      <video playsinline autoplay muted loop poster="/img/background.jpg" id="bgvid">
+        <source src="polina.webm" type="video/webm"/>
+        <source src="polina.mp4" type="video/mp4"/>
+      </video>
+      <Navbar></Navbar>
+      <main className="content">
         <Switch>
           <Route exact path="/" component={Empty}/>
           <Route exact path="/filmes" render={(props) => <FilmList {...props} whichList="filmes" />} />
@@ -26,7 +27,7 @@ function App() {
           <Route path="/sobre" component={About} />
           <Route path="/contato" component={Contact} />
         </Switch>
-      </div>
+      </main>
     </div>
   );
 }

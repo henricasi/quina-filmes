@@ -2,7 +2,7 @@ export const colabsData = [
   {
     title: "Todos os Pontos da Curva",
     year: "2019",
-    duration: "7'20\"",
+    duration: "7",
     format: "videodança",
     support: "digital 16:9",
     director: "Francisco Miguez",
@@ -56,10 +56,6 @@ export const colabsData = [
         name: "",
         content: "filmado no Departamento de Artes Cênicas ECA/USP"
       },
-      {
-        name: "",
-        content: "São Paulo, 2019"
-      }
     ],
     festivals: [
       "Dança em Foco | festival internacional de vídeo & dança (platadorma online / 2019 - 2020)",
@@ -89,13 +85,32 @@ export const colabsData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "/img/pontos-curva/thumb-tpdc_still1.jpg",
+          full: "/img/pontos-curva/tpdc_still1_1316x740.jpg",
+          alt: "still1"
+        },
+        {
+          thumb: "/img/pontos-curva/thumb-tpdc_still2.jpg",
+          full: "/img/pontos-curva/tpdc_still2_1316x740.jpg",
+          alt: "still2"
+        },
+        {
+          thumb: "/img/pontos-curva/thumb-tpdc_still4.jpg",
+          full: "/img/pontos-curva/tpdc_still4_1316x740.jpg",
+          alt: "still4"
+        },
+      ],
+      gallery2: [
+        {
+          thumb: "/img/pontos-curva/thumb-tpdc_still5.jpg",
+          full: "/img/pontos-curva/tpdc_still5_1316x740.jpg",
+          alt: "still5"
+        },
+      ]
+    },
     video: "",
     url: "todos-os-pontos"
   },
@@ -183,13 +198,15 @@ export const colabsData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+    },
     video: "",
     url: "cabeca-oca"
   },
@@ -257,13 +274,15 @@ export const colabsData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+    },
     video: "",
     url: "nylon-bites"
   },
@@ -323,13 +342,15 @@ export const colabsData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+    },
     video: "",
     url: "estudos-nylon"
   },
@@ -424,13 +445,15 @@ export const colabsData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+    },
     video: "",
     url: "dobras"
   },
@@ -443,8 +466,8 @@ const template =
     duration: "",
     format: "",
     support: "",
-    director: "",
     summary: "",
+    cast: "",
     crew: [
       {
         name: "",
@@ -473,13 +496,17 @@ const template =
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+      gallery2: [],
+      gallery3: []
+    },
     video: "",
     url: ""
   }

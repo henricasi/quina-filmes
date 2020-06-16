@@ -7,7 +7,7 @@ class FilmListItem extends Component {
   }
 
   render() {
-    const {title, year, duration, format, support, director, images, url} = this.props.film;
+    const {title, year, duration, format, support, images, url} = this.props.film;
     const {whichList} = this.props;
     return (
       <div className="card" style={{backgroundImage: `url(${images.banner})`}}>
@@ -16,7 +16,6 @@ class FilmListItem extends Component {
             <h2 className="card-title">{title}</h2>
             <p className="card-year">{year}</p>
             <p className="card-details">{duration}', {format}, {support}</p>
-            <p className="card-director">direção: {director}</p>
           </div>
         </Link>
       </div>

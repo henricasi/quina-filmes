@@ -5,13 +5,9 @@ export const filmesData = [
     duration: "25",
     format: "ficção",
     support: "digital",
-    director: "Mauricio Battistuci e Francisco Miguez",
     summary: "Segurança desempregado, Hélio cai em uma espiral de encontros em São Paulo. Enquanto faz promessas de ascensão para sua companheira que ainda não veio para a capital, passa a rondar a cidade, sem rumo, por sua função.",
+    cast: "João Filho, Georgette Fadel, Rogério Bandeira, Érika Rocha, Eliane Weinfurter, Sérgio Pires",
     crew: [
-      {
-        name:"elenco",
-        content: "João Filho, Georgette Fadel, Rogério Bandeira, Érika Rocha, Eliane Weinfurter, Sérgio Pires"
-      },
       {
         name: "direção e roteiro",
         content: "Mauricio Battistuci e Francisco Miguez"
@@ -98,19 +94,15 @@ export const filmesData = [
       },
       {
         name: "AGRADECIMENTOS",
-        content: "Amanda Monteiro, Antonio Luiz Sampaio Carvalho, Cecília Mello, Celso Bonadio, Companhia Do Latão, Eduardo Freitas, Estacionamento MBA Park, Fabio Miguez, Fernanda Mendes Luiz, Giulia Castro, Henrique Casimiro Mandruzato, João Godoy, João Guilherme Dos Santos (Madureira), João Lucca Piovan, João Pedro Mb Bim, Luca Dourado, Macário Moura , Maíra Do Nascimento, Manoela Cezar, Maria Luiza Tutu Mesquita, Matheus Biscaro, Naomi Takiya Bonadio, Pedro Nishi, Subprefeitura De Pinheiros, Sofia Maruci, Tania Battistuci, Thaís Orchi Abdala, Meia e Firma"
+        content: "Amanda Monteiro, Antonio Luiz Sampaio Carvalho, Cecília Mello, Celso Bonadio, Companhia Do Latão, Eduardo Freitas, Estacionamento MBA Park, Fabio Miguez, Fernanda Mendes Luiz, Giulia Castro, Henrique Casimiro, João Godoy, João Guilherme Dos Santos (Madureira), João Lucca Piovan, João Pedro Mb Bim, Luca Dourado, Macário Moura, Maíra Do Nascimento, Manoela Cezar, Maria Luiza Tutu Mesquita, Matheus Biscaro, Naomi Takiya Bonadio, Pedro Nishi, Subprefeitura De Pinheiros, Sofia Maruci, Tania Battistuci, Thaís Orchi Abdala, Meia e Firma"
       },
       {
         name: "EQUIPE CTR",
-        content: "Daniel Alves da Silva, Douglas Borges Giudice, Edson da Conceição, Ferdinand Machado Coimbra, Francisco Carlos Medina Coca, Gabriel Barreto, Guido Agovino, Ivone Vantini, Joel Yamaji, Marcelo Henrique Leite , Marcos José da Silva Pinto, Marcus Kurtinaitis, Mauricio Nakasato, Paulo César Ferreira, Thiago Afonso De André, Victor Yuji Shirai, Vilma Do Prado Muller"
+        content: "Daniel Alves da Silva, Douglas Borges Giudice, Edson da Conceição, Ferdinand Machado Coimbra, Francisco Carlos Medina Coca, Gabriel Barreto, Guido Agovino, Ivone Vantini, Joel Yamaji, Marcelo Henrique Leite, Marcos José da Silva Pinto, Marcus Kurtinaitis, Mauricio Nakasato, Paulo César Ferreira, Thiago Afonso De André, Victor Yuji Shirai, Vilma Do Prado Muller"
       },
       {
         name: "APOIO",
         content: "Spcine e Pródigo Films"
-      },
-      {
-        name:"",
-        content: "São Paulo, 2018"
       },
     ],
     festivals: [
@@ -156,38 +148,54 @@ export const filmesData = [
       summary: "Vigilante desempleado, Helio cae en una espiral de encuentros en Sao Paulo. Mientras hace promesas de ascenso a su compañera que aún no ha venido a la capital, pasa a rondar la ciudad, sin rumbo, por su función."
     },
     banner: "",
-    images: [
-      {
-        thumb: "/img/ronda/thumb-RONDA_poster_mar2020.jpg",
-        full: "/img/ronda/RONDA_poster_mar2020_1406x2000.jpg",
-        alt: "Poster Ronda"
-      },
-      {
-        thumb: "/img/ronda/thumb-ronda_still1.jpg",
-        full: "/img/ronda/ronda_still1_1369x740.jpg",
-        alt: "Still 1"
-      },
-      {
-        thumb: "/img/ronda/thumb-ronda_still2.jpg",
-        full: "/img/ronda/ronda_still2_1369x740.jpg",
-        alt: "Still 2"
-      },
-      {
-        thumb: "/img/ronda/thumb-ronda_still3.jpg",
-        full: "/img/ronda/ronda_still3_1369x740.jpg",
-        alt: "Still 3"
-      },
-      {
-        thumb: "/img/ronda/thumb-ronda_still4.jpg",
-        full: "/img/ronda/ronda_still4_1369x740.jpg",
-        alt: "Still 4"
-      },
-      {
-        thumb: "/img/ronda/thumb-ronda_still7.jpg",
-        full: "/img/ronda/ronda_still7_1369x740.jpg",
-        alt: "Still 7"
-      }
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "/img/ronda/thumb-RONDA_poster_mar2020.jpg",
+          full: "/img/ronda/RONDA_poster_mar2020_1406x2000.jpg",
+          alt: "Poster Ronda"
+        },
+        {
+          thumb: "/img/ronda/thumb-ronda_still1.jpg",
+          full: "/img/ronda/ronda_still1_1369x740.jpg",
+          alt: "Still 1"
+        },
+        {
+          thumb: "/img/ronda/thumb-ronda_still3.jpg",
+          full: "/img/ronda/ronda_still3_1369x740.jpg",
+          alt: "Still 3"
+        },
+        {
+          thumb: "/img/ronda/thumb-ronda_still5.jpg",
+          full: "/img/ronda/ronda_still5_1369x740.jpg",
+          alt: "Still 5"
+        },
+        {
+          thumb: "/img/ronda/thumb-ronda_still6.jpg",
+          full: "/img/ronda/ronda_still6_1369x740.jpg",
+          alt: "Still 6"
+        }
+      ],
+      gallery2: [
+        {
+          thumb: "/img/ronda/thumb-ronda_still2.jpg",
+          full: "/img/ronda/ronda_still2_1369x740.jpg",
+          alt: "Still 2"
+        },
+      ],
+      gallery3: [
+        {
+          thumb: "/img/ronda/thumb-ronda_still4.jpg",
+          full: "/img/ronda/ronda_still4_1369x740.jpg",
+          alt: "Still 4"
+        },
+        {
+          thumb: "/img/ronda/thumb-ronda_still7.jpg",
+          full: "/img/ronda/ronda_still7_1369x740.jpg",
+          alt: "Still 7"
+        }
+      ]
+    },
     video: `<div style="padding:54.05% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/338993567?autoplay=1&title=0&byline=0&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
     url: "ronda"
   },
@@ -255,11 +263,7 @@ export const filmesData = [
     {
       name:"APOIO",
       content: "Departamento de Cinema, Rádio e Televisão - ECA USP, Xiamen University, Looking China Youth Film Project."
-    },
-    {
-      name:"",
-      content: "São Paulo, 2019"
-    },
+    }
   ],
   festivals: [
     "",
@@ -283,24 +287,26 @@ export const filmesData = [
     summary: ""
   },
   banner: "",
-  images: [
-    {
-      thumb: "/img/china/thumb-verachina_still1.jpg",
-      full: "/img/china/verachina_still1_1316x740.jpg",
-      alt: "Still 1"
-    },
-    {
-      thumb: "/img/china/thumb-verachina_still2.jpg",
-      full: "/img/china/verachina_still2_1316x740.jpg",
-      alt: "Still 2"
-    },
-    {
-      thumb: "/img/china/thumb-verachina_still3.jpg",
-      full: "/img/china/verachina_still3_1316x740.jpg",
-      alt: "Still 3"
-    },
-  ],
-  video: "https://vimeo.com/338993567",
+  images: {
+    gallery1: [
+      {
+        thumb: "/img/china/thumb-verachina_still1.jpg",
+        full: "/img/china/verachina_still1_1316x740.jpg",
+        alt: "Still 1"
+      },
+      {
+        thumb: "/img/china/thumb-verachina_still2.jpg",
+        full: "/img/china/verachina_still2_1316x740.jpg",
+        alt: "Still 2"
+      },
+      {
+        thumb: "/img/china/thumb-verachina_still3.jpg",
+        full: "/img/china/verachina_still3_1316x740.jpg",
+        alt: "Still 3"
+      },
+    ],
+  },
+  video: "",
   url: "ver-a-china"
   },
   {
@@ -355,38 +361,40 @@ export const filmesData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "/img/angela/thumb-angela_still1.jpg",
-        full: "/img/angela/angela_still1_1316x740.jpg",
-        alt: "Still 1"
-      },
-      {
-        thumb: "/img/angela/thumb-angela_still2.jpg",
-        full: "/img/angela/angela_still2_1184x740.jpg",
-        alt: "Still 2"
-      },
-      {
-        thumb: "/img/angela/thumb-angela_still3.jpg",
-        full: "/img/angela/angela_still3_1184x740.jpg",
-        alt: "Still 3"
-      },
-      {
-        thumb: "/img/angela/thumb-angela_still4.jpg",
-        full: "/img/angela/angela_still4_1316x740.jpg",
-        alt: "Still 4"
-      },
-      {
-        thumb: "/img/angela/thumb-angela_still5.jpg",
-        full: "/img/angela/angela_still5_1312x740.jpg",
-        alt: "Still 5"
-      },
-      {
-        thumb: "/img/angela/thumb-angela_still6.jpg",
-        full: "/img/angela/angela_still6_874x740.jpg",
-        alt: "Still 6"
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "/img/angela/thumb-angela_still1.jpg",
+          full: "/img/angela/angela_still1_1316x740.jpg",
+          alt: "Still 1"
+        },
+        {
+          thumb: "/img/angela/thumb-angela_still2.jpg",
+          full: "/img/angela/angela_still2_1184x740.jpg",
+          alt: "Still 2"
+        },
+        {
+          thumb: "/img/angela/thumb-angela_still3.jpg",
+          full: "/img/angela/angela_still3_1184x740.jpg",
+          alt: "Still 3"
+        },
+        {
+          thumb: "/img/angela/thumb-angela_still4.jpg",
+          full: "/img/angela/angela_still4_1316x740.jpg",
+          alt: "Still 4"
+        },
+        {
+          thumb: "/img/angela/thumb-angela_still5.jpg",
+          full: "/img/angela/angela_still5_1312x740.jpg",
+          alt: "Still 5"
+        },
+        {
+          thumb: "/img/angela/thumb-angela_still6.jpg",
+          full: "/img/angela/angela_still6_874x740.jpg",
+          alt: "Still 6"
+        },
+      ],
+    },
     video: "",
     url: "angela"
   },
@@ -396,13 +404,9 @@ export const filmesData = [
     duration: "",
     format: "ficção",
     support: "digital",
-    director: "Mauricio Battistuci",
+    cast: "Sofia Maruci, Érika Rocha, Ricardo Teodoro, João Filho",
     summary: "Ana, uma jovem atriz que mora sozinha, grava self-tapes para um teste de elenco de uma publicidade sobre consultoria empresarial. Sob a orientação de seu agente, ela não mede esforços para conseguir o trabalho.",
     crew: [
-      {
-        name:"ELENCO",
-        content: "Sofia Maruci, Érika Rocha, Ricardo Teodoro, João Filho"
-      },
       {
         name:"direção e roteiro",
         content: "Mauricio Battistuci"
@@ -486,13 +490,15 @@ export const filmesData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+    },
     video: "",
     url: "ensaios"
   },
@@ -556,13 +562,15 @@ export const filmesData = [
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+    },
     video: "",
     url: "uma-invencao-sem-futuro"
   },
@@ -577,8 +585,8 @@ const template =
     duration: "",
     format: "",
     support: "",
-    director: "",
     summary: "",
+    cast: "",
     crew: [
       {
         name: "",
@@ -607,13 +615,17 @@ const template =
       summary: ""
     },
     banner: "",
-    images: [
-      {
-        thumb: "",
-        full: "",
-        alt: ""
-      },
-    ],
+    images: {
+      gallery1: [
+        {
+          thumb: "",
+          full: "",
+          alt: ""
+        },
+      ],
+      gallery2: [],
+      gallery3: []
+    },
     video: "",
     url: ""
   }

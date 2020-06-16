@@ -1,14 +1,33 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; */
 
-
 body {
-  background-image: url('/img/background.jpg');
+  /* background-image: url('/img/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+video#bgvid { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url('/img/background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 a {
@@ -44,18 +63,14 @@ li {
   padding: 0;
 }
 
-.menu {
-  width: 100%;
-}
-
-.content {
+/* .content {
   width: 100%;
 }
 
 
 .nav {
   width: 100%;
-}
+} */
 
 .active {
   color: #BFB4A2 !important;
@@ -76,24 +91,8 @@ li {
 
 .details-content {
   padding: 2vh 2vw;
+  /* font-family: 'PT Sans', 'Open Sans', sans-serif; */
   font-family: 'Open Sans', sans-serif;
-}
-
-.details-content-text > a {
-  color: black;
-}
-
-.details-content-text > h3 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.5em;
-}
-
-.details-content-text > a:hover {
-  color: blue;
-}
-
-.year-duration {
-  color: gray;
 }
 
 .back-link {
@@ -101,14 +100,64 @@ li {
   display: inline-block;
 }
 
+.details-content-text > a {
+  color: black;
+}
+
+.details-content-text > a:hover {
+  color: blue;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+}
+
+.year-duration {
+  color: gray;
+  margin-bottom: 1.6rem;
+}
+
+.details-margin {
+  margin-bottom: 1.8rem;
+}
+
+.details-section-header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+
 .crew-item {
-  /* width: 40%; */
+  /* margin-left: 0.5em; */
 }
 
 .crew-title {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1rem;
+  /* font-family: 'pt sans'; */
 }
 
+.festivals-list-item {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  text-align: start;
+}
+
+.review-link {
+  color: #212529;
+  text-decoration-line: underline;
+}
+
+
+.review-content {
+  text-indent: 1.5rem;
+}
+
+ 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
@@ -128,7 +177,7 @@ li {
 
   li {
     margin-bottom: 4vh;
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   .main {
@@ -136,21 +185,23 @@ li {
     height: 100vh;
   }
 
-  .menu {
-    width: 20%; 
+  nav {
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 
-  .content {
+  main {
     width: 80%;
     max-height: 100vh;
     overflow: auto;
   }
 
-  .nav {
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  img {
+    width: 100%;
+    height: auto;
   }
 
   .logo-container {
@@ -172,22 +223,25 @@ li {
   }
 
   .list {
-    padding: 2vh 0 2vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vh 2vw;
     overflow: auto;
-    max-height: 100vh;
+    height: 100vh;
   }
   
   .card {
     border-radius: 0%;
-    width: 90%;
-    margin: 8vh auto;
+    width: 21vw;
+    height: 28vw;
+    margin: 4vh 2vw;
   }
 
   .card-click {
     padding: 2%;
   }
 
-  .details-content {
+  .details-section {
     display: flex;
     justify-content: space-between;
   }
@@ -195,16 +249,22 @@ li {
   .details-content-text {
     width: 60%;
     text-align: justify;
+    padding-right: 2vw;
   }
 
-  .details-content-images {
+  .gallery {
+    padding: 2vh 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+
+  .no-pad-top {
+    padding: 0;
   }
 
   .thumb-link {
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
   }
 
   .crew {
@@ -215,7 +275,7 @@ li {
   }
   
   .crew-item {
-    width: 80%;
+    width: 100%;
   }
 
 }
