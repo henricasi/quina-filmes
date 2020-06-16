@@ -11,7 +11,6 @@ class FilmDetails extends Component {
       film: {},
       player: {}
     }
-    this.vimeoiframe = React.createRef();
     this.renderGoBackLink = this.renderGoBackLink.bind(this);
     this.pauseVideo = this.pauseVideo.bind(this);
   }
