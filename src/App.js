@@ -6,26 +6,39 @@ import FilmList from './components/FilmList'
 import FilmDetails from './components/FilmDetails'
 import About from './components/About'
 import Contact from './components/Contact'
+import VideoBackground from './components/VideoBackground'
 
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.addVideoSourceDesktop = this.addVideoSourceDesktop.bind(this);
+    // this.state = {
+    //   videoBGClass: 'bg-focus'
+    // }
+    // this.videoRef = React.createRef();
   }
 
-  addVideoSourceDesktop() {
-    return (<><source src="polina.webm" type="video/webm"/>
-    <source src="polina.mp4" type="video/mp4"/></>)
+
+
+
+  componentDidMount() {
+
+    // const videoBG = this.videoRef.current;
+
+    // if (path === "/") {
+    //   videoBG.classList.add('bg-focus');
+    //   console.log('path is /');
+    // } else {
+    //   videoBG.classList.remove('bg-focus');
+    //   console.log('path is not /');
+    // }
   }
 
   render() {
     return (
       <div className="container-fluid main">
-        <video playsinline autoPlay muted loop poster="/img/background.jpg" id="bgvid">
-          {this.addVideoSourceDesktop()}
-        </video>
+        <VideoBackground></VideoBackground>
         <Navbar></Navbar>
         <main className="content">
           <Switch>
