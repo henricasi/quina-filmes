@@ -38,12 +38,14 @@ class FilmList extends Component {
 
   render() {
     return (
-      <div className="list">        
-        {this.state.films.map((film, index) => {
-          return (
-            <FilmListItem film={film} key={index} whichList={this.props.whichList}/>
-          )
-        })}
+      <div className="list">
+        <div className="list-items-container">  
+          {this.state.films.map((film, index) => {
+            return (
+              <FilmListItem film={film} key={index} whichList={this.props.whichList}/>
+            )
+          })}
+        </div>
       </div>
     )
   }

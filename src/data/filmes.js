@@ -147,7 +147,10 @@ export const filmesData = [
       title: "Ronda",
       summary: "Vigilante desempleado, Helio cae en una espiral de encuentros en Sao Paulo. Mientras hace promesas de ascenso a su compañera que aún no ha venido a la capital, pasa a rondar la ciudad, sin rumbo, por su función."
     },
-    banner: "",
+    banner: {
+      img: "/img/ronda/banner-ronda.jpg",
+      pos: "center"
+    },
     images: {
       gallery1: [
         {
@@ -286,7 +289,10 @@ export const filmesData = [
     title: "",
     summary: ""
   },
-  banner: "",
+  banner: {
+    img: "/img/china/verachina_still2_1316x740.jpg",
+    pos: "left"
+  },
   images: {
     gallery1: [
       {
@@ -360,7 +366,10 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    banner: "",
+    banner: {
+      img: "/img/angela/angela_still1_1316x740.jpg",
+      pos: "85%",
+    },
     images: {
       gallery1: [
         {
@@ -489,7 +498,10 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    banner: "",
+    banner: {
+      img: "/img/angela/angela_still4_1316x740.jpg",
+      pos: "55%"
+    },
     images: {
       gallery1: [
         {
@@ -561,7 +573,10 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    banner: "",
+    banner: {
+      img: "/img/angela/angela_still5_1312x740.jpg",
+      pos: "55%"
+    },
     images: {
       gallery1: [
         {
@@ -614,7 +629,10 @@ const template =
       title: "",
       summary: ""
     },
-    banner: "",
+    banner: {
+      img: "",
+      pos: ""
+    },
     images: {
       gallery1: [
         {

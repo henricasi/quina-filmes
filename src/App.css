@@ -39,8 +39,9 @@ body {
   height: 100%;
   background-image: url('/img/background.jpg');
   background-repeat: no-repeat;
-  background-size: 90%;
-  background-position: -75% 50%;
+  background-size: cover;
+  background-position: 70% 50%;
+  overflow: hidden;
   z-index: -100;
 }
 
@@ -48,26 +49,30 @@ body {
   content: "";
   background: inherit; 
   position: absolute;
-  left: 0;
+  left: -1vw;
   right: 0;
-  top: 0; 
+  top: -1vh; 
   bottom: 0;
+  min-width: 102vw;
+  min-height: 102vh;
+  overflow: hidden;
   /* fade */
   z-index: -98;
   transition: filter .3s;
 }
 
 .blur:before {
-  filter: blur(3px);
+  filter: blur(5px);
 }
 
 .blur-video {
-  filter: blur(3px);
+  filter: blur(5px);
 }
 
 a {
   color: #F2F2F2;
   text-decoration: none;
+  transition: color 0.1s;
 }
 
 a:hover {
@@ -137,10 +142,11 @@ li {
 
 .details-content-text > a {
   color: black;
+  transition: color 0.2s
 }
 
 .details-content-text > a:hover {
-  color: blue;
+  color: rgb(97, 97, 97);
 }
 
 .title {
@@ -187,14 +193,12 @@ li {
   text-decoration-line: underline;
 }
 
-
 .review-content {
   text-indent: 1.5rem;
 }
-
  
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
 
 }
 
@@ -264,21 +268,50 @@ li {
 
   .list {
     display: flex;
-    flex-wrap: wrap;
-    padding: 2vh 2vw;
+    justify-content: center;
+    padding: 4vh 2vw;
     overflow: auto;
     height: 100vh;
   }
   
+  .list-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1vh 3vw;
+  }
+  
   .card {
-    border-radius: 0%;
-    width: 21vw;
-    height: 28vw;
-    margin: 4vh 2vw;
+    border: none;
+    margin: 2vh 2.5vw 4vh 2.5vw;
+    background: none;
   }
 
+  .card:last-of-type {
+    margin-bottom: 6vh;
+  }
+  
   .card-click {
+    /* border: 2px solid #F2F2F2; */
+    width: 16.5vw;
+    height: 22vw;
+    background-size: auto 100%;
+    transition: background-size 0.3s;
+  }
+
+  .card-click:hover {
+    background-size: auto 102%;
+  }
+
+  .card-title {
+    margin: 0;
     padding: 2%;
+    text-align: center;
+    color: #F2F2F2;
+    font-size: 1.3rem;
+    text-decoration: underline;
   }
 
   .details-section {
@@ -305,6 +338,11 @@ li {
 
   .thumb-link {
     margin-bottom: 4vh;
+    transition: opacity 0.15s;
+  }
+  
+  .thumb-link:hover {
+    opacity: 0.95;
   }
 
   .crew {
@@ -316,6 +354,18 @@ li {
   
   .crew-item {
     width: 100%;
+  }
+
+  .about-container {
+    margin: 10vh 5vw;
+    min-height: 80vh;
+    background-color: rgba(97, 97, 97, 0.2);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .about-description {
+    width: 50%;
+    color: #F2F2F2;
   }
 
 }

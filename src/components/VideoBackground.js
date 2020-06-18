@@ -16,7 +16,7 @@ const VideoBackground = () => {
   }
   const playVideo = () => {
     vidRef.current.classList.remove('blur-video');
-    setTimeout(() => vidRef.current.play(), 150);
+    setTimeout(() => {vidRef.current.play().then().catch(err => console.log(err))}, 150);
   }
   const toggleBlur = () => pathname === "/" ? "bg-img" : "bg-img blur";
 
@@ -31,9 +31,9 @@ const VideoBackground = () => {
   let source = (<><source src="/back.mp4" type="video/webm"/>
     <source src="/back.mp4" type="video/mp4"/></>)
 
-  // if (width < 1025) {
-  //   return (<img src="/img/background.jpg" ref={vidRef} id="bgvid"></img>)
-  // }
+  if (width < 1025) {
+    source = (<></>)
+  }
 
   return (
     <div>
