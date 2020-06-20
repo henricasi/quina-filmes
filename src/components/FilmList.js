@@ -10,12 +10,15 @@ class FilmList extends Component {
     this.state = {
       films: []
     }
+    this.setList = this.setList.bind(this);
   }
 
   componentDidMount() {
-    this.setList();
+    setInterval(this.setList, 400); //método com delay
+    //this.setList(); //método imediato
   }
 
+  //renderiza novamente se usuário está em /filmes e vai para /colabs
   componentDidUpdate(prevProps) {
     if (this.props.whichList !== prevProps.whichList) {
       this.setList();
