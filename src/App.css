@@ -1,5 +1,8 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif; */
+* {
+  box-sizing: border-box;
+}
 
 body {
   /* background-image: url('/img/background.jpg');
@@ -98,7 +101,7 @@ nav {
   justify-content: flex-end;
 }
 
-nav:hover {
+.inactive {
   left: -100%; 
   /* background-color: rgba(196, 196, 196, 1); */
   /* background-color: rgba(240, 235, 224, 0.2); */
@@ -107,7 +110,7 @@ nav:hover {
 .nav-collapse {
   height: 35%;
   width: 100%;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 ul {
@@ -147,17 +150,39 @@ li {
   padding: 0;
 }
 
-/* .content {
-  width: 100%;
+.content {
+  height: 100vh;
+  overflow: auto;
 }
 
-
+/*
 .nav {
   width: 100%;
 } */
 
 .active {
   color: #BFB4A2 !important;
+}
+
+.page-title-mobile {
+  color: #F2F2F2;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.dark {
+  color: #212529;
+}
+
+.mobile-hr {
+  width: 62%;
+  border: 2px solid #F2F2F2;
+  margin: 0.5vh auto 3vh auto;
+}
+
+.hr-dark {
+  border: 2px solid #212529;
 }
 
 /* FilmDetails */
@@ -182,6 +207,11 @@ li {
 .back-link {
   margin-bottom: 1vh;
   display: inline-block;
+}
+
+.back-link-mobile {
+  width: 70%;
+  margin: 0 auto 3vh auto;
 }
 
 .details-content-text > a {
@@ -241,12 +271,13 @@ li {
   text-indent: 1.5rem;
 }
 
-/* film list mobile */
+/* FilmList mobile */
 
 .list {
   display: flex;
-  justify-content: center;
-  padding: 8vh 2vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 8vh 2vw 2vh 2vh;
   overflow: auto;
   height: 100vh;
 }
@@ -264,10 +295,6 @@ li {
   border: none;
   margin: 2vh 2.5vw 4vh 2.5vw;
   background: none;
-}
-
-.card:last-of-type {
-  margin-bottom: 6vh;
 }
 
 .card-click {
@@ -289,6 +316,23 @@ li {
   color: #F2F2F2;
   font-size: 1.3rem;
   text-decoration: underline;
+}
+
+/* About */
+.about-container {
+  background-color: white;
+  border-radius: 5px;
+  margin: 6vh 8vw;
+  padding: 2vh 3vw;
+}
+
+.about-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  padding: 0 4vw;
+  /* text-indent: 1.5rem; */
+  /* text-align: justify; */
+  color: #212529;
 }
 
  
@@ -386,6 +430,7 @@ li {
 
   .list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 8vh 2vw;
     overflow: auto;
@@ -476,17 +521,14 @@ li {
   }
 
   .about-container {
-    margin: 10vh 5vw;
+    /* margin: 10vh 5vw;
     min-height: 80vh;
     background-color: rgba(97, 97, 97, 0.8);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
   }
 
   .about-description {
-    padding: 2vh 1vw;
-    text-align: justify;
-    width: 60%;
-    color: #F2F2F2;
+
   }
 
 }

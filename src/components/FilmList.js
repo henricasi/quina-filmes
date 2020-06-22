@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import FilmListItem from './FilmListItem';
 
 import {filmesData} from '../data/filmes';
 import {colabsData} from '../data/colabs';
+
 
 class FilmList extends Component {
   constructor(props) {
@@ -11,11 +13,12 @@ class FilmList extends Component {
       films: []
     }
     this.setList = this.setList.bind(this);
+    this.renderPageTitle = this.renderPageTitle.bind(this)
   }
 
   componentDidMount() {
-    setInterval(this.setList, 400); //método com delay
-    //this.setList(); //método imediato
+    // setInterval(this.setList, 400); //método com delay
+    this.setList(); //método imediato
   }
 
   //renderiza novamente se usuário está em /filmes e vai para /colabs
@@ -37,11 +40,21 @@ class FilmList extends Component {
       })
     }
   }
+
+  renderPageTitle() {
+    const {width, whichList} = this.props;
+    let html = <></>;
+    if (width < 992) {
+      whichList === "filmes" ? html = <><h1 className="page-title-mobile">filmes</h1><hr className="mobile-hr"/></> : html = <><h1 className="page-title-mobile">colaborações</h1><hr className="mobile-hr"/></>
+    }
+    return html;
+  }
   
 
   render() {
     return (
       <div className="list">
+        {this.renderPageTitle()}
         <div className="list-items-container">  
           {this.state.films.map((film, index) => {
             return (
@@ -49,6 +62,7 @@ class FilmList extends Component {
             )
           })}
         </div>
+        {this.props.width < 992 && <Link to="/" className="back-link back-link-mobile">← voltar</Link>}
       </div>
     )
   }
