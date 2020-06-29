@@ -32,16 +32,16 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
           <ul>
-            <li>
+            <li className="nav-link">
               <NavLink to="/filmes">filmes</NavLink>
             </li>
-            <li>
+            <li className="nav-link">
               <NavLink to="/colabs">colaborações</NavLink>
             </li>
-            <li>
+            <li className="nav-link">
               <NavLink to="/sobre">a quina</NavLink>
             </li>
-            <li>
+            <li className="nav-link">
               <NavLink to="/contato">contato</NavLink>
             </li>
           </ul>

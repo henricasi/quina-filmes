@@ -14,10 +14,10 @@ body {
   font-size: 16px;
 }
 
-*:focus  
+/* *:focus  
 {  
     outline: none;  
-}
+} */
 
 
 #bg {
@@ -122,7 +122,22 @@ ul {
 
 li {
   list-style: none;
+  font-size: 1em;
   margin-bottom: 4vh;
+}
+
+button {
+  border: none;
+  background-color: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.nav-link {
+  padding: 0;
+  font-size: 1.2rem;
 }
 
 .desktop-only {
@@ -164,7 +179,7 @@ li {
   color: #BFB4A2 !important;
 }
 
-.page-title-mobile {
+.page-title {
   color: #F2F2F2;
   font-size: 2rem;
   text-align: center;
@@ -175,7 +190,7 @@ li {
   color: #212529;
 }
 
-.mobile-hr {
+.title-hr {
   width: 62%;
   border: 2px solid #F2F2F2;
   margin: 0.5vh auto 3vh auto;
@@ -188,9 +203,9 @@ li {
 /* FilmDetails */
 
 .details-page {
-  background-color: white;
-  width: 90%;
-  margin: 6vh auto;
+  background-color: #F2F2F2;
+  width: 95%;
+  margin: 2vh auto 2vh auto;
 }
 
 .video-container {
@@ -199,9 +214,10 @@ li {
 }
 
 .details-content {
-  padding: 2vh 2vw;
+  padding: 2vh 3vw;
   /* font-family: 'PT Sans', 'Open Sans', sans-serif; */
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 .back-link {
@@ -214,18 +230,18 @@ li {
   margin: 0 auto 3vh auto;
 }
 
-.details-content-text > a {
-  color: black;
-  transition: color 0.2s
+.back-link-black {
+  color: #212529;
+  transition: color 0.2s;
 }
 
-.details-content-text > a:hover {
+.back-link-black:hover {
   color: rgb(97, 97, 97);
 }
 
 .title {
   font-family: 'Oswald', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .year-duration {
@@ -244,6 +260,33 @@ li {
   margin-bottom: 0.4rem;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6vh;
+}
+
+.details-section:last-of-type > .gallery {
+  margin-bottom: 2vh;
+}
+
+/* .gallery-less-margin {
+  margin-bottom: 2vh;
+} */
+
+.thumb-link {
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.thumb-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.thumb-img {
+  width: 100%;
+}
+
 .crew-item {
   /* margin-left: 0.5em; */
 }
@@ -254,10 +297,13 @@ li {
   /* font-family: 'pt sans'; */
 }
 
+.festivals-list {
+  padding: 0;
+}
+
 .festivals-list-item {
   list-style-type: none;
   list-style-position: inside;
-  font-size: 1rem;
   margin-bottom: 0.3rem;
   text-align: start;
 }
@@ -319,21 +365,63 @@ li {
 }
 
 /* About */
-.about-container {
+.about-content {
   background-color: white;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   margin: 6vh 8vw;
   padding: 2vh 3vw;
 }
 
 .about-description {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0 4vw;
   /* text-indent: 1.5rem; */
   /* text-align: justify; */
   color: #212529;
 }
+
+.about-picture {
+  width: 60%;
+  display: block;
+  margin: 2vh auto 4vh auto;
+}
+
+/* Lightbox centering rules */
+
+.lightbox {
+  align-content: center;
+  align-items: center;
+  height :100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed !important;
+  top: 0 !important;
+}
+
+#lightboxOverlay {
+ height: 100% !important;
+ left: 0;
+ position: fixed !important;
+ top: 0;
+ width: 100% !important;
+}
+
+.lb-outerContainer {
+   margin: auto;
+}
+
+.lb-image {
+  margin: auto;
+}
+
+.lb-close {
+   bottom: 100%;
+   position: fixed;
+   right: 3%;
+   top: 30px;
+ }
+
 
  
 /* Medium devices (landscape tablets, 768px and up) */
@@ -377,7 +465,7 @@ li {
     justify-content: flex-start;
   }
 
-  li {
+  li.nav-link {
     margin-bottom: 4vh;
     font-size: 1.3rem;
   }
@@ -410,7 +498,7 @@ li {
 
   .nav-collapse {
     display: flex;
-    padding-top: 10vh;
+    padding-top: 7.2vh;
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -428,11 +516,27 @@ li {
 
   /* end navbar desktop */
 
+  .page-title {
+    text-align: left;
+    width: 80.5%;
+    margin: 0 auto;
+  }
+
+  .title-hr {
+    width: 79%;
+    margin: 1vh 2vw 2vh 7.3vw;
+  }
+
+  .hr-less-margin {
+    width: 79%;
+    margin: 1vh 2vw 1vh 7.3vw;
+  }
+
   .list {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 8vh 2vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 9vh 2vw 6vh 2vw;
     overflow: auto;
     height: 100vh;
   }
@@ -478,9 +582,19 @@ li {
     text-decoration: underline;
   }
 
+  .details-page {
+    width: 90%;
+    margin: 6vh auto;
+  }
+
   .details-section {
     display: flex;
     justify-content: space-between;
+  }
+
+  .details-content {
+    padding: 2vh 2vw;
+    font-size: 16px;
   }
 
   .details-content-text {
@@ -488,12 +602,17 @@ li {
     text-align: justify;
     padding-right: 2vw;
   }
+  
+  .title {
+    font-size: 2.5rem;
+  }
 
   .gallery {
     padding: 2vh 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .no-pad-top {
@@ -520,15 +639,16 @@ li {
     width: 100%;
   }
 
-  .about-container {
-    /* margin: 10vh 5vw;
-    min-height: 80vh;
-    background-color: rgba(97, 97, 97, 0.8);
-    font-family: 'Open Sans', sans-serif; */
+  .about-content {
+    margin: 0 7.3vw;
+    width: 79.3%;
+    /* min-height: 80vh; */
+    background-color: #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .about-description {
-
+    padding: 0%;
   }
 
 }

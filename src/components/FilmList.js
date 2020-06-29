@@ -44,9 +44,9 @@ class FilmList extends Component {
   renderPageTitle() {
     const {width, whichList} = this.props;
     let html = <></>;
-    if (width < 992) {
-      whichList === "filmes" ? html = <><h1 className="page-title-mobile">filmes</h1><hr className="mobile-hr"/></> : html = <><h1 className="page-title-mobile">colaborações</h1><hr className="mobile-hr"/></>
-    }
+    // if (width < 992) {
+      whichList === "filmes" ? html = <><h1 className="page-title">filmes</h1><hr className="title-hr"/></> : html = <><h1 className="page-title">colaborações</h1><hr className="title-hr"/></>
+    // }
     return html;
   }
   
@@ -55,7 +55,7 @@ class FilmList extends Component {
     return (
       <div className="list">
         {this.renderPageTitle()}
-        <div className="list-items-container">  
+        <div className="list-items-container">
           {this.state.films.map((film, index) => {
             return (
               <FilmListItem film={film} key={index} whichList={this.props.whichList}/>

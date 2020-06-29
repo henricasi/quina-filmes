@@ -3,6 +3,7 @@ import Player from '@vimeo/player';
 import {Link} from 'react-router-dom';
 import {filmesData} from '../data/filmes';
 import {colabsData} from '../data/colabs';
+import GoBack from './GoBack';
 
 class FilmDetails extends Component {
   constructor(props) {
@@ -11,7 +12,6 @@ class FilmDetails extends Component {
       film: {},
       player: {}
     }
-    this.renderGoBackLink = this.renderGoBackLink.bind(this);
     this.pauseVideo = this.pauseVideo.bind(this);
   }
 
@@ -33,19 +33,6 @@ class FilmDetails extends Component {
 
   }
 
-  renderGoBackLink() {
-    let goBack;
-    const {path} = this.props.match;
-    
-    if (path === "/filmes/:url") {
-      goBack = "/filmes"
-    } else if (path === "/colabs/:url") {
-      goBack = "/colabs"
-    }
-
-    return goBack;
-  }
-
   pauseVideo() {
 
   }
@@ -62,7 +49,7 @@ class FilmDetails extends Component {
           {/* seção 1*/}
           <section className="details-section">
             <div className="details-content-text">
-              <Link to={this.renderGoBackLink} className="back-link">← voltar</Link>
+              <GoBack></GoBack>
               <h3 className="title">{title}</h3>
               <p className="year-duration">{year}, {format}, {support} {duration && `, ${duration}'`}</p>
               <div className="details-margin">
@@ -124,13 +111,13 @@ class FilmDetails extends Component {
               </div>}
             </div>
 
-            <div className="gallery">
+            <div className="gallery gallery-less-margin">
               {images.gallery3 && images.gallery3.map((item, idx) => {
                 return <a key={idx} href={item.full} data-lightbox="gallery" className="thumb-link"><img src={item.thumb} alt={item.alt} className="thumb-img"/></a>
               })}
             </div>
           </section>}
-
+        <GoBack></GoBack>
         </div>
       </article>
     )

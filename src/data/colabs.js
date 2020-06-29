@@ -68,23 +68,23 @@ export const colabsData = [
       "Equinoxio | 21º Festival Universitario de Cine y Audiovisuales (Bogotá, Colômbia / setembro 2019)",
       "FIVM2019 | Festival VideoMovimiento – CineDanza (Bogotá, Colômbia / setembro 2019)",
     ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
-    english: {
-      title: "Every Point in a Curve",
-      summary: "Every Point in a Curve is an open space for impermanent movement. Impermanent in the sense of an aimless, haphazard wandering. A movement with no certain starting point and no certain arrival. This uncertainty becomes matter, through which dance and video editing converse. Escaping predictable inertia, a search for constant new beginnings."
-    },
-    spanish: {
-      title: "",
-      summary: ""
-    },
-    banner: "",
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
+    // english: {
+    //   title: "Every Point in a Curve",
+    //   summary: "Every Point in a Curve is an open space for impermanent movement. Impermanent in the sense of an aimless, haphazard wandering. A movement with no certain starting point and no certain arrival. This uncertainty becomes matter, through which dance and video editing converse. Escaping predictable inertia, a search for constant new beginnings."
+    // },
+    // spanish: {
+    //   title: "",
+    //   summary: ""
+    // },
+    banner: "/img/pontos-curva/tpdc_banner.jpg",
     images: {
       gallery1: [
         {
@@ -117,7 +117,7 @@ export const colabsData = [
   {
     title: "cabeça oca espuma de boneca",
     year: "2019",
-    duration: "43'34\"",
+    duration: "43",
     format: "vídeo / vídeo-instalação",
     support: "digital 1:1",
     director: "",
@@ -341,14 +341,24 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    banner: "",
+    banner: "/img/estudo-nylon/estudosnylon_banner.jpg",
     images: {
       gallery1: [
         {
-          thumb: "",
-          full: "",
-          alt: ""
+          thumb: "/img/estudo-nylon/thumb-estudosnylon_still6.jpg",
+          full: "/img/estudo-nylon/estudosnylon_still6_721x722.jpg",
+          alt: "Still 6"
         },
+        {
+          thumb: "/img/estudo-nylon/thumb-estudosnylon_still5.jpg",
+          full: "/img/estudo-nylon/estudosnylon_still5_721x722.jpg",
+          alt: "Still 5"
+        },
+        // {
+        //   thumb: "/img/estudo-nylon/thumb-estudosnylon_still1.jpg",
+        //   full: "/img/estudo-nylon/estudosnylon_still1_721x722.jpg",
+        //   alt: "Still 1"
+        // },
       ],
     },
     video: "",
@@ -444,15 +454,32 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    banner: "",
+    banner: "/img/dobras/dobras_banner.jpg",
     images: {
       gallery1: [
         {
-          thumb: "",
-          full: "",
-          alt: ""
+          thumb: "/img/dobras/thumb-dobras_still1.jpg",
+          full: "/img/dobras/dobras_still1_987x740.jpg",
+          alt: "Still 1"
         },
+        {
+          thumb: "/img/dobras/thumb-dobras_still3.jpg",
+          full: "/img/dobras/dobras_still3_987x740.jpg",
+          alt: "Still 3"
+        },
+        {
+          thumb: "/img/dobras/thumb-dobras_still11.jpg",
+          full: "/img/dobras/dobras_still11_987x740.jpg",
+          alt: "Still 11"
+        }
       ],
+      gallery2: [
+        {
+          thumb: "/img/dobras/thumb-dobras_still8.jpg",
+          full: "/img/dobras/dobras_still8_987x740.jpg",
+          alt: "Still 8"
+        }
+      ]
     },
     video: "",
     url: "dobras"

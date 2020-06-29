@@ -12,8 +12,7 @@ class FilmListItem extends Component {
     return (
       <div className="card">
         
-        <Link to={`/${whichList}/${url}`} className="card-click" style={{backgroundImage: `url(${banner.img})`, backgroundPosition: banner.pos}}>
-
+        <Link to={`/${whichList}/${url}`} className="card-click" style={{backgroundImage: `url(${banner})`, backgroundPosition: "center"}}>
         </Link>
         <h4 className="card-title">
           <Link to={`/${whichList}/${url}`}>{title}</Link>

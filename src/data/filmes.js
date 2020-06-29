@@ -147,10 +147,7 @@ export const filmesData = [
       title: "Ronda",
       summary: "Vigilante desempleado, Helio cae en una espiral de encuentros en Sao Paulo. Mientras hace promesas de ascenso a su compañera que aún no ha venido a la capital, pasa a rondar la ciudad, sin rumbo, por su función."
     },
-    banner: {
-      img: "/img/ronda/banner-ronda.jpg",
-      pos: "center"
-    },
+    banner: "/img/ronda/banner-ronda.jpg",
     images: {
       gallery1: [
         {
@@ -270,17 +267,15 @@ export const filmesData = [
   ],
   festivals: [
     "",
-    "",
-    "",
   ],
-  reviews: [
-    {
-      name: "",
-      author: "",
-      content: "",
-      link: ""
-    }
-  ],
+  // reviews: [
+  //   {
+  //     name: "",
+  //     author: "",
+  //     content: "",
+  //     link: ""
+  //   }
+  // ],
   english: {
     title: "",
     summary: ""
@@ -289,10 +284,7 @@ export const filmesData = [
     title: "",
     summary: ""
   },
-  banner: {
-    img: "/img/china/verachina_still2_1316x740.jpg",
-    pos: "left"
-  },
+  banner: "/img/china/verachina_banner.jpg",
   images: {
     gallery1: [
       {
@@ -345,19 +337,19 @@ export const filmesData = [
         content: "Caio Antonio"
       },
     ],
-    festivals: [
-      "",
-      "",
-      "",
-    ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
+    // festivals: [
+    //   "",
+    //   "",
+    //   "",
+    // ],
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
     english: {
       title: "",
       summary: ""
@@ -366,10 +358,7 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    banner: {
-      img: "/img/angela/angela_still1_1316x740.jpg",
-      pos: "85%",
-    },
+    banner: "/img/angela/angela_banner.jpg",
     images: {
       gallery1: [
         {
@@ -382,26 +371,26 @@ export const filmesData = [
           full: "/img/angela/angela_still2_1184x740.jpg",
           alt: "Still 2"
         },
-        {
-          thumb: "/img/angela/thumb-angela_still3.jpg",
-          full: "/img/angela/angela_still3_1184x740.jpg",
-          alt: "Still 3"
-        },
+        // {
+        //   thumb: "/img/angela/thumb-angela_still3.jpg",
+        //   full: "/img/angela/angela_still3_1184x740.jpg",
+        //   alt: "Still 3"
+        // },
         {
           thumb: "/img/angela/thumb-angela_still4.jpg",
           full: "/img/angela/angela_still4_1316x740.jpg",
           alt: "Still 4"
         },
-        {
-          thumb: "/img/angela/thumb-angela_still5.jpg",
-          full: "/img/angela/angela_still5_1312x740.jpg",
-          alt: "Still 5"
-        },
-        {
-          thumb: "/img/angela/thumb-angela_still6.jpg",
-          full: "/img/angela/angela_still6_874x740.jpg",
-          alt: "Still 6"
-        },
+        // {
+        //   thumb: "/img/angela/thumb-angela_still5.jpg",
+        //   full: "/img/angela/angela_still5_1312x740.jpg",
+        //   alt: "Still 5"
+        // },
+        // {
+        //   thumb: "/img/angela/thumb-angela_still6.jpg",
+        //   full: "/img/angela/angela_still6_874x740.jpg",
+        //   alt: "Still 6"
+        // },
       ],
     },
     video: "",
@@ -477,31 +466,28 @@ export const filmesData = [
         content: "Luisa Noriko"
       },
     ],
-    festivals: [
-      "",
-      "",
-      "",
-    ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
-    english: {
-      title: "",
-      summary: ""
-    },
-    spanish: {
-      title: "",
-      summary: ""
-    },
-    banner: {
-      img: "/img/angela/angela_still4_1316x740.jpg",
-      pos: "55%"
-    },
+    // festivals: [
+    //   "",
+    //   "",
+    //   "",
+    // ],
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
+    // english: {
+    //   title: "",
+    //   summary: ""
+    // },
+    // spanish: {
+    //   title: "",
+    //   summary: ""
+    // },
+    banner: "",
     images: {
       gallery1: [
         {
@@ -552,37 +538,44 @@ export const filmesData = [
         content: "Fabio Miguez, Fernanda Mendes Luiz, João MB Bim, Lucia Miguez, Lucas Reitano, Ottavia Delfanti, Paulo Martins Filho, Pedro Koberle, Victor Maia"
       },
     ],
-    festivals: [
-      "",
-      "",
-      "",
-    ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
-    english: {
-      title: "",
-      summary: ""
-    },
-    spanish: {
-      title: "",
-      summary: ""
-    },
-    banner: {
-      img: "/img/angela/angela_still5_1312x740.jpg",
-      pos: "55%"
-    },
+    // festivals: [
+    //   "",
+    //   "",
+    //   "",
+    // ],
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
+    // english: {
+    //   title: "",
+    //   summary: ""
+    // },
+    // spanish: {
+    //   title: "",
+    //   summary: ""
+    // },
+    banner: "/img/invencao/umainvencao_banner.jpg",
     images: {
       gallery1: [
         {
-          thumb: "",
-          full: "",
-          alt: ""
+          thumb: "/img/invencao/thumb-umainvencao_still1.jpg",
+          full: "/img/invencao/umainvencao_still1_1316x740.jpg",
+          alt: "Still 1"
+        },
+        {
+          thumb: "/img/invencao/thumb-umainvencao_still2.jpg",
+          full: "/img/invencao/umainvencao_still2_1316x740.jpg",
+          alt: "Still 2"
+        },
+        {
+          thumb: "/img/invencao/thumb-umainvencao_still3.jpg",
+          full: "/img/invencao/umainvencao_still3_1316x740.jpg",
+          alt: "Still 3"
         },
       ],
     },
