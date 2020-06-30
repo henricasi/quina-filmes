@@ -135,13 +135,13 @@ ul {
 
 li {
   list-style: none;
-  font-size: 1em;
+  /* font-size: 1em; */
   margin-bottom: 4vh;
 }
 
 button {
   border: none;
-  background-color: none;
+  background-color: none !important;
 }
 
 button:focus {
@@ -230,7 +230,7 @@ button:focus {
   padding: 2vh 3vw;
   /* font-family: 'PT Sans', 'Open Sans', sans-serif; */
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 .back-link {
@@ -339,7 +339,7 @@ button:focus {
   justify-content: flex-start;
   padding: 8vh 2vw 2vh 2vh;
   overflow: auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .list-items-container {
@@ -487,6 +487,10 @@ button:focus {
   p {
     font-size: 0.8em;
     line-height: 1.5;
+  }
+
+  li {
+    font-size: 0.8em;
   }
 
   #bg, .bg-img {
@@ -648,7 +652,7 @@ button:focus {
 
   .details-content {
     padding: 2vh 2vw;
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   .details-content-text {
