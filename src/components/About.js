@@ -8,16 +8,16 @@ const About = (props) => {
       <h1 className="page-title">a quina</h1>
       <hr className="title-hr hr-less-margin"/>
       <div className="about-content">
-        <section className="about-section">
+        <section className="about-section about-section-1">
           <div className="about-description">
             <div>  
               <p>Criada em 2018, a <strong>Quina</strong> é uma produtora de audiovisual sediada em São Paulo, composta por Amanda Carvalho, Caio Antônio, Francisco Miguez, Luisa Noriko e Mauricio Battistuci, formados em Audiovisual na ECA-USP.</p>
               <p>Atuamos na produção e finalização de obras audiovisuais, dentre elas curta-metragens de ficção, documentários, vídeodanças e vídeo-instalações.</p>
               <p>Em 2019, nossos trabalhos circularam em diversos festivais e exposições. Além destes trabalhos, atuamos em parcerias de projetos de artes visuais, teatro, dança e música, interessados em pesquisar estratégias audiovisuais que traduzam a obra para o vídeo.</p>
             </div>
-            <div className="media-links-container mt-2" >
-              <h5 className="details-section-header mb-3">siga a quina</h5>
-              <div className="">
+            <div className="media-links-container" >
+              <h5 className="details-section-header media-links-header">siga a quina</h5>
+              <div className="media-link-group">
                 <a className="media-link" target="_blank" href="http://www.facebook.com/quinafilmes"><img className="icon" src="/img/icon/fb.png" alt="Facebook"/></a>
                 <a className="media-link" target="_blank" href="http://www.instagram.com/quinafilmes"><img className="icon" src="/img/icon/ig.png" alt="Instagram"/></a>
                 <a className="media-link" target="_blank" href="http://www.vimeo.com/quinafilmes"><img className="icon" src="/img/icon/vimeo.png" alt="Vimeo"/></a>
@@ -25,7 +25,7 @@ const About = (props) => {
             </div>
           </div>
           <div className="gallery pb-0">
-            <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_h.jpg" alt="a quina" className="about-img"/></a>
+            <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
           </div>
         </section>
         <section className="about-section mt-5">
@@ -37,9 +37,9 @@ const About = (props) => {
             <p><strong>Mauricio Battistuci</strong> é graduado em Audiovisual na ECA/USP. Escreveu e dirigiu o curta-metragem Ronda (2019), em fase de circulação por diversos festivais nacionais einternacionais como o 21º FestCurtasBH, XV Panorama Coisa de Cinema, Festival Primeiro Plano, Mostra SESC de cinema, recebendo o prêmio Leit Motiff de destaque no 21ºFBCU (Festival Brasileiro de Cinema Universitário). Realizou trabalhos de fotografia/vídeo e de assistência de pesquisa em dramaturgia junto à Companhia do Latão de teatro de São Paulo, nas remontagens de Experimento H e Patrão Cordial, e na criação das peças inéditas Estação da Luz e Lugar Nenhum, a última dessas tendo circulação nacional. Em outros formatos, produziu e realizou a direção de fotografia da vídeo-dança Todos os Pontos da Curva,em fase de circulação em festivais da Europa e América Latina. Trabalhou como produtor e curador do CINUSP (Cinema da Universidade de São Paulo), realizando mostras, exibições e debates, algumas em parceria com cinematecas e consulados de diversos países, inclusive a Cinemateca Brasileira.</p>
           </div>
           <div className="gallery">
-          <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_v.jpg" alt="a quina" className="about-img"/></a>
-          <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_h.jpg" alt="a quina" className="about-img"/></a>
-          <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_h.jpg" alt="a quina" className="about-img"/></a>
+          <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_v.jpg" alt="a quina" className="thumb-img about-img"/></a>
+          <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
+          <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
           </div>
         </section>
         {props.width < 992 && <Link to="/" className="back-link back-link-mobile dark">← voltar</Link>}

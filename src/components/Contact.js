@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 class Contact extends Component {
@@ -58,6 +59,7 @@ class Contact extends Component {
             </div>
             <button type="submit" className="btn btn-secondary">{ this.state.buttonText }</button>
           </form>
+          {this.props.width < 992 && <Link to="/" className="back-link back-link-mobile dark">← voltar</Link>}
         </div>
       </article>
     )

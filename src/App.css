@@ -11,7 +11,7 @@ body {
   background-attachment: fixed;
   background-size: cover; */
   font-family: 'Oswald', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* *:focus  
@@ -19,6 +19,15 @@ body {
     outline: none;  
 } */
 
+p {
+  line-height: 1.7;
+}
+
+form {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  margin-bottom: 4vh;
+}
 
 #bg {
   /* positioning video background */
@@ -180,7 +189,7 @@ button:focus {
 
 .page-title {
   color: #F2F2F2;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   margin-top: 2vh;
 }
@@ -197,6 +206,11 @@ button:focus {
 
 .hr-dark {
   border: 2px solid #212529;
+}
+
+.hr-less-margin {
+  width: 94.5%;
+  margin: 0.5vh auto 0 auto;
 }
 
 /* FilmDetails */
@@ -292,7 +306,7 @@ button:focus {
 
 .crew-title {
   font-weight: 400;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   /* font-family: 'pt sans'; */
 }
 
@@ -314,6 +328,7 @@ button:focus {
 
 .review-content {
   text-indent: 1.5rem;
+  text-align: justify;
 }
 
 /* FilmList mobile */
@@ -332,7 +347,7 @@ button:focus {
   flex-direction: column;
   align-items: center;
   width: 95%;
-  margin: 0 auto;
+  margin: 0 auto 2vh auto;
   padding: 1vh 3vw;
 }
 
@@ -359,7 +374,7 @@ button:focus {
   padding: 2%;
   text-align: center;
   color: #F2F2F2;
-  font-size: 1.3rem;
+  font-size: 1.5em;
   text-decoration: underline;
 }
 
@@ -367,13 +382,18 @@ button:focus {
 .about-content {
   background-color: white;
   /* border-radius: 5px; */
-  margin: 6vh 8vw;
+  margin: 2vh 2vw;
   padding: 2vh 3vw;
+  text-align: justify;
+}
+
+.about-section-1 {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .about-description {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
   padding: 0 4vw;
   /* text-indent: 1.5rem; */
   /* text-align: justify; */
@@ -384,6 +404,34 @@ button:focus {
   width: 60%;
   display: block;
   margin: 2vh auto 4vh auto;
+}
+
+.media-links-container {
+  margin-top: 4vh;
+}
+
+.media-link-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.media-links-header {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.media-link {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.media-link:hover {
+  opacity: 1;
+}
+
+.icon {
+  width: 10vw;
+  height: auto;
 }
 
 
@@ -436,6 +484,11 @@ button:focus {
     font-size: 16px;
   }
 
+  p {
+    font-size: 0.8em;
+    line-height: 1.5;
+  }
+
   #bg, .bg-img {
     background-size: cover;
     background-position: center;
@@ -466,10 +519,10 @@ button:focus {
     justify-content: flex-start;
   }
 
-  li.nav-link {
+  /* li.nav-link {
     margin-bottom: 4vh;
     font-size: 1.3rem;
-  }
+  } */
 
   nav {
     position: static;
@@ -579,7 +632,7 @@ button:focus {
     padding: 2%;
     text-align: center;
     color: #F2F2F2;
-    font-size: 1.3rem;
+    font-size: 1.2em;
     text-decoration: underline;
   }
 
@@ -658,6 +711,11 @@ button:focus {
     margin-bottom: 0;
   }
 
+  .about-section-1 {
+    display: flex;
+    flex-direction: row;
+  }
+
   .about-description {
     display: flex;
     flex-direction: column;
@@ -673,23 +731,22 @@ button:focus {
     height: auto;
   }
 
-  /* .media-links-container {
-    margin-top: 6vh;
-  } */
-
-  .media-link {
-    margin-right: 4vh;
-    opacity: 0.8;
-    transition: opacity 0.3s;
+  .media-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .media-link:hover {
-    opacity: 1;
+  .media-link-group {
+    width: 60%;
+  }
+
+  .media-link {
+    margin-right: 2vh;
   }
 
   .icon {
-    width: 3vw;
-    height: auto;
+    width: 2vw;
   }
 
   .contact-form {
