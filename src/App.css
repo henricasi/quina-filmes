@@ -123,7 +123,7 @@ nav {
 .nav-collapse {
   height: 35%;
   width: 100%;
-  margin-bottom: 2vh;
+  padding-bottom: 2vh;
 }
 
 ul {
