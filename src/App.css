@@ -16,11 +16,6 @@ body {
   font-size: 14px;
 }
 
-/* *:focus  
-{  
-    outline: none;  
-} */
-
 p {
   line-height: 1.7;
 }
@@ -178,6 +173,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   padding: 0;
+  height: 100%;
 }
 
 .content {
