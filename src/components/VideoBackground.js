@@ -28,8 +28,10 @@ const VideoBackground = () => {
   //TODO construir if mobile que retorna source
   const {width} = useWindowDimensions();
   
-  let source = (<><source src="/back.mp4" type="video/webm"/>
-    <source src="/back.mp4" type="video/mp4"/></>)
+  let source = (<video ref={vidRef} playsInline autoPlay muted loop id="bg">
+      <source src="/back.mp4" type="video/webm"/>
+      <source src="/back.mp4" type="video/mp4"/>
+    </video>)
 
   if (width < 1025) {
     source = (<></>)
@@ -39,9 +41,7 @@ const VideoBackground = () => {
     <div>
       <div className={toggleBlur()}>
       </div>
-      <video ref={vidRef} playsInline autoPlay muted loop id="bg">
-        {source}
-      </video>
+      {source}
     </div>
   )
 }

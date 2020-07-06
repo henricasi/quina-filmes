@@ -1,5 +1,7 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom'
+import React, {useRef, useEffect} from 'react';
+import { Switch, Route, useLocation } from 'react-router-dom'
+import { CSSTransition } from 'react-transition-group'
+
 import Navbar from './components/Navbar'
 import Empty from './components/Empty'
 import FilmList from './components/FilmList'
@@ -11,15 +13,48 @@ import useWindowDimensions from './components/useWindowDimensions'
 
 import './App.css';
 
+const routes = [
+  {path: '/', Component: Empty, props: {}},
+  {path: '/filmes', Component: FilmList, props: {whichList: "filmes"}},
+  {path: '/filmes/:url', Component: FilmDetails, props: {}},
+  {path: '/colabs', Component: FilmList, props: {whichList: "colabs"}},
+  {path: '/colabs/:url', Component: FilmDetails, props: {}},
+  {path: '/sobre', Component: About, props: {}},
+  {path: '/contato', Component: Contact, props: {}},
+];
+
 const App = () => {
   const {width} = useWindowDimensions();
+  const mainContainer = useRef(null);
+  console.log(mainContainer)
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => mainContainer.current.scrollTo(0, 0), 200);
+  }, [pathname]);
 
   return (
     <div className="container-fluid main">
       <VideoBackground></VideoBackground>
       <Navbar></Navbar>
-      <main className="content">
-        <Switch>
+      <main className="content" ref={mainContainer}>
+        {routes.map(({path, Component, props}) => (
+          <Route key={path} exact path={path}>
+            {({ match }) => (
+              <CSSTransition
+                in={match != null}
+                timeout={400}
+                classNames="page"
+                unmountOnExit
+              >
+                <Component {...props} width={width} match={match}/>
+              </CSSTransition>
+            )}
+          </Route>
+        ))}
+
+        {/* <Switch>
           <Route exact path="/" component={Empty}/>
           <Route exact path="/filmes" render={(props) => <FilmList {...props} whichList="filmes" width={width} />} />
           <Route path="/filmes/:url" component={FilmDetails} />
@@ -27,7 +62,7 @@ const App = () => {
           <Route path="/colabs/:url" component={FilmDetails} />
           <Route path="/sobre" render={(props) => <About {...props} width={width} />} />
           <Route path="/contato" render={(props) => <Contact {...props} width={width} />} />
-        </Switch>
+        </Switch> */}
       </main>
     </div>
   );
