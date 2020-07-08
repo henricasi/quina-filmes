@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Loader from 'react-loader-spinner';
-import Player from '@vimeo/player';
 
 import {filmesData} from '../data/filmes';
 import {colabsData} from '../data/colabs';
