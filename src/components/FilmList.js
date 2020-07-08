@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Loader from 'react-loader-spinner';
 import FilmListItem from './FilmListItem';
 
 import {filmesData} from '../data/filmes';
@@ -10,15 +11,16 @@ class FilmList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      films: []
+      films: [],
+      counter: 0,
+      imagesHaveLoaded: false,
     }
     this.setList = this.setList.bind(this);
     this.renderPageTitle = this.renderPageTitle.bind(this)
   }
 
   componentDidMount() {
-    // setInterval(this.setList, 400); //método com delay
-    this.setList(); //método imediato
+    this.setList();
   }
 
   //renderiza novamente se usuário está em /filmes e vai para /colabs
@@ -41,6 +43,22 @@ class FilmList extends Component {
     }
   }
 
+  imageLoaded() {
+    let {counter, films} = this.state;
+    let newCounter = counter + 1;
+
+    if (newCounter === films.length) {
+      this.setState({
+        counter: newCounter,
+        imagesHaveLoaded: true
+      })
+    } else {
+      this.setState({
+        counter: newCounter,
+      })
+    }
+  }
+
   renderPageTitle() {
     const {width, whichList} = this.props;
     let html = <></>;
@@ -52,20 +70,32 @@ class FilmList extends Component {
   
 
   render() {
+    let {imagesHaveLoaded} = this.state;
     return (
-      <div className="list">
-        {this.renderPageTitle()}
-        <div className="list-items-container">
-          {this.state.films.map((film, index) => {
-            return (
-              <FilmListItem film={film} key={index} whichList={this.props.whichList}/>
-            )
-          })}
+      <div className="page">
+        <div className={imagesHaveLoaded ? "loader noshow" : "loader"}>
+          <Loader type="Oval" color="#F2F2F2" height={80} width={80}/>
         </div>
-        {this.props.width < 992 && <Link to="/" className="back-link back-link-mobile">← voltar</Link>}
+
+        <div className={imagesHaveLoaded ? "list" : "list noshow"}>
+          {this.renderPageTitle()}
+          <div className="list-items-container">
+            {this.state.films.map((film, index) => {
+              return (
+                <FilmListItem film={film} key={index} whichList={this.props.whichList} imageLoaded={() => this.imageLoaded()}/>
+              )
+            })}
+          </div>
+          {this.props.width < 992 && <Link to="/" className="back-link back-link-mobile">← voltar</Link>}
+        </div>
+        
+
       </div>
-    )
+    ) 
+    
   }
 }
+
+
 
 export default FilmList;

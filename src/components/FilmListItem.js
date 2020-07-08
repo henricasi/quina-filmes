@@ -7,12 +7,17 @@ class FilmListItem extends Component {
   }
 
   render() {
-    const {title, banner, url} = this.props.film;
-    const {whichList} = this.props;
+    let {title, banner, url} = this.props.film;
+    let {whichList} = this.props;
+
+    if (banner === "") {
+      banner = "/img/filler_v.jpg"
+    }
+
     return (
       <div className="card">
-        
-        <Link to={`/${whichList}/${url}`} className="card-click" style={{backgroundImage: `url(${banner})`, backgroundPosition: "center"}}>
+        <Link to={`/${whichList}/${url}`} className="card-click">
+          <img src={banner} onLoad={() => this.props.imageLoaded()}/>
         </Link>
         <h4 className="card-title">
           <Link to={`/${whichList}/${url}`}>{title}</Link>

@@ -26,7 +26,6 @@ const routes = [
 const App = () => {
   const {width} = useWindowDimensions();
   const mainContainer = useRef(null);
-  console.log(mainContainer)
 
   const { pathname } = useLocation();
 

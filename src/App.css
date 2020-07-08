@@ -11,11 +11,6 @@ html, body {
 }
 
 body {
-  /* background-image: url('/img/background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
 }
@@ -62,12 +57,12 @@ form {
   content: "";
   background: inherit; 
   position: absolute;
-  left: -1vw;
+  left: -5vw;
   right: 0;
-  top: -1vh; 
+  top: -5vh; 
   bottom: 0;
-  min-width: 102vw;
-  min-height: 102vh;
+  min-width: 110vw;
+  min-height: 110vh;
   overflow: hidden;
   /* fade */
   z-index: -98;
@@ -112,10 +107,9 @@ textarea {
   opacity: 1;
 }
 .page-exit-active {
-  opacity: 0;
+  opacity: 0 !important;
   transition: opacity 200ms;
 }
-
 
 /* mobile navbar */
 nav {
@@ -163,7 +157,7 @@ li {
 
 button {
   border: none;
-  background-color: none !important;
+  font-size: 0.8em;
 }
 
 button:focus {
@@ -243,6 +237,8 @@ button:focus {
   background-color: #F2F2F2;
   width: 95%;
   margin: 2vh auto 2vh auto;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .video-container {
@@ -260,6 +256,7 @@ button:focus {
 .back-link {
   margin-bottom: 1vh;
   display: inline-block;
+  background: none !important;
 }
 
 .back-link-mobile {
@@ -362,9 +359,13 @@ button:focus {
   flex-direction: column;
   justify-content: flex-start;
   padding: 8vh 2vw 2vh 2vh;
-  /* overflow: auto; */
+  overflow: visible;
   position: absolute;
+  visibility: visible;
+  max-height: 200vh;
   height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .list-items-container {
@@ -386,12 +387,10 @@ button:focus {
   /* border: 2px solid #F2F2F2; */
   width: 60vw;
   height: 80vw;
-  background-size: auto 100%;
-  transition: background-size 0.3s;
 }
 
 .card-click:hover {
-  background-size: auto 102%;
+  opacity: 1;
 }
 
 .card-title {
@@ -459,6 +458,17 @@ button:focus {
   height: auto;
 }
 
+/* loader transition */
+
+.noshow {
+  visibility: hidden !important;
+  height: 0 !important;
+  opacity: 0 !important;
+}
+
+.noshow .list-items-container {
+  display: none;
+}
 
 
 /* Lightbox centering rules */
@@ -615,13 +625,25 @@ button:focus {
     margin: 1vh 2vw 1vh 7.3vw;
   }
 
+  .loader {
+    position: absolute;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    max-height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 1;
+    transition: opacity 0.2s */
+  }
+
   .list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 9vh 2vw 6vh 2vw;
-    /* overflow: auto; */
-    /* height: 100vh; */
+    padding: 7vh 2vw 6vh 2vw;
+    
   }
   
   .list-items-container {
@@ -630,7 +652,7 @@ button:focus {
     flex-wrap: wrap;
     align-items: center;
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 4vh auto;
     padding: 1vh 3vw;
   }
   
