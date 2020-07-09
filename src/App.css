@@ -345,6 +345,7 @@ button:focus {
 .review-link {
   color: #212529;
   text-decoration-line: underline;
+  font-size: 0.8em;
 }
 
 .review-content {
