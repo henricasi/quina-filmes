@@ -12,7 +12,13 @@ const Navbar = () => {
 
   const {width} = useWindowDimensions();
 
-  const getClassName = () => pathname === "/" && width < 1025 ? "nav" : "nav inactive"
+  const getClassName = () => {
+    if (width < 1025) {
+      if (pathname === "/") {return "nav"} else {return "nav inactive"}
+    }
+    return "nav"
+  }
+    
 
   return (
     <nav className={getClassName()}>

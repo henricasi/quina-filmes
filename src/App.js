@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from 'react';
-import { Switch, Route, useLocation } from 'react-router-dom'
+import { Route, useLocation } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
 
 import Navbar from './components/Navbar'
@@ -30,7 +30,15 @@ const App = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    setTimeout(() => mainContainer.current.scrollTo(0, 0), 200);
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
+    if (width < 1025) {
+      setTimeout(() => window.scrollTo(0, 0), 200);
+    } else {
+      setTimeout(() => mainContainer.current.scrollTo(0, 0), 200);
+    }
   }, [pathname]);
 
   return (

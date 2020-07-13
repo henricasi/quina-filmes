@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 
 import {filmesData} from '../data/filmes';
@@ -76,8 +77,19 @@ class FilmDetails extends Component {
         </div>
 
         <article className={imagesHaveLoaded ? "details-page" : "details-page noshow"}>
-          <section id="video-container" dangerouslySetInnerHTML={{ __html: video }}>
-
+          {/* <section id="video-container" dangerouslySetInnerHTML={{ __html: video }}> */}
+          <section id="video-container">
+            {video &&
+              <>
+              <div style={{backgroundColor: "black", padding: video.padding + "0 0 0", position: "relative"}}>
+                <iframe title="vimeoiframe" src={`https://player.vimeo.com/video/${video.id}?autoplay=${this.props.width < 1025 ? 0 : 1}&title=0&byline=0&muted=${this.props.width < 1025 ? 0 : 1}`} style={{position:"absolute", top:"0", left:"0", width:"100%", height:"100%"}} frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js">
+              </script>
+              </>
+            }
+            {video === "" && <img src={images.gallery1[0].full} className="cover-image" alt={title + "Still"}></img>}
           </section>
           <div className="details-content">
             {/* seção 1*/}

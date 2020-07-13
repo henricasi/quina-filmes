@@ -84,7 +84,7 @@ export const colabsData = [
     //   title: "",
     //   summary: ""
     // },
-    banner: "/img/pontos-curva/tpdc_banner.jpg",
+    poster: "/img/pontos-curva/tpdc_banner.jpg",
     images: {
       gallery1: [
         {
@@ -197,7 +197,7 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    banner: "",
+    poster: "",
     images: {
       gallery1: [
         {
@@ -273,7 +273,7 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    banner: "",
+    poster: "",
     images: {
       gallery1: [
         {
@@ -341,7 +341,7 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    banner: "/img/estudo-nylon/estudosnylon_banner.jpg",
+    poster: "/img/estudo-nylon/estudosnylon_banner.jpg",
     images: {
       gallery1: [
         {
@@ -454,7 +454,7 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    banner: "/img/dobras/dobras_banner.jpg",
+    poster: "/img/dobras/dobras_banner.jpg",
     images: {
       gallery1: [
         {
@@ -522,7 +522,7 @@ const template =
       title: "",
       summary: ""
     },
-    banner: "",
+    poster: "",
     images: {
       gallery1: [
         {

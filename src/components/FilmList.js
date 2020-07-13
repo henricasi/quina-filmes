@@ -60,11 +60,9 @@ class FilmList extends Component {
   }
 
   renderPageTitle() {
-    const {width, whichList} = this.props;
+    const {whichList} = this.props;
     let html = <></>;
-    // if (width < 992) {
-      whichList === "filmes" ? html = <><h1 className="page-title">filmes</h1><hr className="title-hr"/></> : html = <><h1 className="page-title">colaborações</h1><hr className="title-hr"/></>
-    // }
+    whichList === "filmes" ? html = <><h1 className="page-title">filmes</h1><hr className="title-hr"/></> : html = <><h1 className="page-title">colaborações</h1><hr className="title-hr"/></>
     return html;
   }
   

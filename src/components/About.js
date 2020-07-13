@@ -18,12 +18,16 @@ const About = (props) => {
         <Loader type="Oval" color="#F2F2F2" height={80} width={80}/>
       </div>
 
-      <article className={imagesHaveLoaded ? "list" : "list noshow"}>
+      <article className={imagesHaveLoaded ? "list about-page" : "list noshow"}>
+        {props.width > 1025 && <>
         <h1 className="page-title">a quina</h1>
-        <hr className="title-hr hr-less-margin"/>
+        <hr className="title-hr hr-less-margin"/></>}
         <div className="about-content">
           <section className="about-section about-section-1">
             <div className="about-description">
+              {props.width < 1025 && <>
+              <h1 className="page-title dark">a quina</h1>
+              <hr className="title-hr page-hr hr-dark"/></>}
               <div>  
                 <p>Criada em 2018, a <strong>Quina</strong> é uma produtora de audiovisual sediada em São Paulo, composta por Amanda Carvalho, Caio Antônio, Francisco Miguez, Luisa Noriko e Mauricio Battistuci, formados em Audiovisual na ECA-USP.</p>
                 <p>Atuamos na produção e finalização de obras audiovisuais, dentre elas curta-metragens de ficção, documentários, vídeodanças e vídeo-instalações.</p>
@@ -38,7 +42,7 @@ const About = (props) => {
                 </div>
               </div>
             </div>
-            <div className="gallery pb-0">
+            <div className="gallery pb-0 mb-3">
               <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
             </div>
           </section>

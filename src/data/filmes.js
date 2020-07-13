@@ -147,7 +147,7 @@ export const filmesData = [
       title: "Ronda",
       summary: "Vigilante desempleado, Helio cae en una espiral de encuentros en Sao Paulo. Mientras hace promesas de ascenso a su compañera que aún no ha venido a la capital, pasa a rondar la ciudad, sin rumbo, por su función."
     },
-    banner: "/img/ronda/banner-ronda.jpg",
+    poster: "/img/ronda/banner-ronda.jpg",
     images: {
       gallery1: [
         {
@@ -196,7 +196,10 @@ export const filmesData = [
         }
       ]
     },
-    video: `<div style="padding:54.05% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/338993567?autoplay=1&title=0&byline=0&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
+    video: {
+      id: 338993567,
+      padding: "54.05%"
+    },
     url: "ronda"
   },
   {
@@ -284,7 +287,7 @@ export const filmesData = [
     title: "",
     summary: ""
   },
-  banner: "/img/china/verachina_banner.jpg",
+  poster: "/img/china/verachina_banner.jpg",
   images: {
     gallery1: [
       {
@@ -358,7 +361,7 @@ export const filmesData = [
       title: "",
       summary: ""
     },
-    banner: "/img/angela/angela_banner.jpg",
+    poster: "/img/angela/angela_banner.jpg",
     images: {
       gallery1: [
         {
@@ -487,7 +490,7 @@ export const filmesData = [
     //   title: "",
     //   summary: ""
     // },
-    banner: "",
+    poster: "",
     images: {
       gallery1: [
         {
@@ -559,7 +562,7 @@ export const filmesData = [
     //   title: "",
     //   summary: ""
     // },
-    banner: "/img/invencao/umainvencao_banner.jpg",
+    poster: "/img/invencao/umainvencao_banner.jpg",
     images: {
       gallery1: [
         {
@@ -622,7 +625,7 @@ const template =
       title: "",
       summary: ""
     },
-    banner: {
+    poster: {
       img: "",
       pos: ""
     },
@@ -637,6 +640,9 @@ const template =
       gallery2: [],
       gallery3: []
     },
-    video: "",
+    video: {
+      id: "",
+      padding: ""
+    },
     url: ""
   }
