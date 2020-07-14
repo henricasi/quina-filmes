@@ -60,7 +60,7 @@ const About = (props) => {
             <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
             </div>
           </section>
-          {props.width < 992 && <Link to="/" className="back-link back-link-mobile dark">← voltar</Link>}
+          {props.width < 992 && <Link to="/" className="back-link dark">← voltar</Link>}
         </div>
       </article>
     </div>

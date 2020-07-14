@@ -39,15 +39,19 @@ class Contact extends Component {
   render() {
     return (
       <div className="page">
-        <article className="list">
-          <h1 className="page-title">contato</h1>
-          <hr className="title-hr hr-less-margin"/>
-          <div className="about-content">
+        <article className="list contact-page">
+        {this.props.width > 1025 && <>
+        <h1 className="page-title">contato</h1>
+        <hr className="title-hr hr-less-margin contact-hr"/></>}
+          <div className="contact-content">
+            {this.props.width < 1025 && <>
+            <h1 className="page-title dark">contato</h1>
+            <hr className="title-hr page-hr hr-dark"/></>}
             <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
               <div className="form-row">
                 <div className="form-group col-md-6">
                   <label className="message-name sr-only" htmlFor="name">Nome</label>
-                  <input onChange={e => this.setState({ name: e.target.value})} name="name" className="form-control" type="text" placeholder="Nome" value={this.state.name}/>
+                  <input onChange={e => this.setState({ name: e.target.value})} name="name" className="form-control" type="text" placeholder="Nome" required value={this.state.name}/>
                 </div>
                 <div className="form-group col-md-6">
                   <label className="message-email sr-only" htmlFor="email">Email</label>
@@ -60,7 +64,7 @@ class Contact extends Component {
               </div>
               <button type="submit" className="btn btn-secondary">{ this.state.buttonText }</button>
             </form>
-            {this.props.width < 992 && <Link to="/" className="back-link back-link-mobile dark">← voltar</Link>}
+            {this.props.width < 992 && <Link to="/" className="back-link back-link-contact dark">← voltar</Link>}
           </div>
         </article>
       </div>

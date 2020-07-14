@@ -270,14 +270,19 @@ main {
 }
 
 .back-link {
-  margin: 0 0 1vh 0;
+  width: 100%;
+  padding: 2vh 7vw 3vh 0;
+  text-align: end;
   display: inline-block;
-  background: none !important;
 }
 
-.back-link-mobile {
-  width: 70%;
-  margin: 0 6vw 3vh 6vw;
+.back-link-list {
+  padding: 4vh 14vw 5vh 0;
+  background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(33,37,41,0) 100%);
+}
+
+.back-link-contact {
+  padding: 4vh 12vw 5vh 0;
 }
 
 .back-link-black {
@@ -489,6 +494,40 @@ main {
 .icon {
   width: 10vw;
   height: auto;
+}
+
+/* contact */
+
+.contact-page {
+  padding: 0;
+  width: 86%;
+  margin: 0 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 100%; */
+}
+
+.contact-content {
+  background-color: white;
+  /* height: 100%; */
+  margin: 0;
+  padding: 2vh 0 0 0;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form {
+  width: 73%;
+  margin: 0 auto 2vh auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control, .btn {
+  font-size: 0.9rem;
 }
 
 /* loader transition */
@@ -743,6 +782,13 @@ main {
     text-decoration: underline;
   }
 
+  .back-link {
+    width: initial;
+    padding: 0 0 2vh 0;
+    text-align: start;
+    background: none !important;
+  }
+
   .details-page {
     width: 90%;
     margin: 6vh auto;
@@ -873,13 +919,33 @@ main {
     width: 2vw;
   }
 
+  /* contact */
+
+  .contact-page {
+    margin: 0;
+    padding: 12vh 15% 6vh 15%;
+  }
+
+  .contact-content {
+    margin: 0 auto;
+    height: 60%;
+    width: 80.5%;
+    padding: 2vh 1.5vw;
+    justify-content: center;
+  }
+
   .contact-form {
     width: 80%;
-    margin: 4vh auto 8vh auto;
+    margin: 0 auto;
+  }
+
+  .contact-hr {
+    width: 80%;
+    margin: 1vh auto;
   }
 
   input {
-    height: 6vh !important;
+    height: 4.5vh !important;
   }
 
   .form-control {

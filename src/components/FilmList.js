@@ -84,7 +84,7 @@ class FilmList extends Component {
               )
             })}
           </div>
-          {this.props.width < 992 && <Link to="/" className="back-link back-link-mobile">← voltar</Link>}
+          {this.props.width < 992 && <Link to="/" className="back-link back-link-list">← voltar</Link>}
         </div>
         
 
