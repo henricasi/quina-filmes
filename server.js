@@ -1,10 +1,14 @@
 const express = require('express');
+const favicon = require('serve-favicon');
 const path = require('path');
 
 const app = express();
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'build')));
+
+// Serve favicon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // An api endpoint that returns a short list of items
 // app.get('/api/getList', (req,res) => {
