@@ -1,6 +1,7 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import { Route, useLocation } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
+import Loader from 'react-loader-spinner';
 
 import Navbar from './components/Navbar'
 import Empty from './components/Empty'
@@ -27,6 +28,8 @@ const App = () => {
   const {width} = useWindowDimensions();
   const mainContainer = useRef(null);
 
+  const [bgHasLoaded, setBgHasLoaded] = useState(false);
+
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -43,7 +46,10 @@ const App = () => {
 
   return (
     <div className="container-fluid main">
-      <VideoBackground></VideoBackground>
+      <div className={!bgHasLoaded ? "loader main-loader" : "opacity-0 loader main-loader"}>
+        <Loader type="Oval" color="#F2F2F2" height={80} width={80}/>
+      </div>
+      <VideoBackground setBgHasLoaded={setBgHasLoaded}></VideoBackground>
       <Navbar></Navbar>
       <main className="content" ref={mainContainer}>
         {routes.map(({path, Component, props}) => (

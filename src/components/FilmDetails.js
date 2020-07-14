@@ -32,11 +32,12 @@ class FilmDetails extends Component {
       foundFilm = colabsData.find(filme => filme.url === url);
     }
 
-    const {images} = foundFilm;
+    const {images, video} = foundFilm;
     let numberOfImages = 0;
     if (images.gallery1) {numberOfImages += images.gallery1.length};
     if (images.gallery2) {numberOfImages += images.gallery2.length};
     if (images.gallery3) {numberOfImages += images.gallery3.length};
+    if (video === "") {numberOfImages += 1}
     
     this.setState({
       film: foundFilm,
@@ -89,7 +90,8 @@ class FilmDetails extends Component {
               </script>
               </>
             }
-            {video === "" && <img src={images.gallery1[0].full} className="cover-image" alt={title + "Still"}></img>}
+            {/* banner fallback */}
+            {video === "" && <img src={images.gallery1[0].full} className="cover-image" onLoad={this.imageLoaded} alt={title + "Still"}></img>}
           </section>
           <div className="details-content">
             {/* seção 1*/}

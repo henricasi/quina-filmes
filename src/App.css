@@ -545,6 +545,17 @@ main {
   transition: opacity 0.2s */
 }
 
+.main-loader {
+  z-index: 10;
+  background-color: #dbcfba;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
 .noshow {
   visibility: hidden !important;
   height: 0 !important;
