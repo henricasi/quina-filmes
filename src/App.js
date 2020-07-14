@@ -47,9 +47,11 @@ const App = () => {
 
   return (
     <div className="container-fluid main">
-      <div className={!bgHasLoaded ? "loader main-loader" : "opacity-0 loader main-loader"}>
-        <Loader type="Oval" color="#F2F2F2" height={80} width={80}/>
-      </div>
+      <CSSTransition in={!bgHasLoaded} timeout={200} classNames="page" unmountOnExit>
+        <div className="loader main-loader">
+          <Loader type="Oval" color="#F2F2F2" height={80} width={80}/>
+        </div>
+      </CSSTransition>
       <VideoBackground backgroundSrc={backgroundSrc} setBgHasLoaded={setBgHasLoaded}></VideoBackground>
       <Navbar></Navbar>
       <main className="content" ref={mainContainer}>

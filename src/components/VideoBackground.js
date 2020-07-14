@@ -6,13 +6,13 @@ const VideoBackground = ({backgroundSrc, setBgHasLoaded}) => {
   //get location
   const location = useLocation();
   const {pathname} = location;
+
+  const {width} = useWindowDimensions();
   
   const vidRef = useRef(null);
 
-  const backgroundImage = new Image();
-  backgroundImage.src = backgroundSrc;
-  backgroundImage.onload = setBgHasLoaded(true);
 
+  
   //functions
   const pauseVideo = () => {
     vidRef.current.classList.add('blur-video');
@@ -22,15 +22,23 @@ const VideoBackground = ({backgroundSrc, setBgHasLoaded}) => {
     vidRef.current.classList.remove('blur-video');
     setTimeout(() => {vidRef.current.play().then().catch(err => console.log(err))}, 150);
   }
+  
   const toggleBlur = () => pathname === "/" ? "bg-img" : "bg-img blur";
 
+  const handleMediaLoaded = () => {
+    console.log('im here momma');
+    setBgHasLoaded(true);
+  };
+  
   // check pathname
   if (vidRef.current !== null) {
     pathname === "/" ? playVideo() : pauseVideo();
   }
-
-  //TODO construir if mobile que retorna source
-  const {width} = useWindowDimensions();
+  
+  //image loader
+  const backgroundImage = new Image();
+  backgroundImage.src = backgroundSrc;
+  backgroundImage.onload = handleMediaLoaded;
   
   let source = (<video ref={vidRef} playsInline autoPlay muted loop id="bg">
       <source src="/back.mp4" type="video/webm"/>
