@@ -13,6 +13,7 @@ import VideoBackground from './components/VideoBackground'
 import useWindowDimensions from './components/useWindowDimensions'
 
 import './App.css';
+import backgroundSrc from './background.jpg'
 
 const routes = [
   {path: '/', Component: Empty, props: {}},
@@ -49,7 +50,7 @@ const App = () => {
       <div className={!bgHasLoaded ? "loader main-loader" : "opacity-0 loader main-loader"}>
         <Loader type="Oval" color="#F2F2F2" height={80} width={80}/>
       </div>
-      <VideoBackground setBgHasLoaded={setBgHasLoaded}></VideoBackground>
+      <VideoBackground backgroundSrc={backgroundSrc} setBgHasLoaded={setBgHasLoaded}></VideoBackground>
       <Navbar></Navbar>
       <main className="content" ref={mainContainer}>
         {routes.map(({path, Component, props}) => (

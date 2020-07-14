@@ -2,9 +2,7 @@ import React, {useRef} from 'react';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from './useWindowDimensions'
 
-import backgroundSrc from '../background.jpg'
-
-const VideoBackground = ({setBgHasLoaded}) => {
+const VideoBackground = ({backgroundSrc, setBgHasLoaded}) => {
   //get location
   const location = useLocation();
   const {pathname} = location;
