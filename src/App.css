@@ -399,13 +399,14 @@ main {
   border: none;
   margin: 2vh 2.5vw 4vh 2.5vw;
   background: none;
+  flex: 0 0 auto;
+  flex-shrink: 0;
 }
 
 .card-click, .card-poster {
   /* border: 2px solid #F2F2F2; */
   width: 72vw;
   height: 96vw;
-  flex-shrink: 0;
 }
 
 
