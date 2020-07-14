@@ -405,6 +405,7 @@ main {
   /* border: 2px solid #F2F2F2; */
   width: 72vw;
   height: 96vw;
+  flex-shrink: 0;
 }
 
 
