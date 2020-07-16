@@ -26,7 +26,6 @@ const VideoBackground = ({backgroundSrc, setBgHasLoaded}) => {
   const toggleBlur = () => pathname === "/" ? "bg-img" : "bg-img blur";
 
   const handleMediaLoaded = () => {
-    console.log('im here momma');
     setBgHasLoaded(true);
   };
   

@@ -404,16 +404,21 @@ main {
 
 .card {
   border: none;
-  margin: 2vh 2.5vw 4vh 2.5vw;
+  width: 72vw;
+  margin: 2vh 2.5vw 6vh 2.5vw;
   background: none;
   flex: 0 0 auto;
   flex-shrink: 0;
 }
 
+.card:last-of-type {
+  margin-bottom: 1vh;
+}
+
 .card-click, .card-poster {
   /* border: 2px solid #F2F2F2; */
-  width: 72vw;
-  height: 96vw;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -422,12 +427,18 @@ main {
 }
 
 .card-title {
-  margin: 0;
+  margin-top: 0.8vh;
   padding: 2%;
   text-align: center;
   color: #F2F2F2;
-  font-size: 1.2rem;
-  text-decoration: underline;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+}
+
+.card-title a {
+  width: 100%;
 }
 
 /* About */
@@ -758,13 +769,15 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
+    /* justify-content: center; */
     width: 95%;
     margin: 0 auto 4vh auto;
     padding: 1vh 3vw;
   }
   
   .card {
+    width: 16.5vw;
     border: none;
     margin: 2vh 2.5vw 4vh 2.5vw;
     background: none;
@@ -776,8 +789,8 @@ main {
   
   .card-click, .card-poster {
     /* border: 2px solid #F2F2F2; */
-    width: 16.5vw;
-    height: 22vw;
+    width: 100%;
+    height: auto;
     background-size: auto 100%;
     transition: background-size 0.3s;
   }
@@ -787,12 +800,10 @@ main {
   }
 
   .card-title {
-    margin: 0;
+    margin-top: 0.4vh;
     padding: 2%;
     text-align: center;
     color: #F2F2F2;
-    font-size: 1.2rem;
-    text-decoration: underline;
   }
 
   .back-link {

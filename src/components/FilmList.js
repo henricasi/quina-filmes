@@ -76,7 +76,7 @@ class FilmList extends Component {
         </div>
 
         <div className={imagesHaveLoaded ? "list" : "list noshow"}>
-          {this.renderPageTitle()}
+          {this.props.width < 992 && this.renderPageTitle()}
           <div className="list-items-container">
             {this.state.films.map((film, index) => {
               return (

@@ -20,13 +20,13 @@ const About = (props) => {
 
       <article className={imagesHaveLoaded ? "list about-page" : "list noshow"}>
         {props.width > 1025 && <>
-        <h1 className="page-title">a quina</h1>
+        <h1 className="page-title">quina filmes</h1>
         <hr className="title-hr hr-less-margin"/></>}
         <div className="about-content">
           <section className="about-section about-section-1">
             <div className="about-description">
               {props.width < 1025 && <>
-              <h1 className="page-title dark">a quina</h1>
+              <h1 className="page-title dark">quina filmes</h1>
               <hr className="title-hr page-hr hr-dark"/></>}
               <div>  
                 <p>Criada em 2018, a <strong>Quina</strong> é uma produtora de audiovisual sediada em São Paulo, composta por Amanda Carvalho, Caio Antônio, Francisco Miguez, Luisa Noriko e Mauricio Battistuci, formados em Audiovisual na ECA-USP.</p>
