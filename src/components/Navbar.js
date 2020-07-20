@@ -1,16 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from './useWindowDimensions'
 
 
-const Navbar = () => {
+const Navbar = ({changeBackground, posX, posY, handleChange}) => {
   //get location
   const location = useLocation();
   const {pathname} = location;
-
-
   const {width} = useWindowDimensions();
+
+  const [menuDisplay, setMenuDisplay] = useState("none");
+  const initialPadding = width < 1025 ? "50" : "0";
+  const [navPadding, setNavPadding] = useState(initialPadding);
+
 
   const getClassName = () => {
     if (width < 1025) {
@@ -18,10 +21,23 @@ const Navbar = () => {
     }
     return "nav"
   }
-    
 
+  const handleOpacityChange = () => {
+    if (menuDisplay === "none") {
+      setMenuDisplay("block");
+    } else {
+      setMenuDisplay("none");
+    }
+  }
+
+  const handlePaddingChange = (e) => {
+    const {value} = e.target;
+    setNavPadding(value);
+  }
+
+  
   return (
-    <nav className={getClassName()}>
+    <nav className={getClassName()} style={{paddingTop: navPadding + "%"}}>
       <NavLink to="/" id="logo-image-mobile">
         <img src="/img/logo_transp_white_500_FULL.png" alt="Quina Filmes"/>
       </NavLink>
@@ -52,6 +68,33 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <div className="bg-menu" style={{display: menuDisplay}}>
+          <div className="bg-selector" style={{display: "flex", justifyContent: "space-between"}}>
+            <button onClick={() => changeBackground(1)}>1</button>
+            <button onClick={() => changeBackground(2)}>2</button>
+            <button onClick={() => changeBackground(3)}>3</button>
+            <button onClick={() => changeBackground(4)}>4</button>
+            <button onClick={() => changeBackground(5)}>5</button>
+            <button onClick={() => changeBackground(6)}>6</button>
+            <button onClick={() => changeBackground(7)}>7</button>
+            <button onClick={() => changeBackground(8)}>8</button>
+          </div>
+          <div className="bg-pos mt-4">
+            {width < 1025 && <><div className="pos-range">
+              <input type="range" min="0" max="100" name="padding" value={navPadding} onChange={handlePaddingChange}/>
+              <p>{navPadding}%</p>
+            </div>
+            <div className="pos-range">
+              <input type="range" min="0" max="100" name="bg-pos-x" value={posX} onChange={handleChange}/>
+              <p>{posX}%</p>
+            </div></>}
+            <div className="pos-range">
+              <input type="range" min="0" max="100" name="bg-pos-y" value={posY} onChange={handleChange}/>
+              <p>{posY}%</p>
+            </div>
+          </div>
+        </div>
+        <button className="menu-toggler" onClick={handleOpacityChange}>show/hide</button>
       </div>
     </nav>
   )

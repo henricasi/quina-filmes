@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 
 import {filmesData} from '../data/filmes';
@@ -37,7 +36,9 @@ class FilmDetails extends Component {
     if (images.gallery1) {numberOfImages += images.gallery1.length};
     if (images.gallery2) {numberOfImages += images.gallery2.length};
     if (images.gallery3) {numberOfImages += images.gallery3.length};
-    if (video === "") {numberOfImages += 1}
+    if (video.id === "") {numberOfImages += 1}
+
+    if (this.props.width > 1025 && video.padding === "75%") {video.padding = "56.25%"}
     
     this.setState({
       film: foundFilm,
@@ -91,7 +92,7 @@ class FilmDetails extends Component {
               </>
             }
             {/* banner fallback */}
-            {video === "" && <img src={images.gallery1[0].full} className="cover-image" onLoad={this.imageLoaded} alt={title + "Still"}></img>}
+            {video && video.id === "" && <img src={images.gallery1[0].full} className="cover-image" onLoad={this.imageLoaded} alt={title + "Still"}></img>}
           </section>
           <div className="details-content">
             {/* seção 1*/}

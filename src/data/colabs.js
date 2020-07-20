@@ -5,7 +5,6 @@ export const colabsData = [
     duration: "7",
     format: "videodança",
     support: "digital 16:9",
-    director: "Francisco Miguez",
     summary: "Todos os Pontos da Curva abre espaço para o movimento impermanente. Dizemos impermanente como quem diz sem rumo, sem norte, sem prumo. Um movimento que não tem bem de onde sair e nem muito certo para onde chegar. Em Todos os Pontos da Curva o diálogo entre a dança e a montagem ocorre em meio a suspensão. Na fuga da inércia e na busca pelo constante recomeço.",
     crew: [
       {
@@ -67,6 +66,7 @@ export const colabsData = [
       "Corpo-Imagem: Criações Coreográficas Interdisciplinares (Sesc – Campinas - julho 2019)",
       "Equinoxio | 21º Festival Universitario de Cine y Audiovisuales (Bogotá, Colômbia / setembro 2019)",
       "FIVM2019 | Festival VideoMovimiento – CineDanza (Bogotá, Colômbia / setembro 2019)",
+      "Sans Souci | 17º Festival of Dance Cinema – 2ª Edição Brasileira (Boulder, USA / agosto 2020)"
     ],
     // reviews: [
     //   {
@@ -76,10 +76,10 @@ export const colabsData = [
     //     link: ""
     //   }
     // ],
-    // english: {
-    //   title: "Every Point in a Curve",
-    //   summary: "Every Point in a Curve is an open space for impermanent movement. Impermanent in the sense of an aimless, haphazard wandering. A movement with no certain starting point and no certain arrival. This uncertainty becomes matter, through which dance and video editing converse. Escaping predictable inertia, a search for constant new beginnings."
-    // },
+    english: {
+      title: "Every Point in a Curve",
+      summary: "Every Point in a Curve is an open space for impermanent movement. Impermanent in the sense of an aimless, haphazard wandering. A movement with no certain starting point and no certain arrival. This uncertainty becomes matter, through which dance and video editing converse. Escaping predictable inertia, a search for constant new beginnings."
+    },
     // spanish: {
     //   title: "",
     //   summary: ""
@@ -111,7 +111,10 @@ export const colabsData = [
         },
       ]
     },
-    video: "",
+    video: {
+      id: 296537653,
+      padding: "56.25%"
+    },
     url: "todos-os-pontos"
   },
   {
@@ -120,9 +123,12 @@ export const colabsData = [
     duration: "43",
     format: "vídeo / vídeo-instalação",
     support: "digital 1:1",
-    director: "",
     summary: "Vídeo-instalação em três canais produzida a partir da peça \"cabeça oca espuma de boneca\", de Ilê Sartuzi.",
     crew: [
+      {
+        name: "vídeo-instalação",
+        content: "Ilê Sartuzi"
+      },
       {
         name: "coordenação",
         content: "Francisco Miguez"
@@ -134,10 +140,6 @@ export const colabsData = [
       {
         name: "edição e finalização",
         content: "Amanda Carvalho e Francisco Miguez"
-      },
-      {
-        name: "vídeo-instalação",
-        content: "Ilê Sartuzi"
       },
       {
         name: "consultoria técnica",
@@ -197,18 +199,31 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    poster: "",
+    poster: "/img/cabeca-oca/poster-cabecaoca.jpg",
     images: {
       gallery1: [
         {
-          thumb: "",
-          full: "",
-          alt: ""
+          thumb: "/img/cabeca-oca/thumb-cabecaoca3.jpg",
+          full: "/img/cabeca-oca/full-cabecaoca3.jpg",
+          alt: "Still 3"
+        },
+        {
+          thumb: "/img/cabeca-oca/thumb-cabecaoca9.jpg",
+          full: "/img/cabeca-oca/full-cabecaoca9.jpg",
+          alt: "Still 9"
+        },
+        {
+          thumb: "/img/cabeca-oca/thumb-cabecaoca6.jpg",
+          full: "/img/cabeca-oca/full-cabecaoca6.jpg",
+          alt: "Still 6"
         },
       ],
     },
-    video: "",
-    url: "cabeca-oca"
+    video: {
+      id: 407783789,
+      padding: "56.25%"
+    },
+    url: "cabeca-oca-espuma-de-boneca"
   },
   {
     title: "nylon bites",
@@ -273,26 +288,45 @@ export const colabsData = [
       title: "",
       summary: ""
     },
-    poster: "",
+    poster: "/img/nylon-bites/poster-nylon-bites.jpg",
     images: {
       gallery1: [
         {
-          thumb: "",
-          full: "",
-          alt: ""
+          thumb: "/img/nylon-bites/thumb-nylon-bites9.jpg",
+          full: "/img/nylon-bites/nylon-bites9-full.jpg",
+          alt: "Still 9"
+        },
+        {
+          thumb: "/img/nylon-bites/thumb-nylon-bites10.jpg",
+          full: "/img/nylon-bites/nylon-bites10-full.jpg",
+          alt: "Still 10"
+        },
+      ],
+      gallery2: [
+        {
+          thumb: "/img/nylon-bites/thumb-nylon-bites11.jpg",
+          full: "/img/nylon-bites/nylon-bites11-full.jpg",
+          alt: "Still 11"
+        },
+        {
+          thumb: "/img/nylon-bites/thumb-nylon-bites12.jpg",
+          full: "/img/nylon-bites/nylon-bites12-full.jpg",
+          alt: "Still 12"
         },
       ],
     },
-    video: "",
+    video: {
+      id: "",
+      padding: ""
+    },
     url: "nylon-bites"
   },
   {
-    title: "Estudo em Nylon: Linhas de Fuga",
+    title: "Estudo em Nylon: Linhas de fuga",
     year: "2017",
-    duration: "12'",
+    duration: "12",
     format: "performance",
     support: "digital",
-    director: "",
     summary: "performance de 69 minutos realizada por Mariana Carvalho durante ¿Música? 12",
     crew: [
       {
@@ -361,7 +395,10 @@ export const colabsData = [
         // },
       ],
     },
-    video: "",
+    video: {
+      id: "",
+      padding: ""
+    },
     url: "estudos-nylon"
   },
   {
@@ -481,7 +518,10 @@ export const colabsData = [
         }
       ]
     },
-    video: "",
+    video: {
+      id: 438999791,
+      padding: "75%"
+    },
     url: "dobras"
   },
 ]
@@ -534,6 +574,9 @@ const template =
       gallery2: [],
       gallery3: []
     },
-    video: "",
+    video: {
+      id: "",
+      padding: ""
+    },
     url: ""
   }

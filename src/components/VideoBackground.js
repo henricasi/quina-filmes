@@ -1,8 +1,8 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from './useWindowDimensions'
 
-const VideoBackground = ({backgroundSrc, setBgHasLoaded}) => {
+const VideoBackground = ({backgroundSrc, posX, posY, setBgHasLoaded}) => {
   //get location
   const location = useLocation();
   const {pathname} = location;
@@ -48,9 +48,10 @@ const VideoBackground = ({backgroundSrc, setBgHasLoaded}) => {
     source = (<></>)
   }
 
+
   return (
     <div>
-      <div className={toggleBlur()} style={{backgroundImage: `url(${backgroundSrc})`}}>
+      <div className={toggleBlur()} style={{backgroundImage: `url(${backgroundSrc})`, backgroundPosition: posX + "% " + posY + "%" }}>
       </div>
       {source}
     </div>

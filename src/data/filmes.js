@@ -13,12 +13,16 @@ export const filmesData = [
         content: "Mauricio Battistuci e Francisco Miguez"
       },
       {
+        name: "produção",
+        content: "Tarsila Varallo"
+      },
+      {
         name: "montagem",
         content: "Luisa Noriko"
       },
       {
-        name: "produção",
-        content: "Tarsila Varallo"
+        name: "direção de fotografia",
+        content: "Caio Antônio"
       },
       {
         name: "assistentes de direção",
@@ -31,10 +35,6 @@ export const filmesData = [
       {
         name: "assistentes de produção",
         content: "Júlia Fávero, Fernando Borba e Francisco Grasso"
-      },
-      {
-        name: "direção de fotografia",
-        content: "Caio Antônio"
       },
       {
         name: "1º assistente de câmera",
@@ -92,18 +92,18 @@ export const filmesData = [
         name: "composição de imagem",
         content: "Paulo Hernani Chedid"
       },
-      {
-        name: "AGRADECIMENTOS",
-        content: "Amanda Monteiro, Antonio Luiz Sampaio Carvalho, Cecília Mello, Celso Bonadio, Companhia Do Latão, Eduardo Freitas, Estacionamento MBA Park, Fabio Miguez, Fernanda Mendes Luiz, Giulia Castro, Henrique Casimiro, João Godoy, João Guilherme Dos Santos (Madureira), João Lucca Piovan, João Pedro Mb Bim, Luca Dourado, Macário Moura, Maíra Do Nascimento, Manoela Cezar, Maria Luiza Tutu Mesquita, Matheus Biscaro, Naomi Takiya Bonadio, Pedro Nishi, Subprefeitura De Pinheiros, Sofia Maruci, Tania Battistuci, Thaís Orchi Abdala, Meia e Firma"
-      },
-      {
-        name: "EQUIPE CTR",
-        content: "Daniel Alves da Silva, Douglas Borges Giudice, Edson da Conceição, Ferdinand Machado Coimbra, Francisco Carlos Medina Coca, Gabriel Barreto, Guido Agovino, Ivone Vantini, Joel Yamaji, Marcelo Henrique Leite, Marcos José da Silva Pinto, Marcus Kurtinaitis, Mauricio Nakasato, Paulo César Ferreira, Thiago Afonso De André, Victor Yuji Shirai, Vilma Do Prado Muller"
-      },
-      {
-        name: "APOIO",
-        content: "Spcine e Pródigo Films"
-      },
+      // {
+      //   name: "AGRADECIMENTOS",
+      //   content: "Amanda Monteiro, Antonio Luiz Sampaio Carvalho, Cecília Mello, Celso Bonadio, Companhia Do Latão, Eduardo Freitas, Estacionamento MBA Park, Fabio Miguez, Fernanda Mendes Luiz, Giulia Castro, Henrique Casimiro, João Godoy, João Guilherme Dos Santos (Madureira), João Lucca Piovan, João Pedro Mb Bim, Luca Dourado, Macário Moura, Maíra Do Nascimento, Manoela Cezar, Maria Luiza Tutu Mesquita, Matheus Biscaro, Naomi Takiya Bonadio, Pedro Nishi, Subprefeitura De Pinheiros, Sofia Maruci, Tania Battistuci, Thaís Orchi Abdala, Meia e Firma"
+      // },
+      // {
+      //   name: "EQUIPE CTR",
+      //   content: "Daniel Alves da Silva, Douglas Borges Giudice, Edson da Conceição, Ferdinand Machado Coimbra, Francisco Carlos Medina Coca, Gabriel Barreto, Guido Agovino, Ivone Vantini, Joel Yamaji, Marcelo Henrique Leite, Marcos José da Silva Pinto, Marcus Kurtinaitis, Mauricio Nakasato, Paulo César Ferreira, Thiago Afonso De André, Victor Yuji Shirai, Vilma Do Prado Muller"
+      // },
+      // {
+      //   name: "APOIO",
+      //   content: "Spcine e Pródigo Films"
+      // },
     ],
     festivals: [
       "XV Panorama Internacional Coisa de Cinema - Mostra Competitiva (Salvador BA / novembro 2019)",
@@ -220,12 +220,20 @@ export const filmesData = [
       content: "Zhao Fangwei"
     },
     {
+      name:"captação",
+      content: "Amanda Carvalho"
+    },
+    {
       name:"assistência de montagem",
       content: "Luisa Noriko"
     },
     {
-      name:"captação",
-      content: "Amanda Carvalho"
+      name:"correção de cor",
+      content: "Caio Antônio"
+    },
+    {
+      name:"edição de som",
+      content: "Lucca Chiavone"
     },
     {
       name:"imagens adicionais china",
@@ -244,16 +252,8 @@ export const filmesData = [
       content: "Amanda Carvalho"
     },
     {
-      name:"edição de som",
-      content: "Lucca Chiavone"
-    },
-    {
       name:"mixagem",
       content: "Sandro Dalla Costa"
-    },
-    {
-      name:"correção de cor",
-      content: "Caio Antônio"
     },
     {
       name:"motion graphics",
@@ -269,7 +269,9 @@ export const filmesData = [
     }
   ],
   festivals: [
-    "",
+    "Mostra Em Trânsito do 29º Festival Internacional de Curtas do Rio de Janeiro - Curta Cinema",
+    "5º Toró - Festival Audiovisual Universitário de Belém",
+    "Competição Brasileira de Curtas-Metragens do É Tudo Verdade 2020 - 25º Festival Internacional de Documentários",
   ],
   // reviews: [
   //   {
@@ -281,33 +283,43 @@ export const filmesData = [
   // ],
   english: {
     title: "",
-    summary: ""
+    summary: "A foreigner filmmaker is invited to visit China with the task of producing a documentary film about tea production in Fujian province. One year later, back in Brazil, reexamines her images and what was seen in China."
   },
   spanish: {
     title: "",
-    summary: ""
+    summary: "Una cineasta extranjera es invitada a visitar China con la tarea de producir una película documental sobre la producción de té en la provincia de Fujian. Un año después, de regreso en Brasil, recupera sus imágenes y lo que se vio en territorio chino."
   },
   poster: "/img/china/verachina_banner.jpg",
   images: {
     gallery1: [
       {
-        thumb: "/img/china/thumb-verachina_still1.jpg",
-        full: "/img/china/verachina_still1_1316x740.jpg",
+        thumb: "/img/china/thumb-VERACHINA_07.jpg",
+        full: "/img/china/verachina_still07-full.jpg",
         alt: "Still 1"
       },
       {
-        thumb: "/img/china/thumb-verachina_still2.jpg",
-        full: "/img/china/verachina_still2_1316x740.jpg",
+        thumb: "/img/china/thumb-VERACHINA_07(1).jpg",
+        full: "/img/china/verachina_still07(1)-full.jpg",
         alt: "Still 2"
       },
       {
-        thumb: "/img/china/thumb-verachina_still3.jpg",
-        full: "/img/china/verachina_still3_1316x740.jpg",
+        thumb: "/img/china/thumb-verachina_still1.jpg",
+        full: "/img/china/verachina_still1_1316x740.jpg",
         alt: "Still 3"
       },
     ],
+    gallery2: [
+      {
+        thumb: "/img/china/thumb-VERACHINA_09.jpg",
+        full: "/img/china/verachina_still09-full.jpg",
+        alt: "Still 4"
+      }
+    ]
   },
-  video: "",
+  video: {
+    id: "",
+    padding: ""
+  },
   url: "ver-a-china"
   },
   {
@@ -396,7 +408,10 @@ export const filmesData = [
         // },
       ],
     },
-    video: "",
+    video: {
+      id: 360162923,
+      padding: "56.25%"
+    },
     url: "angela"
   },
   {
@@ -469,11 +484,11 @@ export const filmesData = [
         content: "Luisa Noriko"
       },
     ],
-    // festivals: [
-    //   "",
-    //   "",
-    //   "",
-    // ],
+    festivals: [
+      "",
+      "",
+      "",
+    ],
     // reviews: [
     //   {
     //     name: "",
@@ -490,17 +505,42 @@ export const filmesData = [
     //   title: "",
     //   summary: ""
     // },
-    poster: "",
+    poster: "/img/ensaios/poster-ensaios.jpg",
     images: {
       gallery1: [
         {
-          thumb: "",
-          full: "",
-          alt: ""
+          thumb: "/img/ensaios/thumb-ensaios_4.jpg",
+          full: "/img/ensaios/ensaios_4-full.jpg",
+          alt: "Still 4"
+        },
+        {
+          thumb: "/img/ensaios/thumb-ensaios_8.jpg",
+          full: "/img/ensaios/ensaios_8-full.jpg",
+          alt: "Still 8"
+        },
+      ],
+      gallery2: [
+        {
+          thumb: "/img/ensaios/thumb-ensaios_9.jpg",
+          full: "/img/ensaios/ensaios_9-full.jpg",
+          alt: "Still 9"
+        },
+        {
+          thumb: "/img/ensaios/thumb-ensaios_10.jpg",
+          full: "/img/ensaios/ensaios_10-full.jpg",
+          alt: "Still 10"
+        },
+        {
+          thumb: "/img/ensaios/thumb-ensaios_11.jpg",
+          full: "/img/ensaios/ensaios_11-full.jpg",
+          alt: "Still 11"
         },
       ],
     },
-    video: "",
+    video: {
+      id: "",
+      padding: ""
+    },
     url: "ensaios"
   },
   {
@@ -582,7 +622,10 @@ export const filmesData = [
         },
       ],
     },
-    video: "",
+    video: {
+      id: "",
+      padding: ""
+    },
     url: "uma-invencao-sem-futuro"
   },
 
