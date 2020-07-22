@@ -303,17 +303,17 @@ export const filmesData = [
         alt: "Still 2"
       },
       {
-        thumb: "/img/china/thumb-verachina_still1.jpg",
-        full: "/img/china/verachina_still1_1316x740.jpg",
-        alt: "Still 3"
-      },
-    ],
-    gallery2: [
-      {
         thumb: "/img/china/thumb-VERACHINA_09.jpg",
         full: "/img/china/verachina_still09-full.jpg",
         alt: "Still 4"
       }
+    ],
+    gallery2: [
+      {
+        thumb: "/img/china/thumb-verachina_still1.jpg",
+        full: "/img/china/verachina_still1_1316x740.jpg",
+        alt: "Still 3"
+      },
     ]
   },
   video: {
@@ -484,11 +484,11 @@ export const filmesData = [
         content: "Luisa Noriko"
       },
     ],
-    festivals: [
-      "",
-      "",
-      "",
-    ],
+    // festivals: [
+    //   "",
+    //   "",
+    //   "",
+    // ],
     // reviews: [
     //   {
     //     name: "",
@@ -514,6 +514,11 @@ export const filmesData = [
           alt: "Still 4"
         },
         {
+          thumb: "/img/ensaios/thumb-ensaios_10.jpg",
+          full: "/img/ensaios/ensaios_10-full.jpg",
+          alt: "Still 10"
+        },
+        {
           thumb: "/img/ensaios/thumb-ensaios_8.jpg",
           full: "/img/ensaios/ensaios_8-full.jpg",
           alt: "Still 8"
@@ -524,11 +529,6 @@ export const filmesData = [
           thumb: "/img/ensaios/thumb-ensaios_9.jpg",
           full: "/img/ensaios/ensaios_9-full.jpg",
           alt: "Still 9"
-        },
-        {
-          thumb: "/img/ensaios/thumb-ensaios_10.jpg",
-          full: "/img/ensaios/ensaios_10-full.jpg",
-          alt: "Still 10"
         },
         {
           thumb: "/img/ensaios/thumb-ensaios_11.jpg",

@@ -484,7 +484,7 @@ main {
 }
 
 .page-hr {
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
 }
 
 .about-content {
@@ -575,6 +575,11 @@ main {
 
 .form-control, .btn {
   font-size: 0.9rem;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #BFB4A2;
 }
 
 /* loader transition */
@@ -864,8 +869,12 @@ main {
   }
 
   .details-section {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+  }
+  
+  .details-section-header {
+    margin-bottom: 0.8rem;
   }
 
   .cover-image {
@@ -878,7 +887,7 @@ main {
   }
 
   .details-content-text {
-    width: 60%;
+    width: 100%;
     text-align: justify;
   }
   
@@ -886,13 +895,19 @@ main {
     font-size: 2rem;
   }
 
+  .summary {
+    width: 100%;
+  }
+
   .gallery {
-    width: 35%;
+    width: 100%;
     padding: 2vh 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 0;
+    /* max-height: 50vh; */
   }
 
   .no-pad-top {
@@ -901,6 +916,7 @@ main {
 
   .thumb-link {
     margin-bottom: 4vh;
+    width: 32%;
     transition: opacity 0.15s;
   }
   
@@ -908,15 +924,30 @@ main {
     opacity: 0.95;
   }
 
+  .thumb-img {
+    width: 100%;
+  }
+
   .crew {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+    /* max-height: 70vh; */
+  }
+
+  .crew-column {
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  .crew-column:last-of-type {
+    /* padding-top: 1%; */
   }
   
   .crew-item {
     width: 100%;
+    text-align: left;
   }
 
   .about-page {
@@ -964,23 +995,24 @@ main {
   }
 
   .media-links-header {
-    text-align: left;
-    margin-left: 3vw;
+    text-align: center;
+    /* margin-left: 3vw; */
   }
 
   .media-links-container {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
   }
 
   .media-link-group {
     width: 60%;
+    justify-content: space-between;
   }
 
-  .media-link {
+  /* .media-link {
     margin-right: 2vh;
-  }
+  } */
 
   .icon {
     width: 2vw;
@@ -990,19 +1022,19 @@ main {
 
   .contact-page {
     margin: 0;
-    padding: 12vh 15% 6vh 15%;
+    /* margin-top: 10%; */
   }
 
   .contact-content {
-    margin: 0 auto;
-    height: 60%;
-    width: 80.5%;
+    margin: 5% auto;
+    height: 70%;
+    width: 60%;
     padding: 2vh 1.5vw;
     justify-content: center;
   }
 
   .contact-form {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 

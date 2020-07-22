@@ -40,9 +40,9 @@ class Contact extends Component {
     return (
       <div className="page">
         <article className="list contact-page">
-        {this.props.width > 1025 && <>
+        {/* {this.props.width > 1025 && <>
         <h1 className="page-title">contato</h1>
-        <hr className="title-hr hr-less-margin contact-hr"/></>}
+        <hr className="title-hr hr-less-margin contact-hr"/></>} */}
           <div className="contact-content">
             {this.props.width < 1025 && <>
             <h1 className="page-title dark">contato</h1>
@@ -60,7 +60,7 @@ class Contact extends Component {
               </div>
               <div className="form-group">
                 <label className="message sr-only" htmlFor="message"></label>
-                <textarea rows="10" onChange={e => this.setState({ message: e.target.value})} name="message" className="form-control" type="text" placeholder="Escreva sua mensagem aqui" value={this.state.message} required/>
+                <textarea rows="8" onChange={e => this.setState({ message: e.target.value})} name="message" className="form-control" type="text" placeholder="Escreva sua mensagem aqui" value={this.state.message} required/>
               </div>
               <button type="submit" className="btn btn-secondary">{ this.state.buttonText }</button>
             </form>

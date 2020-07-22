@@ -15,7 +15,8 @@ class FilmDetails extends Component {
       counter: 0,
       imagesHaveLoaded: false
     }
-    this.pauseVideo = this.pauseVideo.bind(this);
+    this.renderCrew = this.renderCrew.bind(this);
+    // this.returnCrewList = this.returnCrewList.bind(this);
     this.imageLoaded = this.imageLoaded.bind(this);
   }
 
@@ -31,11 +32,11 @@ class FilmDetails extends Component {
       foundFilm = colabsData.find(filme => filme.url === url);
     }
 
-    const {images, video} = foundFilm;
+    const {images, video, festivals, reviews} = foundFilm;
     let numberOfImages = 0;
     if (images.gallery1) {numberOfImages += images.gallery1.length};
-    if (images.gallery2) {numberOfImages += images.gallery2.length};
-    if (images.gallery3) {numberOfImages += images.gallery3.length};
+    if (images.gallery2 && festivals) {numberOfImages += images.gallery2.length};
+    if (images.gallery3 && reviews) {numberOfImages += images.gallery3.length};
     if (video.id === "") {numberOfImages += 1}
 
     if (this.props.width > 1025 && video.padding === "75%") {video.padding = "56.25%"}
@@ -47,8 +48,25 @@ class FilmDetails extends Component {
 
   }
 
-  pauseVideo() {
+  renderCrew() {
+    const {crew} = this.state.film;
+    let crewCopy = [...crew];
+    let columns = [];
+    
+    if (crew.length > 8) {
+      columns = [crewCopy.slice(0, crewCopy.length/2), crewCopy.slice(crewCopy.length/2+1)];
+    } else {
+      columns = [crewCopy];
+    }
 
+    return (columns.map((item, idx) => {
+      return (<div className="crew-column" key={idx}>
+          {item.map((item, idx) => {
+            return(item.name === "" ? <p key={idx} className="crew-item">{item.content}</p> : <p key={idx} className="crew-item"><strong className="crew-title">{item.name}</strong><br/>{item.content}</p>)
+          })}
+        </div>)
+      })
+    )
   }
 
   imageLoaded() {
@@ -103,7 +121,7 @@ class FilmDetails extends Component {
                 <p className="year-duration">{year}, {format}, {support} {duration && `, ${duration}'`}</p>
                 <div className="details-margin">
                   <h5 className="details-section-header">sinopse</h5>
-                  <p>{summary}</p>
+                  <p className="summary">{summary}</p>
                 </div>
                 {cast && <div className="details-margin">
                   <h5 className="details-section-header">elenco</h5>
@@ -112,9 +130,7 @@ class FilmDetails extends Component {
                 <div className="details-margin">
                   <h5 className="details-section-header">ficha técnica</h5>
                   <div className="crew">
-                    {crew && crew.map((item, idx) => {
-                      return(item.name === "" ? <p key={idx} className="crew-item">{item.content}</p> : <p key={idx} className="crew-item"><strong className="crew-title">{item.name}</strong><br/>{item.content}</p>)
-                    })}
+                    {crew && this.renderCrew()}
                   </div>
                 </div>
               </div>
