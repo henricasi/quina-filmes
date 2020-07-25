@@ -149,52 +149,61 @@ export const filmesData = [
     },
     poster: "/img/ronda/banner-ronda.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/ronda/thumb-RONDA_poster_mar2020.jpg",
-          full: "/img/ronda/RONDA_poster_mar2020_1406x2000.jpg",
-          alt: "Poster Ronda"
-        },
-        {
-          thumb: "/img/ronda/thumb-ronda_still1.jpg",
-          full: "/img/ronda/ronda_still1_1369x740.jpg",
-          alt: "Still 1"
-        },
-        {
-          thumb: "/img/ronda/thumb-ronda_still3.jpg",
-          full: "/img/ronda/ronda_still3_1369x740.jpg",
-          alt: "Still 3"
-        },
-        {
-          thumb: "/img/ronda/thumb-ronda_still5.jpg",
-          full: "/img/ronda/ronda_still5_1369x740.jpg",
-          alt: "Still 5"
-        },
-        {
-          thumb: "/img/ronda/thumb-ronda_still6.jpg",
-          full: "/img/ronda/ronda_still6_1369x740.jpg",
-          alt: "Still 6"
-        }
-      ],
-      gallery2: [
-        {
-          thumb: "/img/ronda/thumb-ronda_still2.jpg",
-          full: "/img/ronda/ronda_still2_1369x740.jpg",
-          alt: "Still 2"
-        },
-      ],
-      gallery3: [
-        {
-          thumb: "/img/ronda/thumb-ronda_still4.jpg",
-          full: "/img/ronda/ronda_still4_1369x740.jpg",
-          alt: "Still 4"
-        },
-        {
-          thumb: "/img/ronda/thumb-ronda_still7.jpg",
-          full: "/img/ronda/ronda_still7_1369x740.jpg",
-          alt: "Still 7"
-        }
-      ]
+      gallery1: {
+        config: "left-poster-right-top-1-bottom-2",
+        data: [
+          {
+            thumb: "/img/ronda/thumb-RONDA_poster_mar2020.jpg",
+            full: "/img/ronda/RONDA_poster_mar2020_1406x2000.jpg",
+            alt: "Poster Ronda"
+          },
+          {
+            thumb: "/img/ronda/thumb-ronda_still1.jpg",
+            full: "/img/ronda/ronda_still1_1369x740.jpg",
+            alt: "Still 1"
+          },
+          {
+            thumb: "/img/ronda/thumb-ronda_still3.jpg",
+            full: "/img/ronda/ronda_still3_1369x740.jpg",
+            alt: "Still 3"
+          },
+          {
+            thumb: "/img/ronda/thumb-ronda_still6.jpg",
+            full: "/img/ronda/ronda_still6_1369x740.jpg",
+            alt: "Still 6"
+          }
+        ],
+      },
+      gallery2: {
+        config: "horizontal-2",
+        data: [
+          {
+            thumb: "/img/ronda/thumb-ronda_still2.jpg",
+            full: "/img/ronda/ronda_still2_1369x740.jpg",
+            alt: "Still 2"
+          },
+          {
+            thumb: "/img/ronda/thumb-ronda_still5.jpg",
+            full: "/img/ronda/ronda_still5_1369x740.jpg",
+            alt: "Still 5"
+          },
+        ],
+      },
+      gallery3: {
+        config: "horizontal-2",
+        data: [
+          {
+            thumb: "/img/ronda/thumb-ronda_still4.jpg",
+            full: "/img/ronda/ronda_still4_1369x740.jpg",
+            alt: "Still 4"
+          },
+          {
+            thumb: "/img/ronda/thumb-ronda_still7.jpg",
+            full: "/img/ronda/ronda_still7_1369x740.jpg",
+            alt: "Still 7"
+          }
+        ]
+      },
     },
     video: {
       id: 338993567,
@@ -291,34 +300,45 @@ export const filmesData = [
   },
   poster: "/img/china/verachina_banner.jpg",
   images: {
-    gallery1: [
-      {
-        thumb: "/img/china/thumb-VERACHINA_07.jpg",
-        full: "/img/china/verachina_still07-full.jpg",
-        alt: "Still 1"
-      },
-      {
-        thumb: "/img/china/thumb-VERACHINA_07(1).jpg",
-        full: "/img/china/verachina_still07(1)-full.jpg",
-        alt: "Still 2"
-      },
-      {
-        thumb: "/img/china/thumb-VERACHINA_09.jpg",
-        full: "/img/china/verachina_still09-full.jpg",
-        alt: "Still 4"
-      }
-    ],
-    gallery2: [
-      {
-        thumb: "/img/china/thumb-verachina_still1.jpg",
-        full: "/img/china/verachina_still1_1316x740.jpg",
-        alt: "Still 3"
-      },
-    ]
+    gallery1: {
+      config: "top-2-bottom-1",
+      data: [
+        {
+          thumb: "/img/china/thumb-VERACHINA_07(1).jpg",
+          full: "/img/china/verachina_still07(1)-full.jpg",
+          alt: "Still 8"
+        },
+        {
+          thumb: "/img/china/thumb-VERACHINA_09.jpg",
+          full: "/img/china/verachina_still09-full.jpg",
+          alt: "Still 9"
+        },
+        {
+          thumb: "/img/china/thumb-VERACHINA_07.jpg",
+          full: "/img/china/verachina_still07-full.jpg",
+          alt: "Still 7"
+        },
+      ],
+    },
+    gallery2: {
+      config: "horizontal-2",
+      data: [
+        {
+          thumb: "/img/china/thumb-verachina_still1.jpg",
+          full: "/img/china/verachina_still1_1316x740.jpg",
+          alt: "Still 1"
+        },
+        {
+          thumb: "/img/china/thumb-VERACHINA_10.jpg",
+          full: "/img/china/verachina_still10-full.jpg",
+          alt: "Still 10"
+        }
+      ]
+    },
   },
   video: {
-    id: "",
-    padding: ""
+    id: "440095479",
+    padding: "56.25%"
   },
   url: "ver-a-china"
   },
@@ -375,38 +395,41 @@ export const filmesData = [
     },
     poster: "/img/angela/angela_banner.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/angela/thumb-angela_still1.jpg",
-          full: "/img/angela/angela_still1_1316x740.jpg",
-          alt: "Still 1"
-        },
-        {
-          thumb: "/img/angela/thumb-angela_still2.jpg",
-          full: "/img/angela/angela_still2_1184x740.jpg",
-          alt: "Still 2"
-        },
-        // {
-        //   thumb: "/img/angela/thumb-angela_still3.jpg",
-        //   full: "/img/angela/angela_still3_1184x740.jpg",
-        //   alt: "Still 3"
-        // },
-        {
-          thumb: "/img/angela/thumb-angela_still4.jpg",
-          full: "/img/angela/angela_still4_1316x740.jpg",
-          alt: "Still 4"
-        },
-        // {
-        //   thumb: "/img/angela/thumb-angela_still5.jpg",
-        //   full: "/img/angela/angela_still5_1312x740.jpg",
-        //   alt: "Still 5"
-        // },
-        // {
-        //   thumb: "/img/angela/thumb-angela_still6.jpg",
-        //   full: "/img/angela/angela_still6_874x740.jpg",
-        //   alt: "Still 6"
-        // },
-      ],
+      gallery1: {
+        config: "left-2-right-1",
+        data: [
+          {
+            thumb: "/img/angela/thumb-angela_still1.jpg",
+            full: "/img/angela/angela_still1_1316x740.jpg",
+            alt: "Still 1"
+          },
+          {
+            thumb: "/img/angela/thumb-angela_still2.jpg",
+            full: "/img/angela/angela_still2_1184x740.jpg",
+            alt: "Still 2"
+          },
+          // {
+          //   thumb: "/img/angela/thumb-angela_still3.jpg",
+          //   full: "/img/angela/angela_still3_1184x740.jpg",
+          //   alt: "Still 3"
+          // },
+          {
+            thumb: "/img/angela/thumb-angela_still4.jpg",
+            full: "/img/angela/angela_still4_1316x740.jpg",
+            alt: "Still 4"
+          },
+          // {
+          //   thumb: "/img/angela/thumb-angela_still5.jpg",
+          //   full: "/img/angela/angela_still5_1312x740.jpg",
+          //   alt: "Still 5"
+          // },
+          // {
+          //   thumb: "/img/angela/thumb-angela_still6.jpg",
+          //   full: "/img/angela/angela_still6_874x740.jpg",
+          //   alt: "Still 6"
+          // },
+        ],
+      },
     },
     video: {
       id: 360162923,
@@ -507,35 +530,41 @@ export const filmesData = [
     // },
     poster: "/img/ensaios/poster-ensaios.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/ensaios/thumb-ensaios_4.jpg",
-          full: "/img/ensaios/ensaios_4-full.jpg",
-          alt: "Still 4"
-        },
-        {
-          thumb: "/img/ensaios/thumb-ensaios_10.jpg",
-          full: "/img/ensaios/ensaios_10-full.jpg",
-          alt: "Still 10"
-        },
-        {
-          thumb: "/img/ensaios/thumb-ensaios_8.jpg",
-          full: "/img/ensaios/ensaios_8-full.jpg",
-          alt: "Still 8"
-        },
-      ],
-      gallery2: [
-        {
-          thumb: "/img/ensaios/thumb-ensaios_9.jpg",
-          full: "/img/ensaios/ensaios_9-full.jpg",
-          alt: "Still 9"
-        },
-        {
-          thumb: "/img/ensaios/thumb-ensaios_11.jpg",
-          full: "/img/ensaios/ensaios_11-full.jpg",
-          alt: "Still 11"
-        },
-      ],
+      gallery1: {
+        config: "left-1-right-2",
+        data: [
+          {
+            thumb: "/img/ensaios/thumb-ensaios_4.jpg",
+            full: "/img/ensaios/ensaios_4-full.jpg",
+            alt: "Still 4"
+          },
+          {
+            thumb: "/img/ensaios/thumb-ensaios_10.jpg",
+            full: "/img/ensaios/ensaios_10-full.jpg",
+            alt: "Still 10"
+          },
+          {
+            thumb: "/img/ensaios/thumb-ensaios_8.jpg",
+            full: "/img/ensaios/ensaios_8-full.jpg",
+            alt: "Still 8"
+          },
+        ],
+      },
+      gallery2: {
+        config: "horizontal-2",
+        data: [
+          {
+            thumb: "/img/ensaios/thumb-ensaios_9.jpg",
+            full: "/img/ensaios/ensaios_9-full.jpg",
+            alt: "Still 9"
+          },
+          {
+            thumb: "/img/ensaios/thumb-ensaios_11.jpg",
+            full: "/img/ensaios/ensaios_11-full.jpg",
+            alt: "Still 11"
+          },
+        ],
+      },
     },
     video: {
       id: "",
@@ -604,23 +633,26 @@ export const filmesData = [
     // },
     poster: "/img/invencao/umainvencao_banner.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/invencao/thumb-umainvencao_still1.jpg",
-          full: "/img/invencao/umainvencao_still1_1316x740.jpg",
-          alt: "Still 1"
-        },
-        {
-          thumb: "/img/invencao/thumb-umainvencao_still2.jpg",
-          full: "/img/invencao/umainvencao_still2_1316x740.jpg",
-          alt: "Still 2"
-        },
-        {
-          thumb: "/img/invencao/thumb-umainvencao_still3.jpg",
-          full: "/img/invencao/umainvencao_still3_1316x740.jpg",
-          alt: "Still 3"
-        },
-      ],
+      gallery1: {
+        config: "horizontal-3",
+        data: [
+          {
+            thumb: "/img/invencao/thumb-umainvencao_still1.jpg",
+            full: "/img/invencao/umainvencao_still1_1316x740.jpg",
+            alt: "Still 1"
+          },
+          {
+            thumb: "/img/invencao/thumb-umainvencao_still2.jpg",
+            full: "/img/invencao/umainvencao_still2_1316x740.jpg",
+            alt: "Still 2"
+          },
+          {
+            thumb: "/img/invencao/thumb-umainvencao_still3.jpg",
+            full: "/img/invencao/umainvencao_still3_1316x740.jpg",
+            alt: "Still 3"
+          },
+        ],
+      },
     },
     video: {
       id: "",
@@ -673,15 +705,24 @@ const template =
       pos: ""
     },
     images: {
-      gallery1: [
-        {
-          thumb: "",
-          full: "",
-          alt: ""
-        },
-      ],
-      gallery2: [],
-      gallery3: []
+      gallery1: {
+        config: "",
+        data: [
+          {
+            thumb: "",
+            full: "",
+            alt: ""
+          },
+        ],
+      },
+      gallery2: {
+        config: "",
+        data: []
+      },
+      gallery3: {
+        config: "",
+        data: []
+      },
     },
     video: {
       id: "",

@@ -44,9 +44,9 @@ class Contact extends Component {
         <h1 className="page-title">contato</h1>
         <hr className="title-hr hr-less-margin contact-hr"/></>} */}
           <div className="contact-content">
-            {this.props.width < 1025 && <>
-            <h1 className="page-title dark">contato</h1>
-            <hr className="title-hr page-hr hr-dark"/></>}
+            {/* {this.props.width < 1025 && <> */}
+            <h1 className="page-title about-title dark">entre em contato</h1>
+            <hr className="title-hr page-hr about-hr hr-dark"/>
             <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
               <div className="form-row">
                 <div className="form-group col-md-6">

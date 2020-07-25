@@ -10,7 +10,7 @@ const About = (props) => {
     if (counter === 4) {
       setImagesHaveLoaded(true);
     }
-  }) 
+  }, [counter]) 
 
   return (
     <div className="page">
@@ -36,17 +36,17 @@ const About = (props) => {
               <div className="media-links-container" >
                 <h5 className="details-section-header media-links-header">siga a quina</h5>
                 <div className="media-link-group">
-                  <a className="media-link" target="_blank" href="http://www.facebook.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/fb.png" alt="Facebook"/></a>
-                  <a className="media-link" target="_blank" href="http://www.instagram.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/ig.png" alt="Instagram"/></a>
-                  <a className="media-link" target="_blank" href="http://www.vimeo.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/vimeo.png" alt="Vimeo"/></a>
+                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/fb.png" alt="Facebook"/></a>
+                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.instagram.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/ig.png" alt="Instagram"/></a>
+                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.vimeo.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/vimeo.png" alt="Vimeo"/></a>
                 </div>
               </div>
             </div>
-            <div className="gallery pb-0 mb-3">
+            <div className="pb-0 mb-3">
               <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
             </div>
           </section>
-          <section className="about-section mt-5">
+          <section className="about-section mt-4">
             <div className="about-description w-100 mt-3 pt-1">
               <h2 className="details-section-header mb-4">biografias</h2>
               <p><strong>Amanda Carvalho</strong> é graduada em Audiovisual na ECA/ USP. Como diretora, realizou os documentários “Cantos de Kuidou” (2017) e, “Ver a China” (2019), exibido no 29º Festival Internacional de Curtas do Rio de Janeiro - Curta Cinema e no 25º É Tudo Verdade - Festival Internacional de Documentários 2020. É uma das produtoras e sóciofundadoras do grupo Quina Filmes.</p>

@@ -86,30 +86,36 @@ export const colabsData = [
     // },
     poster: "/img/pontos-curva/tpdc_banner.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/pontos-curva/thumb-tpdc_still1.jpg",
-          full: "/img/pontos-curva/tpdc_still1_1316x740.jpg",
-          alt: "still1"
-        },
-        {
-          thumb: "/img/pontos-curva/thumb-tpdc_still2.jpg",
-          full: "/img/pontos-curva/tpdc_still2_1316x740.jpg",
-          alt: "still2"
-        },
-        {
-          thumb: "/img/pontos-curva/thumb-tpdc_still4.jpg",
-          full: "/img/pontos-curva/tpdc_still4_1316x740.jpg",
-          alt: "still4"
-        },
-      ],
-      gallery2: [
-        {
-          thumb: "/img/pontos-curva/thumb-tpdc_still5.jpg",
-          full: "/img/pontos-curva/tpdc_still5_1316x740.jpg",
-          alt: "still5"
-        },
-      ]
+      gallery1: {
+        config: "left-1-right-2",
+        data: [
+          {
+            thumb: "/img/pontos-curva/thumb-tpdc_still1.jpg",
+            full: "/img/pontos-curva/tpdc_still1_1316x740.jpg",
+            alt: "still1"
+          },
+          {
+            thumb: "/img/pontos-curva/thumb-tpdc_still2.jpg",
+            full: "/img/pontos-curva/tpdc_still2_1316x740.jpg",
+            alt: "still2"
+          },
+          {
+            thumb: "/img/pontos-curva/thumb-tpdc_still4.jpg",
+            full: "/img/pontos-curva/tpdc_still4_1316x740.jpg",
+            alt: "still4"
+          },
+        ],
+      },
+      gallery2: {
+        config: "horizontal-1",
+        data: [
+          {
+            thumb: "/img/pontos-curva/thumb-tpdc_still5.jpg",
+            full: "/img/pontos-curva/tpdc_still5_1316x740.jpg",
+            alt: "still5"
+          },
+        ]
+      },
     },
     video: {
       id: 296537653,
@@ -178,19 +184,19 @@ export const colabsData = [
         content: "Arnold Schwarzenegger, Danilo Arrabal, Giovanna Monteiro, Hito Steyerl, Julia Pedreira, Maira do Nascimento, Rafael de Souza"
       }
     ],
-    festivals: [
-      "",
-      "",
-      "",
-    ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
+    // festivals: [
+    //   "",
+    //   "",
+    //   "",
+    // ],
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
     english: {
       title: "",
       summary: ""
@@ -201,23 +207,26 @@ export const colabsData = [
     },
     poster: "/img/cabeca-oca/poster-cabecaoca.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/cabeca-oca/thumb-cabecaoca3.jpg",
-          full: "/img/cabeca-oca/full-cabecaoca3.jpg",
-          alt: "Still 3"
-        },
-        {
-          thumb: "/img/cabeca-oca/thumb-cabecaoca9.jpg",
-          full: "/img/cabeca-oca/full-cabecaoca9.jpg",
-          alt: "Still 9"
-        },
-        {
-          thumb: "/img/cabeca-oca/thumb-cabecaoca6.jpg",
-          full: "/img/cabeca-oca/full-cabecaoca6.jpg",
-          alt: "Still 6"
-        },
-      ],
+      gallery1: {
+        config: "horizontal-3",
+        data: [
+          {
+            thumb: "/img/cabeca-oca/thumb-cabecaoca3.jpg",
+            full: "/img/cabeca-oca/full-cabecaoca3.jpg",
+            alt: "Still 3"
+          },
+          {
+            thumb: "/img/cabeca-oca/thumb-cabecaoca9.jpg",
+            full: "/img/cabeca-oca/full-cabecaoca9.jpg",
+            alt: "Still 9"
+          },
+          {
+            thumb: "/img/cabeca-oca/thumb-cabecaoca6.jpg",
+            full: "/img/cabeca-oca/full-cabecaoca6.jpg",
+            alt: "Still 6"
+          },
+        ],
+      },
     },
     video: {
       id: 407783789,
@@ -272,14 +281,14 @@ export const colabsData = [
       "",
       "",
     ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
     english: {
       title: "",
       summary: ""
@@ -290,34 +299,40 @@ export const colabsData = [
     },
     poster: "/img/nylon-bites/poster-nylon-bites.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/nylon-bites/thumb-nylon-bites9.jpg",
-          full: "/img/nylon-bites/nylon-bites9-full.jpg",
-          alt: "Still 9"
-        },
-        {
-          thumb: "/img/nylon-bites/thumb-nylon-bites10.jpg",
-          full: "/img/nylon-bites/nylon-bites10-full.jpg",
-          alt: "Still 10"
-        },
-      ],
-      gallery2: [
-        {
-          thumb: "/img/nylon-bites/thumb-nylon-bites11.jpg",
-          full: "/img/nylon-bites/nylon-bites11-full.jpg",
-          alt: "Still 11"
-        },
-        {
-          thumb: "/img/nylon-bites/thumb-nylon-bites12.jpg",
-          full: "/img/nylon-bites/nylon-bites12-full.jpg",
-          alt: "Still 12"
-        },
-      ],
+      gallery1: {
+        config: "horizontal-2",
+        data: [
+          {
+            thumb: "/img/nylon-bites/thumb-nylon-bites9.jpg",
+            full: "/img/nylon-bites/nylon-bites9-full.jpg",
+            alt: "Still 9"
+          },
+          {
+            thumb: "/img/nylon-bites/thumb-nylon-bites10.jpg",
+            full: "/img/nylon-bites/nylon-bites10-full.jpg",
+            alt: "Still 10"
+          },
+        ],
+      },
+      gallery2: {
+        config: "horizontal-2",
+        data: [
+          {
+            thumb: "/img/nylon-bites/thumb-nylon-bites11.jpg",
+            full: "/img/nylon-bites/nylon-bites11-full.jpg",
+            alt: "Still 11"
+          },
+          {
+            thumb: "/img/nylon-bites/thumb-nylon-bites12.jpg",
+            full: "/img/nylon-bites/nylon-bites12-full.jpg",
+            alt: "Still 12"
+          },
+        ],
+      },
     },
     video: {
-      id: "",
-      padding: ""
+      id: 440763363,
+      padding: "56.25%"
     },
     url: "nylon-bites"
   },
@@ -377,23 +392,26 @@ export const colabsData = [
     },
     poster: "/img/estudo-nylon/estudosnylon_banner.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/estudo-nylon/thumb-estudosnylon_still6.jpg",
-          full: "/img/estudo-nylon/estudosnylon_still6_721x722.jpg",
-          alt: "Still 6"
-        },
-        {
-          thumb: "/img/estudo-nylon/thumb-estudosnylon_still5.jpg",
-          full: "/img/estudo-nylon/estudosnylon_still5_721x722.jpg",
-          alt: "Still 5"
-        },
-        // {
-        //   thumb: "/img/estudo-nylon/thumb-estudosnylon_still1.jpg",
-        //   full: "/img/estudo-nylon/estudosnylon_still1_721x722.jpg",
-        //   alt: "Still 1"
-        // },
-      ],
+      gallery1: {
+        config: "horizontal-2",
+        data: [
+          {
+            thumb: "/img/estudo-nylon/thumb-estudosnylon_still6.jpg",
+            full: "/img/estudo-nylon/estudosnylon_still6_721x722.jpg",
+            alt: "Still 6"
+          },
+          {
+            thumb: "/img/estudo-nylon/thumb-estudosnylon_still5.jpg",
+            full: "/img/estudo-nylon/estudosnylon_still5_721x722.jpg",
+            alt: "Still 5"
+          },
+          // {
+          //   thumb: "/img/estudo-nylon/thumb-estudosnylon_still1.jpg",
+          //   full: "/img/estudo-nylon/estudosnylon_still1_721x722.jpg",
+          //   alt: "Still 1"
+          // },
+        ],
+      },
     },
     video: {
       id: "",
@@ -475,14 +493,14 @@ export const colabsData = [
       "Flatlands Dance Film Festival (Illinois, EUA / 2018)",
       "Guiar | (Recife, Brasil / outubro 2018)"
     ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
     english: {
       title: "",
       summary: ""
@@ -493,30 +511,36 @@ export const colabsData = [
     },
     poster: "/img/dobras/dobras_banner.jpg",
     images: {
-      gallery1: [
-        {
-          thumb: "/img/dobras/thumb-dobras_still1.jpg",
-          full: "/img/dobras/dobras_still1_987x740.jpg",
-          alt: "Still 1"
-        },
-        {
-          thumb: "/img/dobras/thumb-dobras_still3.jpg",
-          full: "/img/dobras/dobras_still3_987x740.jpg",
-          alt: "Still 3"
-        },
-        {
-          thumb: "/img/dobras/thumb-dobras_still11.jpg",
-          full: "/img/dobras/dobras_still11_987x740.jpg",
-          alt: "Still 11"
-        }
-      ],
-      gallery2: [
-        {
-          thumb: "/img/dobras/thumb-dobras_still8.jpg",
-          full: "/img/dobras/dobras_still8_987x740.jpg",
-          alt: "Still 8"
-        }
-      ]
+      gallery1: {
+        config: "left-1-right-2",
+        data: [
+          {
+            thumb: "/img/dobras/thumb-dobras_still1.jpg",
+            full: "/img/dobras/dobras_still1_987x740.jpg",
+            alt: "Still 1"
+          },
+          {
+            thumb: "/img/dobras/thumb-dobras_still3.jpg",
+            full: "/img/dobras/dobras_still3_987x740.jpg",
+            alt: "Still 3"
+          },
+          {
+            thumb: "/img/dobras/thumb-dobras_still11.jpg",
+            full: "/img/dobras/dobras_still11_987x740.jpg",
+            alt: "Still 11"
+          }
+        ],
+      },
+      gallery2: {
+        config: "horizontal-1",
+        data: [
+          {
+            thumb: "/img/dobras/thumb-dobras_still8.jpg",
+            full: "/img/dobras/dobras_still8_987x740.jpg",
+            alt: "Still 8"
+          }
+        ]
+      },
     },
     video: {
       id: 438999791,
@@ -564,15 +588,24 @@ const template =
     },
     poster: "",
     images: {
-      gallery1: [
-        {
-          thumb: "",
-          full: "",
-          alt: ""
-        },
-      ],
-      gallery2: [],
-      gallery3: []
+      gallery1: {
+        config: "",
+        data: [
+          {
+            thumb: "",
+            full: "",
+            alt: ""
+          },
+        ],
+      },
+      gallery2: {
+        config: "",
+        data: []
+      },
+      gallery3: {
+        config: "",
+        data: []
+      },
     },
     video: {
       id: "",

@@ -82,7 +82,7 @@ const App = () => {
     } else {
       setTimeout(() => mainContainer.current.scrollTo(0, 0), 200);
     }
-  }, [pathname]);
+  }, [width, pathname]);
 
   return (
     <div className="container-fluid main">

@@ -4,6 +4,7 @@ import Loader from 'react-loader-spinner';
 import {filmesData} from '../data/filmes';
 import {colabsData} from '../data/colabs';
 import GoBack from './GoBack';
+import Gallery from './Gallery';
 
 class FilmDetails extends Component {
   constructor(props) {
@@ -34,9 +35,9 @@ class FilmDetails extends Component {
 
     const {images, video, festivals, reviews} = foundFilm;
     let numberOfImages = 0;
-    if (images.gallery1) {numberOfImages += images.gallery1.length};
-    if (images.gallery2 && festivals) {numberOfImages += images.gallery2.length};
-    if (images.gallery3 && reviews) {numberOfImages += images.gallery3.length};
+    if (images.gallery1) {numberOfImages += images.gallery1.data.length};
+    if (images.gallery2 && festivals) {numberOfImages += images.gallery2.data.length};
+    if (images.gallery3 && reviews) {numberOfImages += images.gallery3.data.length};
     if (video.id === "") {numberOfImages += 1}
 
     if (this.props.width > 1025 && video.padding === "75%") {video.padding = "56.25%"}
@@ -110,7 +111,7 @@ class FilmDetails extends Component {
               </>
             }
             {/* banner fallback */}
-            {video && video.id === "" && <img src={images.gallery1[0].full} className="cover-image" onLoad={this.imageLoaded} alt={title + "Still"}></img>}
+            {video && video.id === "" && <img src={images.gallery1.data[0].full} className="cover-image" onLoad={this.imageLoaded} alt={title + "Still"}></img>}
           </section>
           <div className="details-content">
             {/* seção 1*/}
@@ -135,11 +136,7 @@ class FilmDetails extends Component {
                 </div>
               </div>
 
-              <div className="gallery">
-                {images && images.gallery1.map((item, idx) => {
-                  return <a key={idx} href={item.full} data-lightbox="gallery" className="thumb-link"><img src={item.thumb} alt={item.alt} className="thumb-img" onLoad={this.imageLoaded}/></a>
-                })}
-              </div>
+              {images && images.gallery1 && <Gallery gallery={images.gallery1} imageLoaded={this.imageLoaded} width={this.props.width} />}
             </section>
 
             {/* seção 2*/}
@@ -155,11 +152,7 @@ class FilmDetails extends Component {
                 </div>}
               </div>
 
-              <div className="gallery">
-                {images.gallery2 && images.gallery2.map((item, idx) => {
-                  return <a key={idx} href={item.full} data-lightbox="gallery" className="thumb-link"><img src={item.thumb} alt={item.alt} className="thumb-img" onLoad={this.imageLoaded}/></a>
-                })}
-              </div>
+              {images.gallery2 && <Gallery gallery={images.gallery2} imageLoaded={this.imageLoaded} width={this.props.width}/>}
             </section>}
             
             {/* seção 3*/}
@@ -176,11 +169,7 @@ class FilmDetails extends Component {
                 </div>}
               </div>
 
-              <div className="gallery gallery-less-margin">
-                {images.gallery3 && images.gallery3.map((item, idx) => {
-                  return <a key={idx} href={item.full} data-lightbox="gallery" className="thumb-link"><img src={item.thumb} alt={item.alt} className="thumb-img" onLoad={this.imageLoaded}/></a>
-                })}
-              </div>
+              {images && <Gallery gallery={images.gallery3} imageLoaded={this.imageLoaded} width={this.props.width}/>}
             </section>}
           <GoBack></GoBack>
           </div>
