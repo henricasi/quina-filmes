@@ -184,11 +184,9 @@ export const colabsData = [
         content: "Arnold Schwarzenegger, Danilo Arrabal, Giovanna Monteiro, Hito Steyerl, Julia Pedreira, Maira do Nascimento, Rafael de Souza"
       }
     ],
-    // festivals: [
-    //   "",
-    //   "",
-    //   "",
-    // ],
+    festivals: [
+      "Amarradona - Espaço das Artes USP - dezembro/2019",
+    ],
     // reviews: [
     //   {
     //     name: "",
@@ -207,8 +205,28 @@ export const colabsData = [
     },
     poster: "/img/cabeca-oca/poster-cabecaoca.jpg",
     images: {
-      gallery1: {
-        config: "horizontal-3",
+      // gallery1: {
+      //   config: "horizontal-3",
+      //   data: [
+      //     {
+      //       thumb: "/img/cabeca-oca/thumb-cabecaoca3.jpg",
+      //       full: "/img/cabeca-oca/full-cabecaoca3.jpg",
+      //       alt: "Still 3"
+      //     },
+      //     {
+      //       thumb: "/img/cabeca-oca/thumb-cabecaoca9.jpg",
+      //       full: "/img/cabeca-oca/full-cabecaoca9.jpg",
+      //       alt: "Still 9"
+      //     },
+      //     {
+      //       thumb: "/img/cabeca-oca/thumb-cabecaoca6.jpg",
+      //       full: "/img/cabeca-oca/full-cabecaoca6.jpg",
+      //       alt: "Still 6"
+      //     },
+      //   ],
+      // },
+      gallery2: {
+        config: "horizontal-2",
         data: [
           {
             thumb: "/img/cabeca-oca/thumb-cabecaoca3.jpg",
@@ -220,13 +238,8 @@ export const colabsData = [
             full: "/img/cabeca-oca/full-cabecaoca9.jpg",
             alt: "Still 9"
           },
-          {
-            thumb: "/img/cabeca-oca/thumb-cabecaoca6.jpg",
-            full: "/img/cabeca-oca/full-cabecaoca6.jpg",
-            alt: "Still 6"
-          },
-        ],
-      },
+        ]
+      }
     },
     video: {
       id: 407783789,
@@ -277,9 +290,7 @@ export const colabsData = [
       },
     ],
     festivals: [
-      "",
-      "",
-      "",
+      `"Sons de Silício: exposição de arte sonora", Centro Universitário Maria Antônia, 13.09 a 13.12 de 2019.`,
     ],
     // reviews: [
     //   {
@@ -369,19 +380,19 @@ export const colabsData = [
         content: "NuSom - Núcleo de Pesquisa em Sonologia"
       },
     ],
-    festivals: [
-      "",
-      "",
-      "",
-    ],
-    reviews: [
-      {
-        name: "",
-        author: "",
-        content: "",
-        link: ""
-      }
-    ],
+    // festivals: [
+    //   "",
+    //   "",
+    //   "",
+    // ],
+    // reviews: [
+    //   {
+    //     name: "",
+    //     author: "",
+    //     content: "",
+    //     link: ""
+    //   }
+    // ],
     english: {
       title: "",
       summary: ""
@@ -426,12 +437,13 @@ export const colabsData = [
     format: "vídeo-dança",
     support: "digital pb",
     director: "Francisco Miguez e Pedro Nishi",
+    cast: "Ana Paula Camargo, Diego de Paulo, Nielson Souza, Morgana Cappellari e Yoshi Suzuki",
     summary: "Num estúdio espaço nu um cinza médio pinta o fundo cru de um corpo só.",
     crew: [
-      {
-        name: "dançarinos",
-        content: "Ana Paula Camargo, Diego de Paulo, Nielson Souza, Morgana Cappellari e Yoshi Suzuki"
-      },
+      // {
+      //   name: "dançarinos",
+      //   content: "Ana Paula Camargo, Diego de Paulo, Nielson Souza, Morgana Cappellari e Yoshi Suzuki"
+      // },
       {
         name: "coreografia",
         content: "Marco Goecke"
@@ -472,18 +484,18 @@ export const colabsData = [
         name: "correção de cor",
         content: "Lucas Silva Campos"
       },
-      {
-        name: "",
-        content: "numa parceria entre Associação Pró-Dança / São Paulo Companhia de Dança e Departamento de Cinema, Rádio e Televisão / Escola de Comunicação e Artes da USP"
-      },
-      {
-        name: "",
-        content: "como parte da pesquisa \"A dança como cinema, o cinema como dança\", financiada pela Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP)"
-      },
-      {
-        name: "agradecimentos",
-        content: "Antonio Magnoler, Charles Lima, Douglas Giudice, Eduardo Santos Mendes, Gabriel Barreto, Guido Agovino, Joel La Laina, Luís Dantas, Luca Baldovino, Marcos J. S. Pinto, Paulo Ferreira"
-      },
+      // {
+      //   name: "",
+      //   content: "numa parceria entre Associação Pró-Dança / São Paulo Companhia de Dança e Departamento de Cinema, Rádio e Televisão / Escola de Comunicação e Artes da USP"
+      // },
+      // {
+      //   name: "",
+      //   content: "como parte da pesquisa \"A dança como cinema, o cinema como dança\", financiada pela Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP)"
+      // },
+      // {
+      //   name: "agradecimentos",
+      //   content: "Antonio Magnoler, Charles Lima, Douglas Giudice, Eduardo Santos Mendes, Gabriel Barreto, Guido Agovino, Joel La Laina, Luís Dantas, Luca Baldovino, Marcos J. S. Pinto, Paulo Ferreira"
+      // },
     ],
     festivals: [
       "Kinoforum | 30º Festival Internacional de Curtas Metragens de São Paulo (Brasil /agosto 2019) – Prêmio Melhores do Público",

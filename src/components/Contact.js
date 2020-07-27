@@ -14,6 +14,10 @@ class Contact extends Component {
     }
   }
 
+  componentDidMount() {
+    document.title = "Contato - Quina filmes"
+  }
+
   formSubmit = (e) => {
     e.preventDefault()
   
@@ -40,13 +44,8 @@ class Contact extends Component {
     return (
       <div className="page">
         <article className="list contact-page">
-        {/* {this.props.width > 1025 && <>
-        <h1 className="page-title">contato</h1>
-        <hr className="title-hr hr-less-margin contact-hr"/></>} */}
           <div className="contact-content">
-            {/* {this.props.width < 1025 && <> */}
-            <h1 className="page-title about-title dark">entre em contato</h1>
-            <hr className="title-hr page-hr about-hr hr-dark"/>
+            <h1 className="details-section-header contact-header">entre em contato</h1>
             <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
               <div className="form-row">
                 <div className="form-group col-md-6">

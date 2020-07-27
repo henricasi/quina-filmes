@@ -33,10 +33,12 @@ class FilmList extends Component {
   setList() {
     const {whichList} = this.props;
     if (whichList === "filmes") {
+      document.title = "Filmes - Quina filmes"
       this.setState({
         films: filmesData
       })
     } else if (whichList === "colabs") {
+      document.title = "Colaborações - Quina filmes"
       this.setState({
         films: colabsData
       })

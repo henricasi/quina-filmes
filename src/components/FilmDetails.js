@@ -33,7 +33,7 @@ class FilmDetails extends Component {
       foundFilm = colabsData.find(filme => filme.url === url);
     }
 
-    const {images, video, festivals, reviews} = foundFilm;
+    const {title, images, video, festivals, reviews} = foundFilm;
     let numberOfImages = 0;
     if (images.gallery1) {numberOfImages += images.gallery1.data.length};
     if (images.gallery2 && festivals) {numberOfImages += images.gallery2.data.length};
@@ -42,6 +42,8 @@ class FilmDetails extends Component {
 
     if (this.props.width > 1025 && video.padding === "75%") {video.padding = "56.25%"}
     
+    document.title = title + " - Quina filmes"
+
     this.setState({
       film: foundFilm,
       numberOfImages: numberOfImages
@@ -51,22 +53,38 @@ class FilmDetails extends Component {
 
   renderCrew() {
     const {crew} = this.state.film;
-    let crewCopy = [...crew];
-    let columns = [];
     
-    if (crew.length > 8) {
-      columns = [crewCopy.slice(0, crewCopy.length/2), crewCopy.slice(crewCopy.length/2+1)];
-    } else {
-      columns = [crewCopy];
-    }
+    // LEGACY: renderiza ficha técnica não-condensada
 
-    return (columns.map((item, idx) => {
-      return (<div className="crew-column" key={idx}>
-          {item.map((item, idx) => {
-            return(item.name === "" ? <p key={idx} className="crew-item">{item.content}</p> : <p key={idx} className="crew-item"><strong className="crew-title">{item.name}</strong><br/>{item.content}</p>)
-          })}
-        </div>)
-      })
+    // let crewCopy = [...crew];
+    // let columns = [];
+    // if (crew.length > 8) {
+    //   columns = [crewCopy.slice(0, crewCopy.length/2), crewCopy.slice(crewCopy.length/2+1)];
+    // } else {
+    //   columns = [crewCopy];
+    // }
+
+    // return (columns.map((item, idx) => {
+    //   return (<div className="crew-column" key={idx}>
+    //       {item.map((item, idx) => {
+    //         return(item.name === "" ? <p key={idx} className="crew-item">{item.content}</p> : <p key={idx} className="crew-item"><strong className="crew-title">{item.name}</strong><br/>{item.content}</p>)
+    //       })}
+    //     </div>)
+    //   })
+    // )
+
+    return (
+      <p>
+        {crew.map((item, idx) => {
+        if (idx === crew.length - 1) {
+          if (item.name === "") {return <span>{item.content}</span>}
+          return <span>{item.name}: <strong>{item.content}</strong></span>
+        } else {
+          if (item.name === "") {return <span>{item.content} / </span>}
+          return <span>{item.name}: <strong>{item.content}</strong> / </span>
+        }
+      })}
+      </p>
     )
   }
 
@@ -120,18 +138,23 @@ class FilmDetails extends Component {
                 {this.props.width > 1025 && <GoBack></GoBack>}
                 <h3 className="title">{title}</h3>
                 <p className="year-duration">{year}, {format}, {support} {duration && `, ${duration}'`}</p>
-                <div className="details-margin">
-                  <h5 className="details-section-header">sinopse</h5>
-                  <p className="summary">{summary}</p>
-                </div>
-                {cast && <div className="details-margin">
-                  <h5 className="details-section-header">elenco</h5>
-                  <p>{cast}</p>
-                </div>}
-                <div className="details-margin">
-                  <h5 className="details-section-header">ficha técnica</h5>
-                  <div className="crew">
-                    {crew && this.renderCrew()}
+                <div className="details-div">
+                  <div className="summary-cast-container">
+                    <div>
+                      <h5 className="details-section-header">sinopse</h5>
+                      <p className="summary">{summary}</p>
+                    </div>
+                    {cast && <div>
+                      <h5 className="details-section-header">elenco</h5>
+                      <p className="cast">{cast}</p>
+                    </div>}
+                  </div>
+
+                  <div className="crew-container">
+                    <h5 className="details-section-header">ficha técnica</h5>
+                    <div className="crew">
+                      {crew && this.renderCrew()}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -143,8 +166,8 @@ class FilmDetails extends Component {
             {festivals && <section className="details-section">
               <div className="details-content-text">
                 {festivals && <div className="details-margin">
-                  <h5 className="details-section-header">festivais e prêmios</h5>
-                  <ul className="festivals-list">
+                  <h5 className="details-section-header">circulação</h5>
+                  <ul className="festivals-list" style={this.props.width > 1025 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
                     {festivals.map((item, idx) => {
                       return <li key={idx} className="festivals-list-item">- {item}</li>
                     })}
@@ -160,12 +183,15 @@ class FilmDetails extends Component {
               <div className="details-content-text">
                 {reviews && <div className="details-margin">
                   <h5 className="details-section-header">fortuna crítica</h5>
+                  <div className="reviews-container">
                     {reviews.map((item, idx) => {
                       return <div key={idx} className="review">
-                        <a href={item.link} className="review-link"><strong>{item.name}</strong>, por {item.author}</a>
+                        {item.link !== "" && <a href={item.link} className="review-link"><strong>{item.name}</strong>, por {item.author}</a>}
+                        {item.link === "" && <p className="review-link"><strong>{item.name}</strong>, por {item.author}</p>}
                         <p className="review-content">{item.content}</p>
                       </div>
                     })}
+                  </div>
                 </div>}
               </div>
 

@@ -61,7 +61,7 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
               <NavLink to="/colabs">colaborações</NavLink>
             </li>
             <li className="nav-link">
-              <NavLink to="/sobre">a quina</NavLink>
+              <NavLink to="/sobre">quina filmes</NavLink>
             </li>
             <li className="nav-link">
               <NavLink to="/contato">contato</NavLink>
@@ -76,8 +76,8 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
             <button onClick={() => changeBackground(4)}>4</button>
             <button onClick={() => changeBackground(5)}>5</button>
             <button onClick={() => changeBackground(6)}>6</button>
-            <button onClick={() => changeBackground(7)}>7</button>
-            <button onClick={() => changeBackground(8)}>8</button>
+            {/* <button onClick={() => changeBackground(7)}>7</button>
+            <button onClick={() => changeBackground(8)}>8</button> */}
           </div>
           <div className="bg-pos mt-4">
             {width < 1025 && <><div className="pos-range">

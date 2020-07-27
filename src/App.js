@@ -14,14 +14,14 @@ import useWindowDimensions from './components/useWindowDimensions'
 
 
 import './App.css';
-import background1 from './background1.jpg'
-import background2 from './background2.jpg'
-import background3 from './background3.jpg'
+import background1 from './background1.png'
+import background2 from './background2.png'
+import background3 from './background3.png'
 import background4 from './background4.jpg'
-import background5 from './background5.jpg'
-import background6 from './background6.jpg'
-import background7 from './background7.jpg'
-import background8 from './background8.jpg'
+import background5 from './background5.png'
+import background6 from './background6.png'
+// import background7 from './background7.jpg'
+// import background8 from './background8.jpg'
 
 
 const routes = [
@@ -65,8 +65,8 @@ const App = () => {
       4: background4,
       5: background5,
       6: background6,
-      7: background7,
-      8: background8,
+      // 7: background7,
+      // 8: background8,
     }
     backgroundSrc = keys[num];
     history.push('/')

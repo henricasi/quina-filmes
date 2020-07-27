@@ -121,6 +121,12 @@ export const filmesData = [
     ],
     reviews: [
       {
+        name: "21º FBCU 2019 – Prêmio LeitMotif",
+        author: "Equipe LeitMotif",
+        content: "Ronda, filme de Mauricio Battistuci e Francisco Miguez, parece buscar não dicotomizar as questões internas do indivíduo e da cidade, mas encontrar suas raras intersecções e espaços em comum. A construção auditiva da cidade é invasiva, caótica, não procura polidez ou \"educação\" sonora. O metal range, buzinas soam sobre diálogos, a serra de mão, depois o bafo dos carros, por último uma voz, que briga por espaço. Primeiro os gritos do passageiro de metrô que batalha contra o espaço fechado, depois outro profeta que luta contra o Golias do espaço aberto. Os espaços da cidade são construções arquitetônicas reservadas a não-construção pelo universo visual - que se reserva a planos fixos e pouco reveladores, mas construídos em nossa percepção sônica. O que não vemos dos espaços, ouvimos. E o que não ouvimos ou vemos do protagonista, a cidade parece nos contar. Enquanto batalha os sons do dia, as comunicações em celulares e dentro de carros e em ruas ruidosas não são tão diferentes de sua ronda quase quixotesca em busca de um lugar onde estar em um espaço que parece completamente tomado. O espaço encontrado, afinal, traduz-se não tanto na imagem, mas através de uma nova arquitetura sonora que reorganiza os espaços que parecem ali já existir e constrói novos espaços negativos, e define, finalmente, um lugar para o protagonista antes perdido.",
+        link: ""
+      },
+      {
         name: "21º FESTCURTASBH – Catálogo, p. 43",
         author: "Hannah Serrat",
         content: "Hélio é um segurança desempregado, já não tem casa, nem pertences, nem amigos. Quem sabe agora só lhe acompanhem os devaneios de quem, mesmo cansado e ferido, já não pode descansar. Nem o desemprego lhe permite abandonar o ofício que se apoderou de seu corpo e de seus gestos. Como filmar um sintoma coletivo – esse que nos adoece pelo excesso de medo, de controle, de exaustão, de abandono? Em meio ao caos, é preciso produzir brechas em narrativas quaisquer, ir ao encontro do outro, retomar nossa disposição para o perigo.",
@@ -131,12 +137,6 @@ export const filmesData = [
         author: "Gabriel Morais",
         content: "A recusa é pedagogicamente acompanhada por uma reorganização do pacto de representação, que associa os limites das ultrapassadas concepções das relações de trabalho aos limites das ultrapassadas abordagens do drama social realista, ambas como formas esgarçadas de enfrentar as novas questões do mundo e do trabalho. O filme vira-se, portanto, para uma investigação acerca de modelos estéticos e políticos de enfrentamento que estejam a par da reconfiguração dos desafios.",
         link: "http://revistacinetica.com.br/nova/deus-ajuda-quem-cedo-madruga-consideracoes-tardias-sobre-o-21o-festival-brasileiro-de-cinema-universitario/"
-      },
-      {
-        name: "21º FBCU 2019 – Prêmio LeitMotif",
-        author: "Equipe LeitMotif",
-        content: "Ronda, filme de Mauricio Battistuci e Francisco Miguez, parece buscar não dicotomizar as questões internas do indivíduo e da cidade, mas encontrar suas raras intersecções e espaços em comum. A construção auditiva da cidade é invasiva, caótica, não procura polidez ou \"educação\" sonora. O metal range, buzinas soam sobre diálogos, a serra de mão, depois o bafo dos carros, por último uma voz, que briga por espaço. Primeiro os gritos do passageiro de metrô que batalha contra o espaço fechado, depois outro profeta que luta contra o Golias do espaço aberto. Os espaços da cidade são construções arquitetônicas reservadas a não-construção pelo universo visual - que se reserva a planos fixos e pouco reveladores, mas construídos em nossa percepção sônica. O que não vemos dos espaços, ouvimos. E o que não ouvimos ou vemos do protagonista, a cidade parece nos contar. Enquanto batalha os sons do dia, as comunicações em celulares e dentro de carros e em ruas ruidosas não são tão diferentes de sua ronda quase quixotesca em busca de um lugar onde estar em um espaço que parece completamente tomado. O espaço encontrado, afinal, traduz-se não tanto na imagem, mas através de uma nova arquitetura sonora que reorganiza os espaços que parecem ali já existir e constrói novos espaços negativos, e define, finalmente, um lugar para o protagonista antes perdido.",
-        link: "http://www.festivaldecurtasbh.com.br/wp-content/uploads/2019/09/21_FESTCURTASBH_CATALOGO_WEB.pdf"
       },
     ],
     english: {
@@ -158,38 +158,23 @@ export const filmesData = [
             alt: "Poster Ronda"
           },
           {
-            thumb: "/img/ronda/thumb-ronda_still1.jpg",
-            full: "/img/ronda/ronda_still1_1369x740.jpg",
-            alt: "Still 1"
-          },
-          {
-            thumb: "/img/ronda/thumb-ronda_still3.jpg",
-            full: "/img/ronda/ronda_still3_1369x740.jpg",
-            alt: "Still 3"
-          },
-          {
             thumb: "/img/ronda/thumb-ronda_still6.jpg",
             full: "/img/ronda/ronda_still6_1369x740.jpg",
             alt: "Still 6"
-          }
-        ],
-      },
-      gallery2: {
-        config: "horizontal-2",
-        data: [
+          },
           {
             thumb: "/img/ronda/thumb-ronda_still2.jpg",
             full: "/img/ronda/ronda_still2_1369x740.jpg",
             alt: "Still 2"
           },
           {
-            thumb: "/img/ronda/thumb-ronda_still5.jpg",
-            full: "/img/ronda/ronda_still5_1369x740.jpg",
-            alt: "Still 5"
+            thumb: "/img/ronda/RONDA_2.jpg",
+            full: "/img/ronda/RONDA_2.jpg",
+            alt: "Still 3"
           },
         ],
       },
-      gallery3: {
+      gallery2: {
         config: "horizontal-2",
         data: [
           {
@@ -198,10 +183,20 @@ export const filmesData = [
             alt: "Still 4"
           },
           {
-            thumb: "/img/ronda/thumb-ronda_still7.jpg",
-            full: "/img/ronda/ronda_still7_1369x740.jpg",
-            alt: "Still 7"
-          }
+            thumb: "/img/ronda/thumb-ronda_still1.jpg",
+            full: "/img/ronda/ronda_still1_1369x740.jpg",
+            alt: "Still 5"
+          },
+        ],
+      },
+      gallery3: {
+        config: "horizontal-1",
+        data: [
+          {
+            thumb: "/img/ronda/ronda_still5_1369x740.jpg",
+            full: "/img/ronda/ronda_still5_1369x740.jpg",
+            alt: "Still 4"
+          },
         ]
       },
     },
@@ -218,6 +213,7 @@ export const filmesData = [
     format: "documentário",
     support: "digital",
     director: "Amanda Carvalho",
+    cast: "Zhou Meie, Zeng Meijuan, Kang Mingyue, Lin Qingzhen, Kang Shuangying, Kang Lifen, Kang Wenqing, Xie Fan, Li Liqin, Xie Liangpo",
     summary: "Uma realizadora estrangeira é convidada a visitar a China com a tarefa de produzir um filme documentário sobre a produção de chá na província de Fujian. Um ano depois, de volta ao Brasil, retoma suas imagens e aquilo que foi visto em território chinês.",
     crew: [
     {
@@ -282,14 +278,14 @@ export const filmesData = [
     "5º Toró - Festival Audiovisual Universitário de Belém",
     "Competição Brasileira de Curtas-Metragens do É Tudo Verdade 2020 - 25º Festival Internacional de Documentários",
   ],
-  // reviews: [
-  //   {
-  //     name: "",
-  //     author: "",
-  //     content: "",
-  //     link: ""
-  //   }
-  // ],
+  reviews: [
+    {
+      name: `Com mostras online, Festival "É Tudo Verdade" traz diversos filmes de ecanos`,
+      author: "",
+      content: `"Trata-se de uma reflexão sobre o ato de filmar na China e sobre os olhares da câmera, da documentarista e das pessoas que estão sendo filmadas ou que estão filmando”, comenta a docente e orientadora Cecília Antakly de Mello.`,
+      link: "https://www3.eca.usp.br/noticias/festival-tudo-verdade-seleciona-tcc-de-aluna-de-audiovisual-para-mostra-competitiva"
+    }
+  ],
   english: {
     title: "",
     summary: "A foreigner filmmaker is invited to visit China with the task of producing a documentary film about tea production in Fujian province. One year later, back in Brazil, reexamines her images and what was seen in China."
@@ -301,16 +297,21 @@ export const filmesData = [
   poster: "/img/china/verachina_banner.jpg",
   images: {
     gallery1: {
-      config: "top-2-bottom-1",
+      config: "left-poster-right-top-2-bottom-1",
       data: [
         {
-          thumb: "/img/china/thumb-VERACHINA_07(1).jpg",
-          full: "/img/china/verachina_still07(1)-full.jpg",
+          thumb: "/img/china/verachina_banner.jpg",
+          full: "/img/china/verachina_banner.jpg",
+          alt: "Poster"
+        },
+        {
+          thumb: "/img/china/thumb-verachina_still4.jpg",
+          full: "/img/china/verachina_still4_1316x740.jpg",
           alt: "Still 8"
         },
         {
-          thumb: "/img/china/thumb-VERACHINA_09.jpg",
-          full: "/img/china/verachina_still09-full.jpg",
+          thumb: "/img/china/china_still10.jpg",
+          full: "/img/china/china_still10.jpg",
           alt: "Still 9"
         },
         {
@@ -320,7 +321,7 @@ export const filmesData = [
         },
       ],
     },
-    gallery2: {
+    gallery3: {
       config: "horizontal-2",
       data: [
         {

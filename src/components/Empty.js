@@ -1,5 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-const Empty = () => <div className="home"></div>
+const Empty = () => {
+
+  useEffect(() => {
+    document.title = "Quina filmes"
+  }, []);
+
+  return <div className="home"></div>
+}
 
 export default Empty;
