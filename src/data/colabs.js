@@ -185,7 +185,7 @@ export const colabsData = [
       }
     ],
     festivals: [
-      "Amarradona - Espaço das Artes USP - dezembro/2019",
+      `"Amarradona", Espaço das Artes USP - dezembro/2019`,
     ],
     // reviews: [
     //   {
@@ -402,6 +402,7 @@ export const colabsData = [
       summary: ""
     },
     poster: "/img/estudo-nylon/estudosnylon_banner.jpg",
+    banner: "/img/estudo-nylon/estudosnylon_pagebanner.jpg",
     images: {
       gallery1: {
         config: "horizontal-2",
@@ -527,7 +528,7 @@ export const colabsData = [
         config: "left-1-right-2",
         data: [
           {
-            thumb: "/img/dobras/thumb-dobras_still1.jpg",
+            thumb: "/img/dobras/dobras_still1_987x740.jpg",
             full: "/img/dobras/dobras_still1_987x740.jpg",
             alt: "Still 1"
           },
@@ -547,7 +548,7 @@ export const colabsData = [
         config: "horizontal-1",
         data: [
           {
-            thumb: "/img/dobras/thumb-dobras_still8.jpg",
+            thumb: "/img/dobras/dobras_still8_987x740.jpg",
             full: "/img/dobras/dobras_still8_987x740.jpg",
             alt: "Still 8"
           }

@@ -59,11 +59,11 @@ class Contact extends Component {
               </div>
               <div className="form-group">
                 <label className="message sr-only" htmlFor="message"></label>
-                <textarea rows="8" onChange={e => this.setState({ message: e.target.value})} name="message" className="form-control" type="text" placeholder="Escreva sua mensagem aqui" value={this.state.message} required/>
+                <textarea rows={this.props.width >= 640 && this.props.width < 1024 ? "4" : "8"} onChange={e => this.setState({ message: e.target.value})} name="message" className="form-control" type="text" placeholder="Escreva sua mensagem aqui" value={this.state.message} required/>
               </div>
               <button type="submit" className="btn btn-secondary">{ this.state.buttonText }</button>
             </form>
-            {this.props.width < 992 && <Link to="/" className="back-link back-link-contact dark">← voltar</Link>}
+            {this.props.width < 640 && <Link to="/" className="back-link back-link-contact dark">← voltar</Link>}
           </div>
         </article>
       </div>

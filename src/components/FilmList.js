@@ -78,7 +78,7 @@ class FilmList extends Component {
         </div>
 
         <div className={imagesHaveLoaded ? "list" : "list noshow"}>
-          {this.props.width < 992 && this.renderPageTitle()}
+          {this.props.width < 640 && this.renderPageTitle()}
           <div className="list-items-container">
             {this.state.films.map((film, index) => {
               return (
@@ -86,7 +86,7 @@ class FilmList extends Component {
               )
             })}
           </div>
-          {this.props.width < 992 && <Link to="/" className="back-link back-link-list">← voltar</Link>}
+          {this.props.width < 640 && <Link to="/" className="back-link back-link-list">← voltar</Link>}
         </div>
         
 

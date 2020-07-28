@@ -48,7 +48,7 @@ const About = (props) => {
               </div>
               <div className="bios-column">
                 <p><strong>Francisco Miguez</strong> é graduado em Audiovisual pela ECA/USP e atua na realização e crítica de cinema, trabalhando em variados formatos. Dirigiu e escreveu "Ronda" junto a Mauricio Battistuci e atualmente trabalha em um longa documentário intitulado provisoriamente como "Angela", em fase de montagem. Além disso, produziu dois curtas documentários, "Invenção sem futuro" e "Estado de Crise" e uma videoinstalação em dois canais, "Ciclo do sono . Também produziu algumas videodanças, como "Dobras", dirigido junto a Pedro Nishi, em parceria com a São Paulo Companhia de Dança), e "Todos os Pontos da Curva", em parceria com a dançarina Bibi Dória. Como crítico, é redator da Revista Cinética desde 2018.</p>
-                <p><strong>Mauricio Battistuci</strong> Mauricio Battistuci é diretor, roteirista e produtor. Entre outros projetos com a Quina filmes, escreveu e dirigiu junto a Francisco Miguez o curta-metragem "Ronda" (2019), que circulou nacional e internacionalmente. Também realizou trabalhos audiovisuais e de assistência de pesquisa em dramaturgia junto à Cia do Latão de teatro de São Paulo. Foi produtor e curador do CINUSP (Cinema da Universidade de São Paulo), realizando mostras, exibições e debates. Atualmente trabalha na direção do curta-metragem "Ensaios de Ana" em fase de pós-produção e na dramaturgia da peça infantil "Mancala ou as Sementes de Akin", comissionada para o 21° Cultura Inglesa Festival.</p>
+                <p><strong>Mauricio Battistuci</strong> é diretor, roteirista e produtor. Entre outros projetos com a Quina filmes, escreveu e dirigiu junto a Francisco Miguez o curta-metragem "Ronda" (2019), que circulou nacional e internacionalmente. Também realizou trabalhos audiovisuais e de assistência de pesquisa em dramaturgia junto à Cia do Latão de teatro de São Paulo. Foi produtor e curador do CINUSP (Cinema da Universidade de São Paulo), realizando mostras, exibições e debates. Atualmente trabalha na direção do curta-metragem "Ensaios de Ana" em fase de pós-produção e na dramaturgia da peça infantil "Mancala ou as Sementes de Akin", comissionada para o 21° Cultura Inglesa Festival.</p>
               </div>
             </div>
             {/* <div className="gallery">
@@ -56,8 +56,8 @@ const About = (props) => {
             <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
             <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
             </div> */}
+          {props.width < 640 && <Link to="/" className="back-link dark">← voltar</Link>}
           </section>
-          {props.width < 992 && <Link to="/" className="back-link dark">← voltar</Link>}
         </div>
       </article>
     </div>

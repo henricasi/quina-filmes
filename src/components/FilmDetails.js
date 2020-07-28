@@ -129,13 +129,13 @@ class FilmDetails extends Component {
               </>
             }
             {/* banner fallback */}
-            {video && video.id === "" && <img src={images.gallery1.data[0].full} className="cover-image" onLoad={this.imageLoaded} alt={title + "Still"}></img>}
+            {video && video.id === "" && <img src={this.state.film.banner} className="cover-image" onLoad={this.imageLoaded} alt={title + "Still"}></img>}
           </section>
           <div className="details-content">
             {/* seção 1*/}
             <section className="details-section">
               <div className="details-content-text">
-                {this.props.width > 1025 && <GoBack></GoBack>}
+                {this.props.width > 640 && <GoBack></GoBack>}
                 <h3 className="title">{title}</h3>
                 <p className="year-duration">{year}, {format}, {support} {duration && `, ${duration}'`}</p>
                 <div className="details-div">
@@ -167,7 +167,7 @@ class FilmDetails extends Component {
               <div className="details-content-text">
                 {festivals && <div className="details-margin">
                   <h5 className="details-section-header">circulação</h5>
-                  <ul className="festivals-list" style={this.props.width > 1025 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
+                  <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
                     {festivals.map((item, idx) => {
                       return <li key={idx} className="festivals-list-item">- {item}</li>
                     })}

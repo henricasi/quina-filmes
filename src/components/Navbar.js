@@ -11,12 +11,12 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
   const {width} = useWindowDimensions();
 
   const [menuDisplay, setMenuDisplay] = useState("none");
-  const initialPadding = width < 1025 ? "50" : "0";
+  const initialPadding = width < 640 ? "50" : "0";
   const [navPadding, setNavPadding] = useState(initialPadding);
 
 
   const getClassName = () => {
-    if (width < 1025) {
+    if (width < 640) {
       if (pathname === "/") {return "nav"} else {return "nav inactive"}
     }
     return "nav"
@@ -76,8 +76,8 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
             <button onClick={() => changeBackground(4)}>4</button>
             <button onClick={() => changeBackground(5)}>5</button>
             <button onClick={() => changeBackground(6)}>6</button>
-            {/* <button onClick={() => changeBackground(7)}>7</button>
-            <button onClick={() => changeBackground(8)}>8</button> */}
+            <button onClick={() => changeBackground(7)}>7</button>
+            {/* <button onClick={() => changeBackground(8)}>8</button> */}
           </div>
           <div className="bg-pos mt-4">
             {width < 1025 && <><div className="pos-range">

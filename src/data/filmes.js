@@ -168,7 +168,7 @@ export const filmesData = [
             alt: "Still 2"
           },
           {
-            thumb: "/img/ronda/RONDA_2.jpg",
+            thumb: "/img/ronda/thumb-RONDA_2.jpg",
             full: "/img/ronda/RONDA_2.jpg",
             alt: "Still 3"
           },
@@ -281,8 +281,8 @@ export const filmesData = [
   reviews: [
     {
       name: `Com mostras online, Festival "É Tudo Verdade" traz diversos filmes de ecanos`,
-      author: "",
-      content: `"Trata-se de uma reflexão sobre o ato de filmar na China e sobre os olhares da câmera, da documentarista e das pessoas que estão sendo filmadas ou que estão filmando”, comenta a docente e orientadora Cecília Antakly de Mello.`,
+      author: " Amanda Ferreira e Maria Eduarda Nogueira",
+      content: `"'Trata-se de uma reflexão sobre o ato de filmar na China e sobre os olhares da câmera, da documentarista e das pessoas que estão sendo filmadas ou que estão filmando', comenta a docente e orientadora Cecília Antakly de Mello."`,
       link: "https://www3.eca.usp.br/noticias/festival-tudo-verdade-seleciona-tcc-de-aluna-de-audiovisual-para-mostra-competitiva"
     }
   ],
@@ -297,20 +297,15 @@ export const filmesData = [
   poster: "/img/china/verachina_banner.jpg",
   images: {
     gallery1: {
-      config: "left-poster-right-top-2-bottom-1",
+      config: "left-top-2-bottom-1-right-poster",
       data: [
-        {
-          thumb: "/img/china/verachina_banner.jpg",
-          full: "/img/china/verachina_banner.jpg",
-          alt: "Poster"
-        },
         {
           thumb: "/img/china/thumb-verachina_still4.jpg",
           full: "/img/china/verachina_still4_1316x740.jpg",
           alt: "Still 8"
         },
         {
-          thumb: "/img/china/china_still10.jpg",
+          thumb: "/img/china/thumb-china_still10.jpg",
           full: "/img/china/china_still10.jpg",
           alt: "Still 9"
         },
@@ -318,6 +313,11 @@ export const filmesData = [
           thumb: "/img/china/thumb-VERACHINA_07.jpg",
           full: "/img/china/verachina_still07-full.jpg",
           alt: "Still 7"
+        },
+        {
+          thumb: "/img/china/verachina_banner.jpg",
+          full: "/img/china/verachina_banner.jpg",
+          alt: "Poster"
         },
       ],
     },
@@ -530,6 +530,7 @@ export const filmesData = [
     //   summary: ""
     // },
     poster: "/img/ensaios/poster-ensaios.jpg",
+    banner: "/img/ensaios/ensaios_7.jpg",
     images: {
       gallery1: {
         config: "left-1-right-2",
@@ -633,6 +634,7 @@ export const filmesData = [
     //   summary: ""
     // },
     poster: "/img/invencao/umainvencao_banner.jpg",
+    banner: "/img/invencao/umainvencao_still3_1316x740.jpg",
     images: {
       gallery1: {
         config: "horizontal-3",
