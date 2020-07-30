@@ -64,7 +64,8 @@ class FilmList extends Component {
   renderPageTitle() {
     const {whichList} = this.props;
     let html = <></>;
-    whichList === "filmes" ? html = <><h1 className="page-title">filmes</h1><hr className="title-hr"/></> : html = <><h1 className="page-title">colaborações</h1><hr className="title-hr"/></>
+    // whichList === "filmes" ? html = <><h1 className="page-title">filmes</h1><hr className="title-hr"/></> : html = <><h1 className="page-title">colaborações</h1><hr className="title-hr"/></>
+    whichList === "filmes" ? html = <h1 className="page-title">filmes</h1> : html = <h1 className="page-title">colaborações</h1>
     return html;
   }
   

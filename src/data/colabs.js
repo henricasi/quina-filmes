@@ -129,7 +129,7 @@ export const colabsData = [
     duration: "43",
     format: "vídeo / vídeo-instalação",
     support: "digital 1:1",
-    summary: "Vídeo-instalação em três canais produzida a partir da peça \"cabeça oca espuma de boneca\", de Ilê Sartuzi.",
+    summary: "cabeça oca espuma de boneca é uma obra teatral sem atores onde figuram corpos, bonecos, manequins e fantasmagorias das mais diversas, explorando a repetição e a substituição enquanto formas poéticas e estratégias de construção e modificação do corpo.",
     crew: [
       {
         name: "vídeo-instalação",
@@ -250,9 +250,9 @@ export const colabsData = [
   {
     title: "nylon bites",
     year: "2019",
-    duration: "",
-    format: "",
-    support: "",
+    duration: "24",
+    format: "videoarte",
+    support: "digital 16:9",
     director: "Mauricio Battistuci",
     summary: "Nylon bites é um processo de investigação que explora a escuta interna durante o ato de morder nylon e tocá-lo, o som que se propaga pelos ossos do crânio. Com o uso de microfones binaurais voltados para dentro, audibiliza e compartilha o ponto de escuta.",
     crew: [
