@@ -5,7 +5,6 @@ import bg2 from '../background2.jpg'
 import bg3 from '../background3.jpg'
 import bg4 from '../background4.jpg'
 import bg5 from '../background5.jpg'
-import bg6 from '../background6.jpg'
 
 class Background extends Component {
   constructor(props) {
@@ -16,8 +15,7 @@ class Background extends Component {
         {src: bg2, posX: 8, posY: 100},
         {src: bg3, posX: 74, posY: 100},
         {src: bg4, posX: 0, posY: 100},
-        {src: bg5, posX: 32, posY: 50},
-        {src: bg6, posX: 52, posY: 0}],
+        {src: bg5, posX: 52, posY: 0}],
       bgTop: {src: bg1, posX: 73, posY: 100},
       bgBottom: {src: bg2, posX: 8, posY: 100},
       opacityTop: 1,
@@ -31,7 +29,7 @@ class Background extends Component {
     let { bgBottom, images, cycleNumber} = this.state;
     // let futureOpacity = opacityTop - 1;
     let futureCycleNumber = cycleNumber + 1;
-    if (futureCycleNumber === 6) {futureCycleNumber = 0}
+    if (futureCycleNumber === 5) {futureCycleNumber = 0}
 
     this.setState({
       bgTop: bgBottom,
