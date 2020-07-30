@@ -79,8 +79,6 @@ class Background extends Component {
     back4.src = bg4;
     let back5 = new Image();
     back5.src = bg5;
-    let back6 = new Image();
-    back6.src = bg6;
   }
 
 
