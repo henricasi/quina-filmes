@@ -44,6 +44,7 @@ form {
 
 .bg-img {
   position: fixed;
+  opacity: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -84,6 +85,13 @@ form {
   filter: blur(5px) brightness(80%);
 }
 
+.bg-under {
+  z-index: -101;
+}
+
+.transition-none {
+  transition: none;
+}
 
 a {
   color: #F2F2F2;
@@ -132,7 +140,7 @@ nav {
   top: 0;
   width: 60%;
   height: 100%;
-  padding-top: 15%;
+  padding-top: 30%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -215,14 +223,21 @@ button:focus {
   text-align: center;
 }
 
-#logo-image-mobile {
-  display: block;
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70%;
-  margin-left: 5vw;
-  margin-bottom: 4vh;
+  margin: 0 10% 18% 10%;
 }
 
-#logo-image-mobile>img {
+#logo-image {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+#logo-image>img {
   width: 100%;
 }
 

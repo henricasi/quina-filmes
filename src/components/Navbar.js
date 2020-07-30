@@ -10,9 +10,9 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
   const {pathname} = location;
   const {width} = useWindowDimensions();
 
-  const [menuDisplay, setMenuDisplay] = useState("none");
-  const initialPadding = width < 640 ? "50" : "0";
-  const [navPadding, setNavPadding] = useState(initialPadding);
+  // const [menuDisplay, setMenuDisplay] = useState("none");
+  // const initialPadding = width < 640 ? "50" : "0";
+  // const [navPadding, setNavPadding] = useState(initialPadding);
 
 
   const getClassName = () => {
@@ -22,32 +22,24 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
     return "nav"
   }
 
-  const handleOpacityChange = () => {
-    if (menuDisplay === "none") {
-      setMenuDisplay("block");
-    } else {
-      setMenuDisplay("none");
-    }
-  }
+  // const handleOpacityChange = () => {
+  //   if (menuDisplay === "none") {
+  //     setMenuDisplay("block");
+  //   } else {
+  //     setMenuDisplay("none");
+  //   }
+  // }
 
-  const handlePaddingChange = (e) => {
-    const {value} = e.target;
-    setNavPadding(value);
-  }
+  // const handlePaddingChange = (e) => {
+  //   const {value} = e.target;
+  //   setNavPadding(value);
+  // }
 
   
   return (
-    <nav className={getClassName()} style={{paddingTop: navPadding + "%"}}>
-      <NavLink to="/" id="logo-image-mobile">
-        <img src="/img/logo_transp_white_500_FULL.png" alt="Quina Filmes"/>
-      </NavLink>
-      {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button> */}
-
-      {/* <div className="collapse navbar-collapse" id="navbarSupportedContent"> */}
+    <nav className={getClassName()}>
       <div className="nav-collapse">
-        <div className="logo-container desktop-only">
+        <div className="logo-container">
           <NavLink to="/">
             <img src="/img/logo_transp_white_500_FULL.png" alt="Quina Filmes" id="logo-image"/>
           </NavLink>
@@ -68,7 +60,7 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
             </li>
           </ul>
         </div>
-        <div className="bg-menu" style={{display: menuDisplay}}>
+        {/* <div className="bg-menu" style={{display: menuDisplay}}>
           <div className="bg-selector" style={{display: "flex", justifyContent: "space-between"}}>
             <button onClick={() => changeBackground(1)}>1</button>
             <button onClick={() => changeBackground(2)}>2</button>
@@ -77,7 +69,7 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
             <button onClick={() => changeBackground(5)}>5</button>
             <button onClick={() => changeBackground(6)}>6</button>
             <button onClick={() => changeBackground(7)}>7</button>
-            {/* <button onClick={() => changeBackground(8)}>8</button> */}
+            <button onClick={() => changeBackground(8)}>8</button>
           </div>
           <div className="bg-pos mt-4">
             {width < 1025 && <><div className="pos-range">
@@ -94,7 +86,7 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
             </div>
           </div>
         </div>
-        <button className="menu-toggler" onClick={handleOpacityChange}>show/hide</button>
+        <button className="menu-toggler" onClick={handleOpacityChange}>show/hide</button> */}
       </div>
     </nav>
   )

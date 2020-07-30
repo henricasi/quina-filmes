@@ -9,20 +9,10 @@ import FilmList from './components/FilmList'
 import FilmDetails from './components/FilmDetails'
 import About from './components/About'
 import Contact from './components/Contact'
-import VideoBackground from './components/VideoBackground'
+import Background from './components/Background'
 import useWindowDimensions from './components/useWindowDimensions'
 
-
 import './App.css';
-import background1 from './background1.png'
-import background2 from './background2.png'
-import background3 from './background3.png'
-import background4 from './background4.png'
-import background5 from './background5.jpg'
-import background6 from './background6.png'
-import background7 from './background7.png'
-// import background8 from './background8.jpg'
-
 
 const routes = [
   {path: '/', Component: Empty, props: {}},
@@ -34,43 +24,16 @@ const routes = [
   {path: '/contato', Component: Contact, props: {}},
 ];
 
-let backgroundSrc = background1;
-
 
 const App = () => {
   const {width} = useWindowDimensions();
   const mainContainer = useRef(null);
 
   const [bgHasLoaded, setBgHasLoaded] = useState(false);
-  const [posX, setPosX] = useState("69");
-  const [posY, setPosY] = useState("50");
   
   const { pathname } = useLocation();
   let history = useHistory();
   
-  const handleChange = (e) => {
-    const {name, value} = e.target;
-    if (name === "bg-pos-y") {
-      setPosY(value);
-    } else {
-      setPosX(value);
-    }
-  }
-
-  const changeBackground = (num) => {
-    let keys = {
-      1: background1,
-      2: background2,
-      3: background3,
-      4: background4,
-      5: background5,
-      6: background6,
-      7: background7,
-      // 8: background8,
-    }
-    backgroundSrc = keys[num];
-    history.push('/')
-  }
   
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
@@ -91,8 +54,8 @@ const App = () => {
           <Loader type="Oval" color="#F2F2F2" height={80} width={80}/>
         </div>
       </CSSTransition>
-      <VideoBackground backgroundSrc={backgroundSrc} posX={posX} posY={posY} setBgHasLoaded={setBgHasLoaded}></VideoBackground>
-      <Navbar changeBackground={changeBackground} posX={posX} posY={posY} handleChange={handleChange}></Navbar>
+      <Background setBgHasLoaded={setBgHasLoaded} pathname={pathname} ></Background>
+      <Navbar></Navbar>
       <main className="content" ref={mainContainer}>
         {routes.map(({path, Component, props}) => (
           <Route key={path} exact path={path}>
