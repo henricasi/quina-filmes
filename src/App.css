@@ -616,7 +616,7 @@ p.review-link {
   color: #F2F2F2;
   /* height: 100%; */
   margin: 0;
-  padding: 2vh 0 0 0;
+  padding: 4% 0 0 0;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -631,8 +631,10 @@ p.review-link {
 
 .contact-form {
   width: 73%;
-  margin: 0 auto 2vh auto;
+  height: 90%;
+  margin: 0 auto 4% auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -648,6 +650,14 @@ p.review-link {
   border-color: #BFB4A2;
   background-color: #31373b;
   color: #F2F2F2
+}
+
+.textarea-group {
+  height: 80%;
+}
+
+.textarea-group textarea {
+  height: 100%;
 }
 
 /* loader transition */
@@ -1087,16 +1097,16 @@ p.review-link {
 
   .contact-content {
     margin: 5% auto;
-    height: 60vw;
+    height: 60%;
     width: 80%;
-    padding: 2% 1.5vw;
+    padding: 4% 2% 4% 2%;
     justify-content: center;
     /* overflow: scroll; */
   }
 
   .contact-form {
     width: 90%;
-    margin: 0 auto 4vh auto;
+    /* margin: 0 auto 4vh auto; */
   }
 
   .contact-header {
@@ -1432,14 +1442,14 @@ p.review-link {
     margin: 5% auto;
     height: 70%;
     width: 60%;
-    padding: 2vh 1.5vw;
+    padding: 4% 2% 4% 2%;
     justify-content: center;
     /* overflow: scroll; */
   }
 
   .contact-form {
     width: 90%;
-    margin: 0 auto 4vh auto;
+    /* margin: 0 auto 4vh auto; */
   }
 
   .contact-header {

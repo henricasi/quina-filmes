@@ -7,9 +7,9 @@ class Contact extends Component {
     super(props);
     this.state = {
       name: '',
-      message: '',
       email: '',
-      sent: false,
+      message: '',
+      class: 'btn-secondary',
       buttonText: 'Enviar'
     }
   }
@@ -24,20 +24,27 @@ class Contact extends Component {
     this.setState({
         buttonText: 'Enviando...'
     })
+
+    let {name, email, message} = this.state
   
     let data = {
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message
+        name,
+        email,
+        message
     }
     
-    axios.post('API_URI', data)
+    axios.post('/sendmail', data)
     .then( res => {
-        this.setState({ sent: true }, this.resetForm())
+      console.log(res);
+        this.resetForm()
     })
-    .catch( () => {
-      console.log('Message not sent')
+    .catch( res => {
+      this.setState({class: 'btn-danger', buttonText: "Houve um erro ao enviar sua mensagem"})
     })
+  }
+
+  resetForm(){
+    this.setState({name: '', email: '', message: '', class: 'btn-success', buttonText: 'Mensagem enviada com sucesso!'})
   }
 
   render() {
@@ -57,11 +64,11 @@ class Contact extends Component {
                   <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="form-control" type="email" placeholder="Email" required value={this.state.email} />
                 </div>
               </div>
-              <div className="form-group">
+              <div className="form-group textarea-group">
                 <label className="message sr-only" htmlFor="message"></label>
                 <textarea rows={this.props.width >= 640 && this.props.width < 1024 ? "4" : "8"} onChange={e => this.setState({ message: e.target.value})} name="message" className="form-control" type="text" placeholder="Escreva sua mensagem aqui" value={this.state.message} required/>
               </div>
-              <button type="submit" className="btn btn-secondary">{ this.state.buttonText }</button>
+              <button type="submit" className={"btn " + this.state.class}>{ this.state.buttonText }</button>
             </form>
             {this.props.width < 640 && <Link to="/" className="back-link back-link-contact dark">← voltar</Link>}
           </div>

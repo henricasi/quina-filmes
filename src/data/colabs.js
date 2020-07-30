@@ -129,7 +129,7 @@ export const colabsData = [
     duration: "43",
     format: "vídeo / vídeo-instalação",
     support: "digital 1:1",
-    summary: "cabeça oca espuma de boneca é uma obra teatral sem atores onde figuram corpos, bonecos, manequins e fantasmagorias das mais diversas, explorando a repetição e a substituição enquanto formas poéticas e estratégias de construção e modificação do corpo.",
+    summary: "Vídeo-instalação em três canais produzida a partir da peça \"cabeça oca espuma de boneca\", uma obra teatral sem atores onde figuram corpos, bonecos, manequins e fantasmagorias das mais diversas, explorando a repetição e a substituição enquanto formas poéticas e estratégias de construção e modificação do corpo.",
     crew: [
       {
         name: "vídeo-instalação",

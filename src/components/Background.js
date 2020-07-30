@@ -28,24 +28,23 @@ class Background extends Component {
   }
 
   animateBackground() {
-    let {opacityTop, bgBottom, images, cycleNumber, transition} = this.state;
+    let { bgBottom, images, cycleNumber} = this.state;
     // let futureOpacity = opacityTop - 1;
     let futureCycleNumber = cycleNumber + 1;
     if (futureCycleNumber === 6) {futureCycleNumber = 0}
 
-    // console.log('futureOpacity:', futureOpacity, 'futureCycleNumber:', futureCycleNumber)
     this.setState({
       bgTop: bgBottom,
-      bgBottom: images[futureCycleNumber],
       transition: "none",
-      cycleNumber: futureCycleNumber,
       opacityTop: 1,
+      bgBottom: images[futureCycleNumber],
+      cycleNumber: futureCycleNumber,
     }, () => setTimeout(() => {
       this.setState({
         transition: "opacity 20s",
         opacityTop: 0
       })
-      }, 100)
+      }, 50)
     )
       
     

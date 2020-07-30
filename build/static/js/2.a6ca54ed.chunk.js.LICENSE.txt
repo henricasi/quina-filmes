@@ -4,18 +4,6 @@ object-assign
 @license MIT
 */
 
-/*!
- * weakmap-polyfill v2.0.1 - ECMAScript6 WeakMap polyfill
- * https://github.com/polygonplanet/weakmap-polyfill
- * Copyright (c) 2015-2020 Polygon Planet <polygon.planet.aqua@gmail.com>
- * @license MIT
- */
-
-/*! Native Promise Only
-      v0.8.1 (c) Kyle Simpson
-      MIT License: http://getify.mit-license.org
-  */
-
 /** @license React v0.19.1
  * scheduler.production.min.js
  *

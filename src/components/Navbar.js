@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {NavLink} from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from './useWindowDimensions'
@@ -53,7 +53,7 @@ const Navbar = ({changeBackground, posX, posY, handleChange}) => {
               <NavLink to="/colabs">colaborações</NavLink>
             </li>
             <li className="nav-link">
-              <NavLink to="/sobre">quina filmes</NavLink>
+              <NavLink to="/sobre">quina</NavLink>
             </li>
             <li className="nav-link">
               <NavLink to="/contato">contato</NavLink>

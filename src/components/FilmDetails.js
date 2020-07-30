@@ -148,6 +148,16 @@ class FilmDetails extends Component {
                       <h5 className="details-section-header">elenco</h5>
                       <p className="cast">{cast}</p>
                     </div>}
+                    {/* EXCEPTION 1: FOR CABEÇA OCA */}
+                    {title === "cabeça oca espuma de boneca" && <div>
+                      <h5 className="details-section-header">circulação</h5>
+                      <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
+                        {festivals.map((item, idx) => {
+                          return <li key={idx} className="festivals-list-item w-100">- {item}</li>
+                        })}
+                      </ul>
+                    </div>}
+                    {/* END EXCEPTION 1 */}
                   </div>
 
                   <div className="crew-container">
@@ -165,13 +175,45 @@ class FilmDetails extends Component {
             {/* seção 2*/}
             {festivals && <section className="details-section">
               <div className="details-content-text">
-                {festivals && <div className="details-margin">
+                {festivals && title !== "cabeça oca espuma de boneca" &&
+                <div className="details-margin">
+                  {/* EXCEPTION 2: VER A CHINA */}
+                  { title === "Ver a China" ? (
+                  <div className="details-div">
+                    <div className="summary-cast-container">
+                      <h5 className="details-section-header">circulação</h5>
+                      <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
+                        {festivals.map((item, idx) => {
+                          return <li key={idx} className="festivals-list-item w-100">- {item}</li>
+                        })}
+                      </ul>
+                    </div>
+                    <div className="crew-container">
+                      <div className="details-margin">
+                        <h5 className="details-section-header">fortuna crítica</h5>
+                        <div className="reviews-container">
+                          {reviews.map((item, idx) => {
+                            return <div key={idx} className="review w-100">
+                              {item.link !== "" && <a href={item.link} className="review-link"><strong>{item.name}</strong>, por {item.author}</a>}
+                              {item.link === "" && <p className="review-link"><strong>{item.name}</strong>, por {item.author}</p>}
+                              <p className="review-content">{item.content}</p>
+                            </div>
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  // END EXCEPTION 2
+                  ) : (
+                  <>
                   <h5 className="details-section-header">circulação</h5>
                   <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
                     {festivals.map((item, idx) => {
                       return <li key={idx} className="festivals-list-item">- {item}</li>
                     })}
                   </ul>
+                  </>
+                  )}
                 </div>}
               </div>
 
@@ -179,9 +221,10 @@ class FilmDetails extends Component {
             </section>}
             
             {/* seção 3*/}
-            {reviews && <section className="details-section">
+            {reviews &&
+            <section className="details-section">
               <div className="details-content-text">
-                {reviews && <div className="details-margin">
+                {reviews && title !== "Ver a China" && <div className="details-margin">
                   <h5 className="details-section-header">fortuna crítica</h5>
                   <div className="reviews-container">
                     {reviews.map((item, idx) => {

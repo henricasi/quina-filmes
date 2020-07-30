@@ -32,6 +32,7 @@ const App = () => {
   const [bgHasLoaded, setBgHasLoaded] = useState(false);
   
   const { pathname } = useLocation();
+  
   let history = useHistory();
   
   

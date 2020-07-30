@@ -225,20 +225,8 @@ export const filmesData = [
       content: "Zhao Fangwei"
     },
     {
-      name:"captação",
+      name:"captação e montagem",
       content: "Amanda Carvalho"
-    },
-    {
-      name:"assistência de montagem",
-      content: "Luisa Noriko"
-    },
-    {
-      name:"correção de cor",
-      content: "Caio Antônio"
-    },
-    {
-      name:"edição de som",
-      content: "Lucca Chiavone"
     },
     {
       name:"imagens adicionais china",
@@ -247,6 +235,22 @@ export const filmesData = [
     {
       name:"imagens adicionais brasil",
       content: "Caio Antônio, Francisco Miguez, Maurício Battistuci"
+    },
+    {
+      name:"correção de cor",
+      content: "Caio Antônio"
+    },
+    {
+      name:"motion graphics",
+      content: "Cauê Silvério"
+    },
+    {
+      name:"consultoria de montagem",
+      content: "Luisa Noriko"
+    },
+    {
+      name:"edição de som",
+      content: "Lucca Chiavone"
     },
     {
       name:"canção",
@@ -259,10 +263,6 @@ export const filmesData = [
     {
       name:"mixagem",
       content: "Sandro Dalla Costa"
-    },
-    {
-      name:"motion graphics",
-      content: "Cauê Silvério"
     },
     {
       name:"legenda e tradução",
@@ -316,7 +316,7 @@ export const filmesData = [
         },
         {
           thumb: "/img/china/verachina_banner.jpg",
-          full: "/img/china/verachina_banner.jpg",
+          full: "/img/china/verachina_poster2_full.jpg",
           alt: "Poster"
         },
       ],
@@ -362,16 +362,16 @@ export const filmesData = [
       },
       {
         name:"produção",
-        content: "Amanda Carvalho, Francisco Miguez e Nicolau de Almeida"
+        content: "Amanda Carvalho, Francisco Miguez, Nicolau de Almeida e João Pedro Micheletti Bim"
       },
       {
         name:"montagem",
         content: "Luísa Noriko e Amanda Carvalho"
       },
-      {
-        name:"finalização",
-        content: "Caio Antonio"
-      },
+      // {
+      //   name:"finalização",
+      //   content: "Caio Antonio"
+      // },
     ],
     // festivals: [
     //   "",
@@ -581,23 +581,36 @@ export const filmesData = [
     format: "documentário",
     support: "digital",
     director: "Francisco Miguez",
-    summary: "Uma invenção sem futuro? Três projecionistas de película falam de cinema e do declínio de sua profissão durante uma mostra de filmes dos irmãos Lumière. Quando começou o cinema, quando ele termina?",
+    cast: "José Bezerra, José Cícero, Moacir Rodrigues",
+    summary: "Uma invenção sem futuro? Quando um novo projecionista digital chega, três projecionistas de película falam do declínio de sua profissão durante uma mostra de filmes dos irmãos Lumière. Quando começou o cinema, quando ele termina?",
     crew: [
-      {
-        name: "com",
-        content: "José Bezerra, José Cícero, Moacir Rodrigues"
-      },
+      // {
+      //   name: "com",
+      //   content: "José Bezerra, José Cícero, Moacir Rodrigues"
+      // },
       {
         name: "realização",
         content: "Francisco Miguez"
       },
       {
-        name: "",
-        content: "filmado no CCBB São Paulo ao longo da mostra Lumière Cineasta"
+        name: "produção",
+        content: "Quina filmes"
       },
       {
-        name: "Mostra Lumière Cineasta",
-        content: ""
+        name: "",
+        content: "com a colaboração de Ottavia Delfanti, Amanda Carvalho, Caio Antônio, Luisa Noriko, Mauricio Battistuci"
+      },
+      {
+        name: "correção de cor",
+        content: "Caio Antônio"
+      },
+      {
+        name: "edição de som e mixagem",
+        content: "Nicholas Rabinovitch"
+      },
+      {
+        name: "",
+        content: "filmado no CCBB São Paulo ao longo da mostra Lumière Cineasta"
       },
       {
         name: "curadoria",
@@ -608,8 +621,8 @@ export const filmesData = [
         content: "Marina Pessanha, José de Aguiar"
       },
       {
-        name: "e também",
-        content: "Fabio Miguez, Fernanda Mendes Luiz, João MB Bim, Lucia Miguez, Lucas Reitano, Ottavia Delfanti, Paulo Martins Filho, Pedro Koberle, Victor Maia"
+        name: "agradecimentos",
+        content: "Fabio Miguez, Fernanda Mendes Luiz, João MB Bim, Lucia Miguez, Lucas Reitano, Paulo Martins Filho, Pedro Koberle, Pedro Nishi, Victor Maia"
       },
     ],
     // festivals: [
@@ -637,10 +650,10 @@ export const filmesData = [
     banner: "/img/invencao/umainvencao_still3_1316x740.jpg",
     images: {
       gallery1: {
-        config: "horizontal-3",
+        config: "left-1-right-2",
         data: [
           {
-            thumb: "/img/invencao/thumb-umainvencao_still1.jpg",
+            thumb: "/img/invencao/umainvencao_still1_1316x740.jpg",
             full: "/img/invencao/umainvencao_still1_1316x740.jpg",
             alt: "Still 1"
           },
@@ -650,8 +663,8 @@ export const filmesData = [
             alt: "Still 2"
           },
           {
-            thumb: "/img/invencao/thumb-umainvencao_still3.jpg",
-            full: "/img/invencao/umainvencao_still3_1316x740.jpg",
+            thumb: "/img/invencao/thumb_invencao_still4.jpg",
+            full: "/img/invencao/invencao_still4.jpg",
             alt: "Still 3"
           },
         ],
