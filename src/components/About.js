@@ -7,6 +7,7 @@ const About = (props) => {
   const [imagesHaveLoaded, setImagesHaveLoaded] = useState(false);
 
   useEffect(() => {
+    document.title = "Quina filmes - Quina filmes"
     if (counter === 3) {
       setImagesHaveLoaded(true);
     }
