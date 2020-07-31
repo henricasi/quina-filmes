@@ -445,7 +445,7 @@ export const filmesData = [
     format: "ficção",
     support: "digital",
     cast: "Sofia Maruci, Érika Rocha, Ricardo Teodoro, João Filho",
-    summary: "Ana, uma jovem atriz que mora sozinha, grava self-tapes para um teste de elenco de uma publicidade sobre consultoria empresarial. Sob a orientação de seu agente, ela não mede esforços para conseguir o trabalho.",
+    summary: "Ana, uma jovem atriz que mora sozinha, grava self-tapes para um teste de elenco. Sob a orientação de seu agente, ela não mede esforços para conseguir o trabalho.",
     crew: [
       {
         name:"direção e roteiro",

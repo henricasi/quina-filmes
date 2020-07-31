@@ -254,7 +254,7 @@ export const colabsData = [
     format: "videoarte",
     support: "digital 16:9",
     director: "Mauricio Battistuci",
-    summary: "Nylon bites é um processo de investigação que explora a escuta interna durante o ato de morder nylon e tocá-lo, o som que se propaga pelos ossos do crânio. Com o uso de microfones binaurais voltados para dentro, audibiliza e compartilha o ponto de escuta.",
+    summary: "Nylon bites é parte de um processo de investigação audiovisual que explora a sonoridade da corda de náilon estendida entre pessoa e objeto. Por meio do uso de microfones binaurais, o som que ressoa pelos ossos do crânio de Mariana é compartilhado com o espectador.",
     crew: [
       {
         name: "direção",
