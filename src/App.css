@@ -1264,6 +1264,7 @@ p.review-link {
 
   .details-div {
     display: flex;
+    justify-content: space-between;
   }
 
   .details-margin {
@@ -1272,7 +1273,7 @@ p.review-link {
 
   .summary-cast-container {
     width: 48.5%;
-    margin-right: 3%;
+    /* margin-right: 3%; */
   }
 
   .summary-cast-container div {
@@ -1304,7 +1305,7 @@ p.review-link {
   }
 
   .festivals-list-item {
-    width: 48%;
+    width: 48.5%;
   }
 
   .reviews-container {
@@ -1314,6 +1315,7 @@ p.review-link {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
   }
 
   .review {
