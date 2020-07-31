@@ -838,11 +838,6 @@ p.review-link {
   .desktop-only {
     display: block;
   }
-
-  .bg-menu {
-    margin-top: 5%;
-    width: 20vw;
-  }
   
 
   /* end navbar desktop */

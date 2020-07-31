@@ -11,13 +11,14 @@ class Background extends Component {
     super(props);
     this.state = {
       images: [
-        {src: bg1, posX: 73, posY: 100},
-        {src: bg2, posX: 8, posY: 100},
-        {src: bg3, posX: 74, posY: 100},
         {src: bg4, posX: 0, posY: 100},
-        {src: bg5, posX: 52, posY: 0}],
-      bgTop: {src: bg1, posX: 73, posY: 100},
-      bgBottom: {src: bg2, posX: 8, posY: 100},
+        {src: bg5, posX: 52, posY: 0},
+        {src: bg1, posX: 73, posY: 100},
+        {src: bg3, posX: 74, posY: 100},
+        {src: bg2, posX: 8, posY: 100},
+      ],
+      bgTop: {src: bg4, posX: 0, posY: 100},
+      bgBottom: {src: bg5, posX: 52, posY: 0},
       opacityTop: 1,
       transition: "opacity 20s",
       cycleNumber: 1
