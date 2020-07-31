@@ -134,7 +134,7 @@ class FilmDetails extends Component {
           <div className="details-content">
             {/* seção 1*/}
             <section className="details-section">
-              <div className="details-content-text">
+              <div className="details-content-text details-margin">
                 {this.props.width > 640 && <GoBack></GoBack>}
                 <h3 className="title">{title}</h3>
                 <p className="year-duration">{year}, {format}, {support} {duration && `, ${duration}'`}</p>
