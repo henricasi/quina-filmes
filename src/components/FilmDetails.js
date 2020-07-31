@@ -189,7 +189,7 @@ class FilmDetails extends Component {
                       </ul>
                     </div>
                     <div className="crew-container">
-                      <div className="details-margin">
+                      <div>
                         <h5 className="details-section-header">fortuna crítica</h5>
                         <div className="reviews-container">
                           {reviews.map((item, idx) => {
