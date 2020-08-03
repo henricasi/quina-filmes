@@ -140,7 +140,7 @@ nav {
   top: 0;
   width: 60%;
   height: 100%;
-  padding-top: 30%;
+  padding-top: 40%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -766,7 +766,7 @@ p.review-link {
 
   main {
     width: 75%;
-    max-height: 100vh;
+    max-height: 100%;
     overflow: auto;
   }
 

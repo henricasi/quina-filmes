@@ -6,19 +6,35 @@ import bg3 from '../background3.jpg'
 import bg4 from '../background4.jpg'
 import bg5 from '../background5.jpg'
 
+const bgArray = [
+  {src: bg1, posX: 73, posY: 100},
+  {src: bg2, posX: 8, posY: 100},
+  {src: bg3, posX: 74, posY: 100},
+  {src: bg4, posX: 0, posY: 100},
+  {src: bg5, posX: 52, posY: 0},
+]
+
+const shuffleArray = (array) => {
+  let arrCopy = [...array];
+  for (let i = arrCopy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arrCopy[i], arrCopy[j]] = [arrCopy[j], arrCopy[i]];
+  }
+  return arrCopy;
+}
+
+const shuffledBackgrounds = shuffleArray(bgArray);
+
+console.log(shuffledBackgrounds);
+
+
 class Background extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: [
-        {src: bg4, posX: 0, posY: 100},
-        {src: bg5, posX: 52, posY: 0},
-        {src: bg1, posX: 73, posY: 100},
-        {src: bg3, posX: 74, posY: 100},
-        {src: bg2, posX: 8, posY: 100},
-      ],
-      bgTop: {src: bg4, posX: 0, posY: 100},
-      bgBottom: {src: bg5, posX: 52, posY: 0},
+      images: shuffledBackgrounds,
+      bgTop: shuffledBackgrounds[0],
+      bgBottom: shuffledBackgrounds[1],
       opacityTop: 1,
       transition: "opacity 20s",
       cycleNumber: 1
@@ -26,6 +42,7 @@ class Background extends Component {
     this.animateBackground = this.animateBackground.bind(this);
   }
 
+  
   animateBackground() {
     let { bgBottom, images, cycleNumber} = this.state;
     // let futureOpacity = opacityTop - 1;

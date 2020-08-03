@@ -434,7 +434,7 @@ export const colabsData = [
   {
     title: "Dobras",
     year: "2018",
-    duration: "12'",
+    duration: "12",
     format: "vídeo-dança",
     support: "digital pb",
     director: "Francisco Miguez e Pedro Nishi",
