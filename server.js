@@ -26,11 +26,11 @@ app.get('/api/getList', (req,res) => {
 // Nodemailer
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
+  host: 'smtp.umbler.com',
   port: 587,
   auth: {
-      user: 'ellis.kovacek21@ethereal.email',
-      pass: 'm1eGrFf57aQGn1txXr'
+      user: 'contato@quinafilmes.com.br',
+      pass: process.env.MAIL_PASS
   }
 });
 
@@ -38,7 +38,7 @@ app.post('/sendmail', (req, res, next) => {
   let {name, email, message} = req.body;
   let mail = {
     from: `${name} <${email}>`,
-    to: 'Contato Quina <ellis.kovacek21@ethereal.email>',
+    to: 'Quina filmes <contato@quinafilmes.com.br>',
     subject: "Formulário de contato",
     text: message
   }
