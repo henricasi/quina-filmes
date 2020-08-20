@@ -36,11 +36,12 @@ const transporter = nodemailer.createTransport({
 
 app.post('/sendmail', (req, res, next) => {
   let {name, email, message} = req.body;
+  let content = `Nome: ${name} \n Email: ${email} \n Mensagem: ${message}`;
   let mail = {
     from: `${name} <${email}>`,
     to: 'Quina filmes <contato@quinafilmes.com.br>',
     subject: "Formulário de contato",
-    text: message
+    text: content
   }
 
   transporter.sendMail(mail, (err, data) => {
