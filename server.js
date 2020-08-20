@@ -48,7 +48,7 @@ app.post('/sendmail', (req, res, next) => {
       res.status(500).json({
         message: 'Houve um erro ao enviar a mensagem.'
       })
-      console.log('Error sending message')
+      console.log('Error sending message:', err)
     } else {
       res.json({
         message: 'Mensagem enviada com sucesso!'
