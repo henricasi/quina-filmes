@@ -457,7 +457,7 @@ export const filmesData = [
       },
       {
         name:"produção",
-        content: "Amanda Carvalho, Francisco Miguez e Mauricio Battistuci"
+        content: "Amanda Carvalho, Francisco Miguez"
       },
       {
         name:"assistente de direção",
@@ -468,8 +468,8 @@ export const filmesData = [
         content: "Luisa Noriko"
       },
       {
-        name:"assistentes de produção",
-        content: "Júlia Fávero, Fernando Borba e Francisco Grasso"
+        name:"assistente de produção",
+        content: "Luísa Nico"
       },
       {
         name:"direção de fotografia",
