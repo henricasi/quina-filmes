@@ -33,9 +33,9 @@ const About = (props) => {
               <div className="media-links-container" >
                 <h5 className="details-section-header media-links-header">siga a quina</h5>
                 <div className="media-link-group">
-                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/fb.png" alt="Facebook"/></a>
-                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.instagram.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/ig.png" alt="Instagram"/></a>
-                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.vimeo.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/vimeo.png" alt="Vimeo"/></a>
+                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/iconfb.png" alt="Facebook"/></a>
+                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.instagram.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/iconig.png" alt="Instagram"/></a>
+                  <a className="media-link" target="_blank" rel="noopener noreferrer" href="http://www.vimeo.com/quinafilmes"><img onLoad={() => setCounter(counter + 1)} className="icon" src="/img/icon/iconvimeo.png" alt="Vimeo"/></a>
                 </div>
               </div>
           </section>
@@ -52,11 +52,6 @@ const About = (props) => {
                 <p><strong>Mauricio Battistuci</strong> é diretor, roteirista e produtor. Entre outros projetos com a Quina filmes, escreveu e dirigiu junto a Francisco Miguez o curta-metragem "Ronda" (2019). Também realizou trabalhos audiovisuais e de assistência de pesquisa em dramaturgia junto à Cia do Latão de teatro de São Paulo. Foi produtor e curador do CINUSP (Cinema da Universidade de São Paulo), realizando mostras, exibições e debates. Atualmente trabalha na direção do curta-metragem "Ensaios de Ana" em fase de pós-produção e na dramaturgia da peça infantil "Mancala ou as Sementes de Akin", comissionada para o 21° Cultura Inglesa Festival.</p>
               </div>
             </div>
-            {/* <div className="gallery">
-            <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_v.jpg" alt="a quina" className="thumb-img about-img"/></a>
-            <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
-            <a href="/img/filler_v.jpg" data-lightbox="gallery" className="thumb-link"><img onLoad={() => setCounter(counter + 1)} src="/img/filler_h.jpg" alt="a quina" className="thumb-img about-img"/></a>
-            </div> */}
           {props.width < 640 && <Link to="/" className="back-link dark">← voltar</Link>}
           </section>
         </div>

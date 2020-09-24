@@ -274,9 +274,10 @@ export const filmesData = [
     }
   ],
   festivals: [
-    "Mostra Em Trânsito do 29º Festival Internacional de Curtas do Rio de Janeiro - Curta Cinema",
-    "5º Toró - Festival Audiovisual Universitário de Belém",
-    "Competição Brasileira de Curtas-Metragens do É Tudo Verdade 2020 - 25º Festival Internacional de Documentários",
+    "Curta Cinema | 29º Festival Internacional de Curtas do Rio de Janeiro - Mostra Em Trânsito (Rio de Janeiro RJ / novembro 2019)",
+    "Toró | 5º Festival Audiovisual Universitário de Belém (Belém PA / novembro 2019)",
+    "É Tudo Verdade | 25º Festival Internacional de Documentários - Competição Brasileira de Curtas-Metragens (setembro 2020)",
+    "CineOP | 15ª Mostra de Cinema de Ouro Preto - Mostra TV  UFOP (setembro 2020)",
   ],
   reviews: [
     {
