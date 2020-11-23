@@ -106,25 +106,25 @@ export const filmesData = [
       // },
     ],
     festivals: [
-      "XV Panorama Internacional Coisa de Cinema - Mostra Competitiva (Salvador BA / novembro 2019)",
-      "III Mostra Sesc de Cinema – Panorama Paulista (São Paulo SP / novembro e dezembro 2019)",
-      "FestCurtasBH | 21º Festival Internacional de Curtas de Belo Horizonte - Mostra Competitiva Nacional – (Belo Horizonte MG / setembro 2019)",
-      "Primeiro Plano | Festival de Cinema de Juiz de Fora e Mercocidades – Mostra Mercocidades (Juiz de Fora MG, dezembro 2019)",
-      "FBCU | 21º Festival Brasileiro de Cinema Universitário - Mostra Competitiva (Niterói RJ / setembro 2019) – Prêmio Leit Motiff",
-      "Metrô | 3º Festival do Cinema Universitário Brasileiro - Mostra Panorama (Curitiba PA / novembro 2019)",
-      "Toró | 5º Festival Audiovisual Universitário de Belém – Mostra Competitiva (Belém PR / novembro 2019)",
-      "Intersessões | 2º Festival de Cinema Itinerante – Seleção Oficial (Ubá MG / dezembro 2019)",
-      "FIEC | 19 Festival Internacional de Escuelas de Cine (Montevideo, Uruguai / agosto 2019)",
-      "FICU | 2º Festival Internacional de Cine Universitario (Buenos Aires, Argentina / maio 2019)",
-      "Muestra FEISAL | 7ª Mostra Federação das Escolas da Imagem e do Som da América Latina (plataforma online / 2018-2019)",
-      "CINENOVA | 2º Portugal Interuniversity Film Festival – Mostra Competitiva Internacional (Lisboa, Portugal / março 2020)"
+      {content: "FBCU | 21º Festival Brasileiro de Cinema Universitário - Mostra Competitiva (Niterói RJ / setembro 2019) – Prêmio Leit Motiff", won: true},
+      {content: "XV Panorama Internacional Coisa de Cinema - Mostra Competitiva (Salvador BA / novembro 2019)", won: false},
+      {content: "III Mostra Sesc de Cinema – Panorama Paulista (São Paulo SP / novembro e dezembro 2019)", won: false},
+      {content: "FestCurtasBH | 21º Festival Internacional de Curtas de Belo Horizonte - Mostra Competitiva Nacional – (Belo Horizonte MG / setembro 2019)", won: false},
+      {content: "Primeiro Plano | Festival de Cinema de Juiz de Fora e Mercocidades – Mostra Mercocidades (Juiz de Fora MG, dezembro 2019)", won: false},
+      {content: "Metrô | 3º Festival do Cinema Universitário Brasileiro - Mostra Panorama (Curitiba PR / novembro 2019)", won: false},
+      {content: "Toró | 5º Festival Audiovisual Universitário de Belém – Mostra Competitiva (Belém PA / novembro 2019)", won: false},
+      {content: "Intersessões | 2º Festival de Cinema Itinerante – Seleção Oficial (Ubá MG / dezembro 2019)", won: false},
+      {content: "FIEC | 19 Festival Internacional de Escuelas de Cine (Montevideo, Uruguai / agosto 2019)", won: false},
+      {content: "FICU | 2º Festival Internacional de Cine Universitario (Buenos Aires, Argentina / maio 2019)", won: false},
+      {content: "Muestra FEISAL | 7ª Mostra Federação das Escolas da Imagem e do Som da América Latina (plataforma online / 2018-2019)", won: false},
+      {content: "CINENOVA | 2º Portugal Interuniversity Film Festival – Mostra Competitiva Internacional (Lisboa, Portugal / março 2020)", won: false}
     ],
     reviews: [
       {
-        name: "21º FBCU 2019 – Prêmio LeitMotif",
-        author: "Equipe LeitMotif",
-        content: "Ronda, filme de Mauricio Battistuci e Francisco Miguez, parece buscar não dicotomizar as questões internas do indivíduo e da cidade, mas encontrar suas raras intersecções e espaços em comum. A construção auditiva da cidade é invasiva, caótica, não procura polidez ou \"educação\" sonora. O metal range, buzinas soam sobre diálogos, a serra de mão, depois o bafo dos carros, por último uma voz, que briga por espaço. Primeiro os gritos do passageiro de metrô que batalha contra o espaço fechado, depois outro profeta que luta contra o Golias do espaço aberto. Os espaços da cidade são construções arquitetônicas reservadas a não-construção pelo universo visual - que se reserva a planos fixos e pouco reveladores, mas construídos em nossa percepção sônica. O que não vemos dos espaços, ouvimos. E o que não ouvimos ou vemos do protagonista, a cidade parece nos contar. Enquanto batalha os sons do dia, as comunicações em celulares e dentro de carros e em ruas ruidosas não são tão diferentes de sua ronda quase quixotesca em busca de um lugar onde estar em um espaço que parece completamente tomado. O espaço encontrado, afinal, traduz-se não tanto na imagem, mas através de uma nova arquitetura sonora que reorganiza os espaços que parecem ali já existir e constrói novos espaços negativos, e define, finalmente, um lugar para o protagonista antes perdido.",
-        link: ""
+        name: "21º FESTCURTASBH - No fracasso das relações cotidianas, a negritude há de nos salvar?",
+        author: "Gabriel Araújo",
+        content: "Em época de uberização do trabalho, é irônico perceber que o único respiro que o curta nos traz vem dentro de um pretenso uber; quando uma mulher, engalfinhada numa rotina intensa de um emprego supostamente proeminente, cria uma utopia momentânea para que ela enfim possa apenas descansar.",
+        link: "http://www.festivaldecurtasbh.com.br/critica/no-fracasso-das-relacoes-cotidianas-a-negritude-ha-de-nos-salvar/"
       },
       {
         name: "21º FESTCURTASBH – Catálogo, p. 43",
@@ -137,6 +137,12 @@ export const filmesData = [
         author: "Gabriel Morais",
         content: "A recusa é pedagogicamente acompanhada por uma reorganização do pacto de representação, que associa os limites das ultrapassadas concepções das relações de trabalho aos limites das ultrapassadas abordagens do drama social realista, ambas como formas esgarçadas de enfrentar as novas questões do mundo e do trabalho. O filme vira-se, portanto, para uma investigação acerca de modelos estéticos e políticos de enfrentamento que estejam a par da reconfiguração dos desafios.",
         link: "http://revistacinetica.com.br/nova/deus-ajuda-quem-cedo-madruga-consideracoes-tardias-sobre-o-21o-festival-brasileiro-de-cinema-universitario/"
+      },
+      {
+        name: "21º FBCU 2019 – Prêmio LeitMotif",
+        author: "Equipe LeitMotif",
+        content: "Ronda, filme de Mauricio Battistuci e Francisco Miguez, parece buscar não dicotomizar as questões internas do indivíduo e da cidade, mas encontrar suas raras intersecções e espaços em comum. A construção auditiva da cidade é invasiva, caótica, não procura polidez ou \"educação\" sonora. O metal range, buzinas soam sobre diálogos, a serra de mão, depois o bafo dos carros, por último uma voz, que briga por espaço. Primeiro os gritos do passageiro de metrô que batalha contra o espaço fechado, depois outro profeta que luta contra o Golias do espaço aberto. Os espaços da cidade são construções arquitetônicas reservadas a não-construção pelo universo visual - que se reserva a planos fixos e pouco reveladores, mas construídos em nossa percepção sônica. O que não vemos dos espaços, ouvimos. E o que não ouvimos ou vemos do protagonista, a cidade parece nos contar. Enquanto batalha os sons do dia, as comunicações em celulares e dentro de carros e em ruas ruidosas não são tão diferentes de sua ronda quase quixotesca em busca de um lugar onde estar em um espaço que parece completamente tomado. O espaço encontrado, afinal, traduz-se não tanto na imagem, mas através de uma nova arquitetura sonora que reorganiza os espaços que parecem ali já existir e constrói novos espaços negativos, e define, finalmente, um lugar para o protagonista antes perdido.",
+        link: ""
       },
     ],
     english: {
@@ -274,12 +280,37 @@ export const filmesData = [
     }
   ],
   festivals: [
-    "Curta Cinema | 29º Festival Internacional de Curtas do Rio de Janeiro - Mostra Em Trânsito (Rio de Janeiro RJ / novembro 2019)",
-    "Toró | 5º Festival Audiovisual Universitário de Belém (Belém PA / novembro 2019)",
-    "É Tudo Verdade | 25º Festival Internacional de Documentários - Competição Brasileira de Curtas-Metragens (setembro 2020)",
-    "CineOP | 15ª Mostra de Cinema de Ouro Preto - Mostra TV  UFOP (setembro 2020)",
+    {content: "Menção Honrosa da Competição Brasileira de Curtas-Metragens (Júri Oficial) do 25º Festival É Tudo Verdade", won: true},
+    {content: "Curta Cinema | 29º Festival Internacional de Curtas do Rio de Janeiro - Mostra Em Trânsito (Rio de Janeiro RJ / novembro 2019)", won: false},
+    {content: "Toró | 5º Festival Audiovisual Universitário de Belém (Belém PA / novembro 2019)", won: false},
+    {content: "É Tudo Verdade | 25º Festival Internacional de Documentários - Competição Brasileira de Curtas-Metragens (setembro 2020)", won: false},
+    {content: "CineOP | 15ª Mostra de Cinema de Ouro Preto - Mostra TV  UFOP (setembro 2020)", won: false},
   ],
   reviews: [
+    {
+      name: `Um festival de renovação`,
+      author: "Amir Labaki",
+      content: `“Ver A China” conquistou, por sua vez, uma menção para a estreante Amanda Carvalho em seu empenho ascético de decifrar as imagens registradas em torno da produção de chá na província de Fujian.`,
+      link: "http://etudoverdade.com.br/br/noticia/2077-Um-Festival-de-Renovacao"
+    },
+    {
+      name: `Anúncio de prêmio de Menção Honrosa`,
+      author: "Júri Oficial É Tudo Verdade",
+      content: `Pela maturidade com que se serve dos recursos narrativos propriamente documentais, pela sensibilidade em lidar com o inefável da experiência da alteridade, recebe menção honrosa o curta-metragem Ver a China, de Amanda Carvalho.`,
+      link: "https://youtu.be/1kUBzWIgtb0?t=2226"
+    },
+    {
+      name: `Filme de ex-aluna conquista Menção Honrosa no Festival É Tudo Verdade`,
+      author: "Jornal da ECA",
+      content: `O resultado foi apresentado como seu TCC para obtenção do bacharelado na ECA e agora segue sua carreira nos circuitos de festivais, iniciada com a seleção para a mostra competitiva e a conquista da menção honrosa em um dos mais importantes eventos mundiais dedicados ao cinema documental.`,
+      link: "http://www3.eca.usp.br/noticias/filme-de-ex-aluna-integra-programa-o-do-festival-tudo-verdade-2020"
+    },
+    {
+      name: `Filme de ex-aluna da USP ganha menção honrosa no É Tudo Verdade`,
+      author: "Jornal da USP",
+      content: `"Voltei para o Brasil ainda instigada por essa experiência e, no meio de 2018, comecei a executar esse filme, que também usava o material filmado na viagem", conta Amanda. Apesar de acreditar no valor da produção, ela relata que poder participar do É Tudo Verdade foi uma grande surpresa. "A menção honrosa foi a cereja do bolo, mas estar ali dividindo o festival com outros realizadores, mesmo que on-line, já foi muito importante."`,
+      link: "https://jornal.usp.br/cultura/festival-de-gramado-premia-ex-alunos-da-usp/"
+    },
     {
       name: `Com mostras online, Festival "É Tudo Verdade" traz diversos filmes de ecanos`,
       author: " Amanda Ferreira e Maria Eduarda Nogueira",
@@ -375,9 +406,9 @@ export const filmesData = [
       // },
     ],
     // festivals: [
-    //   "",
-    //   "",
-    //   "",
+    //   {content: "", won: false},
+    //   {content: "", won: false},
+    //   {content: "", won: false},
     // ],
     // reviews: [
     //   {
@@ -510,9 +541,9 @@ export const filmesData = [
       },
     ],
     // festivals: [
-    //   "",
-    //   "",
-    //   "",
+    //   {content: "", won: false},
+    //   {content: "", won: false},
+    //   {content: "", won: false},
     // ],
     // reviews: [
     //   {
@@ -627,9 +658,9 @@ export const filmesData = [
       },
     ],
     // festivals: [
-    //   "",
-    //   "",
-    //   "",
+    //   {content: "", won: false},
+    //   {content: "", won: false},
+    //   {content: "", won: false},
     // ],
     // reviews: [
     //   {
@@ -697,9 +728,9 @@ const template =
       },
     ],
     festivals: [
-      "",
-      "",
-      "",
+      {content: "", won: false},
+      {content: "", won: false},
+      {content: "", won: false},
     ],
     reviews: [
       {

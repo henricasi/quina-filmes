@@ -29,8 +29,10 @@ class FilmDetails extends Component {
 
     if (path === "/filmes/:url") {
       foundFilm = filmesData.find(filme => filme.url === url);
+      foundFilm.filmType = "film";
     } else if (path === "/colabs/:url") {
       foundFilm = colabsData.find(filme => filme.url === url);
+      foundFilm.filmType = "colab";
     }
 
     const {title, images, video, festivals, reviews} = foundFilm;
@@ -107,7 +109,7 @@ class FilmDetails extends Component {
 
 
   render() {
-    const {title, year, duration, format, support, summary, cast, crew, festivals, reviews, images, video} = this.state.film;
+    const {title, year, duration, format, support, summary, cast, crew, festivals, reviews, images, video, filmType} = this.state.film;
     const {imagesHaveLoaded} = this.state;
     return (
       <div className="page">
@@ -137,7 +139,8 @@ class FilmDetails extends Component {
               <div className="details-content-text details-margin">
                 {this.props.width > 640 && <GoBack></GoBack>}
                 <h3 className="title">{title}</h3>
-                <p className="year-duration">{year}, {format}, {support} {duration && `, ${duration}'`}</p>
+                <p className={filmType === "colab" ? "year-duration year-duration-less-margin" : "year-duration"}>{year}, {format}, {support} {duration && `, ${duration}'`}</p>
+                {filmType === "colab" && <p className="colab-details">{this.state.film.colabDetails}</p>}
                 <div className="details-div">
                   <div className="summary-cast-container">
                     <div>
@@ -153,7 +156,7 @@ class FilmDetails extends Component {
                       <h5 className="details-section-header">circulação</h5>
                       <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
                         {festivals.map((item, idx) => {
-                          return <li key={idx} className="festivals-list-item w-100">- {item}</li>
+                          return <li key={idx} className="festivals-list-item w-100">- {item.content}</li>
                         })}
                       </ul>
                     </div>}
@@ -177,7 +180,7 @@ class FilmDetails extends Component {
               <div className="details-content-text">
                 {festivals && title !== "cabeça oca espuma de boneca" &&
                 <div className="details-margin">
-                  {/* EXCEPTION 2: VER A CHINA */}
+                  {/* EXCEPTION 2: VER A CHINA
                   { title === "Ver a China" ? (
                   <div className="details-div">
                     <div className="summary-cast-container">
@@ -190,7 +193,7 @@ class FilmDetails extends Component {
                     </div>
                     <div className="crew-container">
                       <div>
-                        <h5 className="details-section-header">fortuna crítica</h5>
+                        <h5 className="details-section-header">críticas e menções</h5>
                         <div className="reviews-container">
                           {reviews.map((item, idx) => {
                             return <div key={idx} className="review w-100">
@@ -205,15 +208,15 @@ class FilmDetails extends Component {
                   </div>
                   // END EXCEPTION 2
                   ) : (
-                  <>
+                  <> */}
                   <h5 className="details-section-header">circulação</h5>
-                  <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 3 + "rem"} : {}}>
+                  <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 2.8 + "rem"} : {}}>
                     {festivals.map((item, idx) => {
-                      return <li key={idx} className="festivals-list-item">- {item}</li>
+                      return <li key={idx} className="festivals-list-item" style={ item.won ? {fontWeight: "bold"} : {}}>- {item.content}</li>
                     })}
                   </ul>
-                  </>
-                  )}
+                  {/* </> */}
+                  {/* )} */}
                 </div>}
               </div>
 
@@ -224,9 +227,10 @@ class FilmDetails extends Component {
             {reviews &&
             <section className="details-section">
               <div className="details-content-text">
-                {reviews && title !== "Ver a China" && <div className="details-margin">
-                  <h5 className="details-section-header">fortuna crítica</h5>
-                  <div className="reviews-container">
+                {reviews && <div className="details-margin">
+                  <h5 className="details-section-header">críticas e menções</h5>
+                  <div className="reviews-container" style={title === "Ver a China" && this.props.width > 1025 ? {maxHeight: "60vh"} : {}}>
+                    {/* a tag style acima é uma gambiarra */}
                     {reviews.map((item, idx) => {
                       return <div key={idx} className="review">
                         {item.link !== "" && <a href={item.link} className="review-link"><strong>{item.name}</strong>, por {item.author}</a>}

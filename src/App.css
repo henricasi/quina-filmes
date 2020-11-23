@@ -359,6 +359,16 @@ main {
   margin-bottom: 1.6rem;
 }
 
+.year-duration-less-margin {
+  margin-bottom: 0.5rem;
+}
+
+.colab-details {
+  /* font-style: italic; */
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
 .details-section-header {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3rem;

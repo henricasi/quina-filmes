@@ -5,6 +5,7 @@ export const colabsData = [
     duration: "7",
     format: "videodança",
     support: "digital 16:9",
+    colabDetails: "Colaboração com a coreógrafa e dançarina Bibi Dória.",
     summary: "Todos os Pontos da Curva abre espaço para o movimento impermanente. Dizemos impermanente como quem diz sem rumo, sem norte, sem prumo. Um movimento que não tem bem de onde sair e nem muito certo para onde chegar. Em Todos os Pontos da Curva o diálogo entre a dança e a montagem ocorre em meio a suspensão. Na fuga da inércia e na busca pelo constante recomeço.",
     crew: [
       {
@@ -57,16 +58,16 @@ export const colabsData = [
       },
     ],
     festivals: [
-      "Dança em Foco | festival internacional de vídeo & dança (platadorma online / 2019 - 2020)",
-      "InShadow | 11ª Lisbon ScreenDance Festival – Programa de instalações loop I (Lisboa/ dezembro 2019)",
-      "IDFF | 8th International Dance Film Festival Brussels (Bruxelas, Bélgica / outubro 2019)",
-      "CODEC | International Experimental Film and Video Festival (Cidade do México, México / novembro 2019)",
-      "Cuerpo Digital: 8º Festival Internacional Cuerpo Video Danza y Tecnología (Cochabamba, Bolívia / agosto 2019)",
-      "MovImages | International Video Dance Festival Dance Lab (Nicósia, Chipre / outubro 2019)",
-      "Corpo-Imagem: Criações Coreográficas Interdisciplinares (Sesc – Campinas - julho 2019)",
-      "Equinoxio | 21º Festival Universitario de Cine y Audiovisuales (Bogotá, Colômbia / setembro 2019)",
-      "FIVM2019 | Festival VideoMovimiento – CineDanza (Bogotá, Colômbia / setembro 2019)",
-      "Sans Souci | 17º Festival of Dance Cinema – 2ª Edição Brasileira (Boulder, USA / agosto 2020)"
+      {content: "Sans Souci | 17º Festival of Dance Cinema – 2ª Edição Brasileira (Boulder, USA / agosto -2020)", won: false},
+      {content: "Dança em Foco | festival internacional de vídeo & dança (platadorma online / 2019 - 2020)", won: false},
+      {content: "InShadow | 11ª Lisbon ScreenDance Festival – Programa de instalações loop I (Lisboa/ dezembro 2019)", won: false},
+      {content: "CODEC | International Experimental Film and Video Festival (Cidade do México, México / novembro 2019)", won: false},
+      {content: "IDFF | 8th International Dance Film Festival Brussels (Bruxelas, Bélgica / outubro 2019)", won: false},
+      {content: "MovImages | International Video Dance Festival Dance Lab (Nicósia, Chipre / outubro 2019)", won: false},
+      {content: "Equinoxio | 21º Festival Universitario de Cine y Audiovisuales (Bogotá, Colômbia / setembro 2019)", won: false},
+      {content: "FIVM2019 | Festival VideoMovimiento – CineDanza (Bogotá, Colômbia / setembro 2019)", won: false},
+      {content: "Cuerpo Digital: 8º Festival Internacional Cuerpo Video Danza y Tecnología (Cochabamba, Bolívia / agosto 2019)", won: false},
+      {content: "Corpo-Imagem: Criações Coreográficas Interdisciplinares (Sesc – Campinas - julho 2019)", won: false},
     ],
     // reviews: [
     //   {
@@ -129,6 +130,7 @@ export const colabsData = [
     duration: "43",
     format: "vídeo / vídeo-instalação",
     support: "digital 1:1",
+    colabDetails: "Colaboração com o artista visual Ilê Sartuzi de adaptação audiovisual da peça homônima para a exposição \"Amarradona\", no Espaço das Artes USP.",
     summary: "Vídeo-instalação em três canais produzida a partir da peça \"cabeça oca espuma de boneca\", uma obra teatral sem atores onde figuram corpos, bonecos, manequins e fantasmagorias das mais diversas, explorando a repetição e a substituição enquanto formas poéticas e estratégias de construção e modificação do corpo.",
     crew: [
       {
@@ -185,7 +187,7 @@ export const colabsData = [
       }
     ],
     festivals: [
-      `"Amarradona", Espaço das Artes USP - dezembro/2019`,
+      {content: `"Amarradona", Espaço das Artes USP - dezembro/2019`, won: false},
     ],
     // reviews: [
     //   {
@@ -253,7 +255,7 @@ export const colabsData = [
     duration: "24",
     format: "videoarte",
     support: "digital 16:9",
-    director: "Mauricio Battistuci",
+    colabDetails: "Colaboração com a artista sonora Mariana Carvalho para a exposição \"Sons de Silício: exposição de arte sonora\", Centro Universitário Maria Antônia.",
     summary: "Nylon bites é parte de um processo de investigação audiovisual que explora a sonoridade da corda de náilon estendida entre pessoa e objeto. Por meio do uso de microfones binaurais, o som que ressoa pelos ossos do crânio de Mariana é compartilhado com o espectador.",
     crew: [
       {
@@ -290,7 +292,8 @@ export const colabsData = [
       },
     ],
     festivals: [
-      `"Sons de Silício: exposição de arte sonora", Centro Universitário Maria Antônia, 13.09 a 13.12 de 2019.`,
+      {content: "DYSTOPIE Sound Art Festival 2020 - Berlin, Alemanha / novembro 2020", won: false},
+      {content: `"Sons de Silício: exposição de arte sonora", Centro Universitário Maria Antônia, 13.09 a 13.12 de 2019.`, won: false},
     ],
     // reviews: [
     //   {
@@ -353,7 +356,8 @@ export const colabsData = [
     duration: "12",
     format: "performance",
     support: "digital",
-    summary: "performance de 69 minutos realizada por Mariana Carvalho durante ¿Música? 12",
+    colabDetails: "Colaboração com a artista Mariana Carvalho em sua performance de 69 minutos durante ¿Música? 12",
+    summary: "Experimentações em piano preparado com fios de náilon, breu, agulhas e outros.",
     crew: [
       {
         name: "direção audiovisual",
@@ -381,9 +385,9 @@ export const colabsData = [
       },
     ],
     // festivals: [
-    //   "",
-    //   "",
-    //   "",
+    //   {content: "", won: false},
+    //   {content: "", won: false},
+    //   {content: "", won: false},
     // ],
     // reviews: [
     //   {
@@ -437,8 +441,8 @@ export const colabsData = [
     duration: "12",
     format: "vídeo-dança",
     support: "digital pb",
-    director: "Francisco Miguez e Pedro Nishi",
     cast: "Ana Paula Camargo, Diego de Paulo, Nielson Souza, Morgana Cappellari e Yoshi Suzuki",
+    colabDetails: "Parceria entre Associação Pró-Dança / São Paulo Companhia de Dança e Departamento de Cinema, Rádio e Televisão / Escola de Comunicação e Artes da USP, que produziu três vídeo-danças, com direção geral de Cristian Borges. \"Dobras\" foi dirigido por Francisco Miguez e Pedro Nishi e montado por Luisa Noriko.",
     summary: "Num estúdio espaço nu um cinza médio pinta o fundo cru de um corpo só.",
     crew: [
       // {
@@ -499,12 +503,12 @@ export const colabsData = [
       // },
     ],
     festivals: [
-      "Kinoforum | 30º Festival Internacional de Curtas Metragens de São Paulo (Brasil /agosto 2019) – Prêmio Melhores do Público",
-      "Dança em Foco | festival internacional de vídeo & dança (online / 2019)",
-      "Frame Rush | (Londres, Inglaterra / fevereiro 2019)",
-      "EIVV | V Meeting on Videodance and Videoperformance (Valencia, Espanha / setembro 2018)",
-      "Flatlands Dance Film Festival (Illinois, EUA / 2018)",
-      "Guiar | (Recife, Brasil / outubro 2018)"
+      {content: "Kinoforum | 30º Festival Internacional de Curtas Metragens de São Paulo (Brasil /agosto 2019) – Prêmio Melhores do Público", won: true},
+      {content: "Dança em Foco | festival internacional de vídeo & dança (online / 2019)", won: false},
+      {content: "Frame Rush | (Londres, Inglaterra / fevereiro 2019)", won: false},
+      {content: "EIVV | V Meeting on Videodance and Videoperformance (Valencia, Espanha / setembro 2018)", won: false},
+      {content: "Flatlands Dance Film Festival (Illinois, EUA / 2018)", won: false},
+      {content: "Guiar | (Recife, Brasil / outubro 2018)", won: false},
     ],
     // reviews: [
     //   {
@@ -579,9 +583,9 @@ const template =
       },
     ],
     festivals: [
-      "",
-      "",
-      "",
+      {content: "", won: false},
+      {content: "", won: false},
+      {content: "", won: false},
     ],
     reviews: [
       {
