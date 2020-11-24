@@ -317,6 +317,10 @@ main {
   /* font-size: 14px; */
 }
 
+.details-margin {
+  margin-bottom: 1.2rem;
+}
+
 .back-link {
   width: 100%;
   margin-top: 1vh;
@@ -364,7 +368,7 @@ main {
 }
 
 .colab-details {
-  /* font-style: italic; */
+  text-align: justify;
   margin-bottom: 1.6rem;
   width: 100%;
 }
@@ -387,10 +391,14 @@ main {
 .gallery {
   display: flex;
   flex-direction: column;
+  /* margin-bottom: 4vh; */
+}
+
+.details-section {
   margin-bottom: 4vh;
 }
 
-.details-section:last-of-type > .gallery {
+.details-section:last-of-type{
   margin-bottom: 0vh;
 }
 
@@ -443,7 +451,7 @@ main {
 }
 
 .review {
-  margin-top: 5vh;
+  margin-top: 1.3rem;
 }
 
 .review-link {
@@ -848,9 +856,6 @@ p.review-link {
   .desktop-only {
     display: block;
   }
-  
-
-  /* end navbar desktop */
 
   .page-title {
     text-align: left;
@@ -935,12 +940,19 @@ p.review-link {
     /* left: 5%; */
   }
 
-  .details-section {
-    /* display: flex; */
-    /* justify-content: space-between; */
+  .colab-details {
+    width: 48.5%;
   }
 
-  .details-section:last-of-type > .gallery {
+  .crew-container {
+    margin-bottom: 0;
+  }
+
+  .details-section {
+    margin-bottom: 1vh;
+  }
+
+  .details-section:last-of-type {
     margin-bottom: 2vh;
   }
   
@@ -977,7 +989,7 @@ p.review-link {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
     /* max-height: 50vh; */
   }
   
@@ -1273,7 +1285,7 @@ p.review-link {
   }
 
   .details-margin {
-    margin-bottom: 0.8rem;
+    /* margin-bottom: 2rem; */
   }
 
   .summary-cast-container {
@@ -1300,31 +1312,32 @@ p.review-link {
 
 
   .festivals-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    column-count: 2;
+    column-gap: 3%;
+    /* display: grid;
+    grid-template-columns: 48.5% 48.5%; */
     justify-content: space-between;
     align-content: space-between;
-    max-height: 50vh;
     margin-bottom: 2vh;
-  }
-
-  .festivals-list-item {
-    width: 48.5%;
   }
 
   .reviews-container {
     width: 100%;
-    max-height: 80vh;
+    /* display: grid; */
+    column-count: 2;
+    column-gap: 3%;
+    /* grid-template-columns: 48.5% 48.5%; */
+    /* max-height: 80vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     justify-content: space-between;
     align-content: space-between;
   }
 
   .review {
-    width: 48.5%;
+    width: 100%;
+    display: inline-block;
     margin-top: 0;
   }
 

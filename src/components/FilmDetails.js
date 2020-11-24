@@ -210,11 +210,11 @@ class FilmDetails extends Component {
                   ) : (
                   <> */}
                   <h5 className="details-section-header">circulação</h5>
-                  <ul className="festivals-list" style={this.props.width > 1025 && festivals.length > 4 ? {maxHeight: festivals.length/2 * 2.8 + "rem"} : {}}>
+                  <div className="festivals-list">
                     {festivals.map((item, idx) => {
-                      return <li key={idx} className="festivals-list-item" style={ item.won ? {fontWeight: "bold"} : {}}>- {item.content}</li>
+                      return item.won ? <li key={idx} dangerouslySetInnerHTML={{__html: item.content}} className="festivals-list-item"></li> : <li key={idx} className="festivals-list-item">- {item.content}</li>
                     })}
-                  </ul>
+                  </div>
                   {/* </> */}
                   {/* )} */}
                 </div>}
@@ -229,9 +229,10 @@ class FilmDetails extends Component {
               <div className="details-content-text">
                 {reviews && <div className="details-margin">
                   <h5 className="details-section-header">críticas e menções</h5>
-                  <div className="reviews-container" style={title === "Ver a China" && this.props.width > 1025 ? {maxHeight: "60vh"} : {}}>
+                  <div className="reviews-container">
                     {/* a tag style acima é uma gambiarra */}
                     {reviews.map((item, idx) => {
+                      // if (this.props.width > 1025 && title === "Ronda" && idx === 0) {return <div className="review" style={{gridRowStart: 1, gridRowEnd: 4}}><p className="review-link"><strong>{item.name}</strong>, por {item.author}</p><p className="review-content">{item.content}</p></div>}
                       return <div key={idx} className="review">
                         {item.link !== "" && <a href={item.link} className="review-link"><strong>{item.name}</strong>, por {item.author}</a>}
                         {item.link === "" && <p className="review-link"><strong>{item.name}</strong>, por {item.author}</p>}

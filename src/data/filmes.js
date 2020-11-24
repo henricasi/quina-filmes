@@ -106,7 +106,7 @@ export const filmesData = [
       // },
     ],
     festivals: [
-      {content: "FBCU | 21º Festival Brasileiro de Cinema Universitário - Mostra Competitiva (Niterói RJ / setembro 2019) – Prêmio Leit Motiff", won: true},
+      {content: "- FBCU | 21º Festival Brasileiro de Cinema Universitário - Mostra Competitiva (Niterói RJ / setembro 2019) – <strong>PRÊMIO LEIT MOTIFF</strong>", won: true},
       {content: "XV Panorama Internacional Coisa de Cinema - Mostra Competitiva (Salvador BA / novembro 2019)", won: false},
       {content: "III Mostra Sesc de Cinema – Panorama Paulista (São Paulo SP / novembro e dezembro 2019)", won: false},
       {content: "FestCurtasBH | 21º Festival Internacional de Curtas de Belo Horizonte - Mostra Competitiva Nacional – (Belo Horizonte MG / setembro 2019)", won: false},
@@ -120,6 +120,12 @@ export const filmesData = [
       {content: "CINENOVA | 2º Portugal Interuniversity Film Festival – Mostra Competitiva Internacional (Lisboa, Portugal / março 2020)", won: false}
     ],
     reviews: [
+      {
+        name: "21º FBCU 2019 – Prêmio LeitMotif",
+        author: "Equipe LeitMotif",
+        content: "Ronda, filme de Mauricio Battistuci e Francisco Miguez, parece buscar não dicotomizar as questões internas do indivíduo e da cidade, mas encontrar suas raras intersecções e espaços em comum. A construção auditiva da cidade é invasiva, caótica, não procura polidez ou \"educação\" sonora. O metal range, buzinas soam sobre diálogos, a serra de mão, depois o bafo dos carros, por último uma voz, que briga por espaço. Primeiro os gritos do passageiro de metrô que batalha contra o espaço fechado, depois outro profeta que luta contra o Golias do espaço aberto. Os espaços da cidade são construções arquitetônicas reservadas a não-construção pelo universo visual - que se reserva a planos fixos e pouco reveladores, mas construídos em nossa percepção sônica. O que não vemos dos espaços, ouvimos. E o que não ouvimos ou vemos do protagonista, a cidade parece nos contar. Enquanto batalha os sons do dia, as comunicações em celulares e dentro de carros e em ruas ruidosas não são tão diferentes de sua ronda quase quixotesca em busca de um lugar onde estar em um espaço que parece completamente tomado. O espaço encontrado, afinal, traduz-se não tanto na imagem, mas através de uma nova arquitetura sonora que reorganiza os espaços que parecem ali já existir e constrói novos espaços negativos, e define, finalmente, um lugar para o protagonista antes perdido.",
+        link: ""
+      },
       {
         name: "21º FESTCURTASBH - No fracasso das relações cotidianas, a negritude há de nos salvar?",
         author: "Gabriel Araújo",
@@ -137,12 +143,6 @@ export const filmesData = [
         author: "Gabriel Morais",
         content: "A recusa é pedagogicamente acompanhada por uma reorganização do pacto de representação, que associa os limites das ultrapassadas concepções das relações de trabalho aos limites das ultrapassadas abordagens do drama social realista, ambas como formas esgarçadas de enfrentar as novas questões do mundo e do trabalho. O filme vira-se, portanto, para uma investigação acerca de modelos estéticos e políticos de enfrentamento que estejam a par da reconfiguração dos desafios.",
         link: "http://revistacinetica.com.br/nova/deus-ajuda-quem-cedo-madruga-consideracoes-tardias-sobre-o-21o-festival-brasileiro-de-cinema-universitario/"
-      },
-      {
-        name: "21º FBCU 2019 – Prêmio LeitMotif",
-        author: "Equipe LeitMotif",
-        content: "Ronda, filme de Mauricio Battistuci e Francisco Miguez, parece buscar não dicotomizar as questões internas do indivíduo e da cidade, mas encontrar suas raras intersecções e espaços em comum. A construção auditiva da cidade é invasiva, caótica, não procura polidez ou \"educação\" sonora. O metal range, buzinas soam sobre diálogos, a serra de mão, depois o bafo dos carros, por último uma voz, que briga por espaço. Primeiro os gritos do passageiro de metrô que batalha contra o espaço fechado, depois outro profeta que luta contra o Golias do espaço aberto. Os espaços da cidade são construções arquitetônicas reservadas a não-construção pelo universo visual - que se reserva a planos fixos e pouco reveladores, mas construídos em nossa percepção sônica. O que não vemos dos espaços, ouvimos. E o que não ouvimos ou vemos do protagonista, a cidade parece nos contar. Enquanto batalha os sons do dia, as comunicações em celulares e dentro de carros e em ruas ruidosas não são tão diferentes de sua ronda quase quixotesca em busca de um lugar onde estar em um espaço que parece completamente tomado. O espaço encontrado, afinal, traduz-se não tanto na imagem, mas através de uma nova arquitetura sonora que reorganiza os espaços que parecem ali já existir e constrói novos espaços negativos, e define, finalmente, um lugar para o protagonista antes perdido.",
-        link: ""
       },
     ],
     english: {
@@ -280,10 +280,9 @@ export const filmesData = [
     }
   ],
   festivals: [
-    {content: "Menção Honrosa da Competição Brasileira de Curtas-Metragens (Júri Oficial) do 25º Festival É Tudo Verdade", won: true},
+    {content: "- É Tudo Verdade | 25º Festival Internacional de Documentários - Competição Brasileira de Curtas-Metragens (setembro 2020) - <strong>MENÇÃO HONROSA (JÚRI OFICIAL)</strong>", won: true},
     {content: "Curta Cinema | 29º Festival Internacional de Curtas do Rio de Janeiro - Mostra Em Trânsito (Rio de Janeiro RJ / novembro 2019)", won: false},
     {content: "Toró | 5º Festival Audiovisual Universitário de Belém (Belém PA / novembro 2019)", won: false},
-    {content: "É Tudo Verdade | 25º Festival Internacional de Documentários - Competição Brasileira de Curtas-Metragens (setembro 2020)", won: false},
     {content: "CineOP | 15ª Mostra de Cinema de Ouro Preto - Mostra TV  UFOP (setembro 2020)", won: false},
   ],
   reviews: [

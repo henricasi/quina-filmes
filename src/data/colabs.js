@@ -503,7 +503,7 @@ export const colabsData = [
       // },
     ],
     festivals: [
-      {content: "Kinoforum | 30º Festival Internacional de Curtas Metragens de São Paulo (Brasil /agosto 2019) – Prêmio Melhores do Público", won: true},
+      {content: "- Kinoforum | 30º Festival Internacional de Curtas Metragens de São Paulo (Brasil /agosto 2019) – <strong>PRÊMIO MELHORES DO PÚBLICO</strong>", won: true},
       {content: "Dança em Foco | festival internacional de vídeo & dança (online / 2019)", won: false},
       {content: "Frame Rush | (Londres, Inglaterra / fevereiro 2019)", won: false},
       {content: "EIVV | V Meeting on Videodance and Videoperformance (Valencia, Espanha / setembro 2018)", won: false},
