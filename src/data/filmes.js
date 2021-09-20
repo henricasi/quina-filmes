@@ -280,6 +280,8 @@ export const filmesData = [
     }
   ],
   festivals: [
+    {content: "ECOFALANTE | 10ª Mostra Ecofalante de Cinema - Competição: Concurso Curta", won: false},
+    {content: "FOFI | 4º Festival Online de Filmes de Inquietação", won: false},
     {content: "- É Tudo Verdade | 25º Festival Internacional de Documentários - Competição Brasileira de Curtas-Metragens (setembro 2020) - <strong>MENÇÃO HONROSA (JÚRI OFICIAL)</strong>", won: true},
     {content: "Curta Cinema | 29º Festival Internacional de Curtas do Rio de Janeiro - Mostra Em Trânsito (Rio de Janeiro RJ / novembro 2019)", won: false},
     {content: "Toró | 5º Festival Audiovisual Universitário de Belém (Belém PA / novembro 2019)", won: false},
@@ -612,13 +614,13 @@ export const filmesData = [
     format: "documentário",
     support: "digital",
     director: "Francisco Miguez",
-    cast: "José Bezerra, José Cícero, Moacir Rodrigues",
+    // cast: "José Bezerra, José Cícero, Moacir Rodrigues",
     summary: "Uma invenção sem futuro? Quando um novo projecionista digital chega, três projecionistas de película falam do declínio de sua profissão durante uma mostra de filmes dos irmãos Lumière. Quando começou o cinema, quando ele termina?",
     crew: [
-      // {
-      //   name: "com",
-      //   content: "José Bezerra, José Cícero, Moacir Rodrigues"
-      // },
+      {
+        name: "com",
+        content: "José Bezerra, José Cícero, Moacir Rodrigues, Francisco Miguez"
+      },
       {
         name: "realização",
         content: "Francisco Miguez"
@@ -626,6 +628,10 @@ export const filmesData = [
       {
         name: "produção",
         content: "Quina filmes"
+      },
+      {
+        name: "produção executiva",
+        content: "Mauricio Battistuci"
       },
       {
         name: "",
@@ -636,7 +642,11 @@ export const filmesData = [
         content: "Caio Antônio"
       },
       {
-        name: "edição de som e mixagem",
+        name: "edição de som",
+        content: "Amanda Carvalho"
+      },
+      {
+        name: "mixagem",
         content: "Nicholas Rabinovitch"
       },
       {
@@ -644,7 +654,7 @@ export const filmesData = [
         content: "filmado no CCBB São Paulo ao longo da mostra Lumière Cineasta"
       },
       {
-        name: "curadoria",
+        name: "curadoria Lumière Cineasta",
         content: "Calac Nogueira, Lucas Baptista, Maria Chiaretti"
       },
       {
@@ -656,11 +666,9 @@ export const filmesData = [
         content: "Fabio Miguez, Fernanda Mendes Luiz, João MB Bim, Lucia Miguez, Lucas Reitano, Paulo Martins Filho, Pedro Koberle, Pedro Nishi, Victor Maia"
       },
     ],
-    // festivals: [
-    //   {content: "", won: false},
-    //   {content: "", won: false},
-    //   {content: "", won: false},
-    // ],
+    festivals: [
+      {content: "CineOP - 16ª Mostra de Cinema de Ouro Preto - Mostra Contemporânea de Curtas", won: false},
+    ],
     // reviews: [
     //   {
     //     name: "",
@@ -702,8 +710,8 @@ export const filmesData = [
       },
     },
     video: {
-      id: "",
-      padding: ""
+      id: "533205029",
+      padding: "56.25%"
     },
     url: "uma-invencao-sem-futuro"
   },
