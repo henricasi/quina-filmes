@@ -286,6 +286,8 @@ export const filmesData = [
     {content: "Curta Cinema | 29º Festival Internacional de Curtas do Rio de Janeiro - Mostra Em Trânsito (Rio de Janeiro RJ / novembro 2019)", won: false},
     {content: "Toró | 5º Festival Audiovisual Universitário de Belém (Belém PA / novembro 2019)", won: false},
     {content: "CineOP | 15ª Mostra de Cinema de Ouro Preto - Mostra TV  UFOP (setembro 2020)", won: false},
+    {content: "21º Encontros de Cinema de Viana (Viana do Castelo, Portugal, novembro 2021) - <strong>Menção Honrosa do Prêmio PrimeirOlhar</strong>", won: true},
+    {content: "FIDBA | 9º Festival Internacional de Cine Documental de Buenos Aires (Buenos Aires, Argentina, dezembro 2021)", won: true}
   ],
   reviews: [
     {
@@ -376,109 +378,109 @@ export const filmesData = [
   },
   url: "ver-a-china"
   },
+  // {
+  //   title: "Angela",
+  //   year: "wip",
+  //   duration: "",
+  //   format: "documentário",
+  //   support: "digital",
+  //   director: "Francisco Miguez e Nicolau de Almeida",
+  //   summary: "Angela de Almeida junta os pontos de um mapa de levantes e represálias militares que atravessaram a América Latina. Esse filme é o encontro de três gerações, Angela, seu filho e seus sobrinhos-netos, que se interrogam: como é ver um mundo que parece tão distante daquele pelo qual lutou Angela toda sua vida? Entre o visível e invisível, a derrota e a vitória, vida e morte de encontro com uma mulher de 80 anos que persiste, incansável.",
+  //   crew: [
+  //     {
+  //       name:"realização",
+  //       content: "Francisco Miguez e Nicolau de Almeida"
+  //     },
+  //     {
+  //       name:"direção de fotografia",
+  //       content: "Mauricio Battistuci"
+  //     },
+  //     {
+  //       name:"produção",
+  //       content: "Amanda Carvalho, Francisco Miguez, Nicolau de Almeida e João Pedro Micheletti Bim"
+  //     },
+  //     {
+  //       name:"montagem",
+  //       content: "Luísa Noriko e Amanda Carvalho"
+  //     },
+  //     // {
+  //     //   name:"finalização",
+  //     //   content: "Caio Antonio"
+  //     // },
+  //   ],
+  //   // festivals: [
+  //   //   {content: "", won: false},
+  //   //   {content: "", won: false},
+  //   //   {content: "", won: false},
+  //   // ],
+  //   // reviews: [
+  //   //   {
+  //   //     name: "",
+  //   //     author: "",
+  //   //     content: "",
+  //   //     link: ""
+  //   //   }
+  //   // ],
+  //   english: {
+  //     title: "",
+  //     summary: ""
+  //   },
+  //   spanish: {
+  //     title: "",
+  //     summary: ""
+  //   },
+  //   poster: "/img/angela/angela_banner.jpg",
+  //   images: {
+  //     gallery1: {
+  //       config: "left-2-right-1",
+  //       data: [
+  //         {
+  //           thumb: "/img/angela/thumb-angela_still1.jpg",
+  //           full: "/img/angela/angela_still1_1316x740.jpg",
+  //           alt: "Still 1"
+  //         },
+  //         {
+  //           thumb: "/img/angela/thumb-angela_still2.jpg",
+  //           full: "/img/angela/angela_still2_1184x740.jpg",
+  //           alt: "Still 2"
+  //         },
+  //         // {
+  //         //   thumb: "/img/angela/thumb-angela_still3.jpg",
+  //         //   full: "/img/angela/angela_still3_1184x740.jpg",
+  //         //   alt: "Still 3"
+  //         // },
+  //         {
+  //           thumb: "/img/angela/thumb-angela_still4.jpg",
+  //           full: "/img/angela/angela_still4_1316x740.jpg",
+  //           alt: "Still 4"
+  //         },
+  //         // {
+  //         //   thumb: "/img/angela/thumb-angela_still5.jpg",
+  //         //   full: "/img/angela/angela_still5_1312x740.jpg",
+  //         //   alt: "Still 5"
+  //         // },
+  //         // {
+  //         //   thumb: "/img/angela/thumb-angela_still6.jpg",
+  //         //   full: "/img/angela/angela_still6_874x740.jpg",
+  //         //   alt: "Still 6"
+  //         // },
+  //       ],
+  //     },
+  //   },
+  //   video: {
+  //     id: 360162923,
+  //     padding: "56.25%"
+  //   },
+  //   url: "angela"
+  // },
   {
-    title: "Angela",
-    year: "wip",
-    duration: "",
-    format: "documentário",
-    support: "digital",
-    director: "Francisco Miguez e Nicolau de Almeida",
-    summary: "Angela de Almeida junta os pontos de um mapa de levantes e represálias militares que atravessaram a América Latina. Esse filme é o encontro de três gerações, Angela, seu filho e seus sobrinhos-netos, que se interrogam: como é ver um mundo que parece tão distante daquele pelo qual lutou Angela toda sua vida? Entre o visível e invisível, a derrota e a vitória, vida e morte de encontro com uma mulher de 80 anos que persiste, incansável.",
-    crew: [
-      {
-        name:"realização",
-        content: "Francisco Miguez e Nicolau de Almeida"
-      },
-      {
-        name:"direção de fotografia",
-        content: "Mauricio Battistuci"
-      },
-      {
-        name:"produção",
-        content: "Amanda Carvalho, Francisco Miguez, Nicolau de Almeida e João Pedro Micheletti Bim"
-      },
-      {
-        name:"montagem",
-        content: "Luísa Noriko e Amanda Carvalho"
-      },
-      // {
-      //   name:"finalização",
-      //   content: "Caio Antonio"
-      // },
-    ],
-    // festivals: [
-    //   {content: "", won: false},
-    //   {content: "", won: false},
-    //   {content: "", won: false},
-    // ],
-    // reviews: [
-    //   {
-    //     name: "",
-    //     author: "",
-    //     content: "",
-    //     link: ""
-    //   }
-    // ],
-    english: {
-      title: "",
-      summary: ""
-    },
-    spanish: {
-      title: "",
-      summary: ""
-    },
-    poster: "/img/angela/angela_banner.jpg",
-    images: {
-      gallery1: {
-        config: "left-2-right-1",
-        data: [
-          {
-            thumb: "/img/angela/thumb-angela_still1.jpg",
-            full: "/img/angela/angela_still1_1316x740.jpg",
-            alt: "Still 1"
-          },
-          {
-            thumb: "/img/angela/thumb-angela_still2.jpg",
-            full: "/img/angela/angela_still2_1184x740.jpg",
-            alt: "Still 2"
-          },
-          // {
-          //   thumb: "/img/angela/thumb-angela_still3.jpg",
-          //   full: "/img/angela/angela_still3_1184x740.jpg",
-          //   alt: "Still 3"
-          // },
-          {
-            thumb: "/img/angela/thumb-angela_still4.jpg",
-            full: "/img/angela/angela_still4_1316x740.jpg",
-            alt: "Still 4"
-          },
-          // {
-          //   thumb: "/img/angela/thumb-angela_still5.jpg",
-          //   full: "/img/angela/angela_still5_1312x740.jpg",
-          //   alt: "Still 5"
-          // },
-          // {
-          //   thumb: "/img/angela/thumb-angela_still6.jpg",
-          //   full: "/img/angela/angela_still6_874x740.jpg",
-          //   alt: "Still 6"
-          // },
-        ],
-      },
-    },
-    video: {
-      id: 360162923,
-      padding: "56.25%"
-    },
-    url: "angela"
-  },
-  {
-    title: "Ensaios",
-    year: "wip",
-    duration: "",
+    title: "Ana quer ser uma grande atriz",
+    year: "2022",
+    duration: "18",
     format: "ficção",
     support: "digital",
     cast: "Sofia Maruci, Érika Rocha, Ricardo Teodoro, João Filho",
-    summary: "Ana, uma jovem atriz que mora sozinha, grava self-tapes para um teste de elenco. Sob a orientação de seu agente, ela não mede esforços para conseguir o trabalho.",
+    summary: "Ana, uma jovem atriz que mora sozinha, grava vídeos para o teste de elenco de uma publicidade de consultoria de imagem. Orientada pelo seu insistente e entusiasmado agente, ela não poupa esforços para conseguir o trabalho. Até que, absorta em seus próprios vídeos, ela se torna obcecada pelo papel.",
     crew: [
       {
         name:"direção e roteiro",
@@ -541,11 +543,12 @@ export const filmesData = [
         content: "Luisa Noriko"
       },
     ],
-    // festivals: [
-    //   {content: "", won: false},
-    //   {content: "", won: false},
-    //   {content: "", won: false},
-    // ],
+      festivals: [
+        {content: "FICBC | 12º Festival Internacional de Cinema em Balneário Camboriú - Seleção Oficial (Balneário Camboriú - SC) - <strong>PRÊMIO ESPECIAL DO JÚRI</strong>", won: true},
+        {content: "Cinalfama Screenings and Awards (Lisboa, Portugal) - <strong>PRÊMIO DE MELHOR ATUAÇÃO</strong> (Sofia Maruci)", won: true},
+        {content: "KISFF | Korea International Short Film Festival (Seul, Coreia do Sul) - <strong>PRÊMIO DE MELHOR SOUND DESIGN</strong>", won: true},
+        {content: "NYOFF  | New York Odyssey Film Festival (Nova Iorque, EUA) - <strong>MENÇÃO DE MELHOR FOTOGRAFIA</strong>", won: true},
+      ],
     // reviews: [
     //   {
     //     name: "",
@@ -585,25 +588,25 @@ export const filmesData = [
           },
         ],
       },
-      gallery2: {
-        config: "horizontal-2",
-        data: [
-          {
-            thumb: "/img/ensaios/thumb-ensaios_9.jpg",
-            full: "/img/ensaios/ensaios_9-full.jpg",
-            alt: "Still 9"
-          },
-          {
-            thumb: "/img/ensaios/thumb-ensaios_11.jpg",
-            full: "/img/ensaios/ensaios_11-full.jpg",
-            alt: "Still 11"
-          },
-        ],
-      },
+      // gallery2: {
+      //   config: "horizontal-2",
+      //   data: [
+      //     {
+      //       thumb: "/img/ensaios/thumb-ensaios_9.jpg",
+      //       full: "/img/ensaios/ensaios_9-full.jpg",
+      //       alt: "Still 9"
+      //     },
+      //     {
+      //       thumb: "/img/ensaios/thumb-ensaios_11.jpg",
+      //       full: "/img/ensaios/ensaios_11-full.jpg",
+      //       alt: "Still 11"
+      //     },
+      //   ],
+      // },
     },
     video: {
-      id: "",
-      padding: ""
+      id: "758954270",
+      padding: "56.25%"
     },
     url: "ensaios"
   },
